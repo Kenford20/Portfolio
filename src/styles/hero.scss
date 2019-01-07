@@ -1,0 +1,29 @@
+@import '../variables.scss';
+
+#hero-section {
+    color: white;
+    width: 400px;
+    position: absolute;
+    top: 25%;
+    left: 20%;
+
+    h2 {
+        margin-bottom: 25px;
+        font-size:36px;
+    }
+    h3 {
+        color: rgb(240, 240, 240);
+        margin-bottom: 25px;
+    }
+    button {
+        padding: 10px;
+        margin-right: 10px;
+        color: $primaryColor;
+    }
+    #hero-img {
+        position: absolute;
+        right: -150%;
+        top: -60%;
+        height: 400px;
+    }
+}

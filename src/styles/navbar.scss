@@ -1,0 +1,25 @@
+$testColor: #123456;
+
+#navbar {
+    color:white;
+    width:60%;
+    margin: auto;
+    padding-top: 30px;
+    font-weight:600;
+
+    span {
+        text-transform: uppercase;
+    }
+}
+
+nav {
+    float: right;
+
+    a {
+        text-decoration: none;
+        color:white;
+        display: inline;
+        padding: 0 10px;
+        text-transform: uppercase;
+    }
+}
