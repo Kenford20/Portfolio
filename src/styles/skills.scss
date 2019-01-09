@@ -1,0 +1,14 @@
+.skills-container {
+    height: 90vh;
+    position: relative;
+    background: #0b345d;
+    background-image: linear-gradient(-125deg, #002f62 0%, #18496a 50%, #138b89 100%);
+
+    svg {
+        position: absolute;
+        left:0;
+        bottom: -20%;
+        width: 100%;
+        height: auto;
+    }
+}

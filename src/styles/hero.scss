@@ -2,18 +2,19 @@
 
 #hero-section {
     color: white;
-    width: 400px;
+    width: 480px;
     position: absolute;
     top: 25%;
     left: 20%;
 
     h2 {
         margin-bottom: 25px;
-        font-size:36px;
+        font-size:42px;
     }
     h3 {
         color: rgb(240, 240, 240);
-        margin-bottom: 25px;
+        margin-bottom: 45px;
+        line-height: 2;
     }
     button {
         padding: 10px;
@@ -22,8 +23,15 @@
     }
     #hero-img {
         position: absolute;
-        right: -150%;
-        top: -60%;
-        height: 400px;
+        right: -130%;
+        top: -50%;
+        height: 500px;
     }
 }
+
+header {
+    position: relative;
+    height: 90vh;
+    background-image: linear-gradient(135deg, #012041 0%, #18496a 50%, #138b89 100%);
+}
+  
