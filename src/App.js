@@ -5,6 +5,7 @@ import Main from './components/main-content';
 import About from './components/about';
 import Skills from './components/skills';
 import Portfolio from './components/portfolio';
+import Contact from './components/contact';
 
 import './app.scss';
 
@@ -35,6 +36,21 @@ class App extends Component {
             <Portfolio />
           </div>
         </section>
+
+        <section id="contact-container" style={{ zIndex: 0 }}>
+          <svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="-300 -100 650 320" style={{ zIndex: -100 }}>
+            <path d="M-344, 207 C5, 404 200, 200 312, 339" fill="none" stroke="white" stroke-width="250" stroke-linecap="round"/>
+          </svg>
+          <Contact />
+        </section>
+
+        <h1>dwadawad</h1>
+        <h1>dwadawad</h1>
+        <h1>dwadawad</h1>
+        <h1>dwadawad</h1>
+        <h1>dwadawad</h1>
+        <h1>dwadawad</h1>
+        
 
       </div>
     );

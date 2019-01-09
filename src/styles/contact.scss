@@ -1,0 +1,151 @@
+@import '../variables.scss';
+
+#contact-container {
+    height: 90vh;
+    position: relative;
+    background-image: linear-gradient(125deg, #002f62 0%, #18496a 50%, #138b89 100%);
+
+    #contact-header {
+        text-align: center;
+        padding-top: 100px;
+        margin-bottom: 100px;
+    }
+}
+
+#contact-form-card {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    border-radius: 20px;    
+    box-shadow: -5px 5px 60px -15px rgb(0, 67, 70);
+    -webkit-box-shadow: -5px 5px 60px -5px rgb(0, 67, 70);
+    
+    #form-wrapper {
+        padding: 60px;
+        background-color: white;
+        border-radius: 20px 0 0 20px;
+        flex-basis: 70%;
+        display: grid;
+        grid-template-rows: 90px 100px 100px 2fr;
+        grid-template-columns: 47% 6% 47%;
+        grid-template-areas: 
+            "header header header"
+            "name . email"
+            "company . phone"
+            "message message message"
+            "button . .";
+
+        h3 {
+            text-align: center;
+            color: $primaryColor;
+            grid-area: header;
+            margin-top: 10px;
+            font-size: 24px;
+        }
+
+        p {
+            color: $primaryColor;
+            text-transform: uppercase;
+            font-size: 12px;
+            margin-bottom: 10px;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+        
+        input {
+            box-sizing: border-box;
+            width: 100%;
+            height: 45px;
+            border: none;
+            border-radius: 10px;
+            background-color: rgb(221, 231, 253);
+            padding: 0 15px;
+            font-family: $mainFont;
+        }
+
+        textarea {
+            box-sizing: border-box;
+            border: none;
+            border-radius: 10px;
+            background-color: rgb(221, 231, 253);
+            padding: 0 15px;
+            padding: 15px;
+            font-family: $mainFont;
+            width: 100%;
+        }
+
+        div:nth-child(2) { grid-area: name; }
+        div:nth-child(3) { grid-area: email; }
+        div:nth-child(4) { grid-area: company; }
+        div:nth-child(5) { grid-area: phone; }
+        div:nth-child(6) { grid-area: message; }
+
+        button {
+            margin-top: 30px;
+            color: $primaryColor;
+            border: 1px solid $primaryColor;
+            background-color: white;
+            border-radius: 20px;
+            width: 100px;
+            padding: 10px;
+            grid-area: button;
+            font-size: 12px;
+            opacity: 0.7;
+        }
+        
+    }
+
+
+    #contact-info-wrapper {
+        flex-basis: 30%;
+        width: 100%;
+        border-radius: 0 20px 20px 0;
+        margin: 0 auto;
+        padding: 40px;
+        background-image: linear-gradient(-125deg, #002f62 0%, #18496a 50%, #138b89 100%);
+        color: white;
+
+        hr {
+            width: 60%;
+            margin: 30px auto;
+            opacity: 0.5;
+        }
+
+        h3 {
+            font-size: 24px;
+            margin-top: 25px;
+            text-align: center;
+        }
+
+        h5 {
+            display: inline-block;
+            margin: 20px 0;
+            font-size: 16px;
+            font-weight: 200;
+        }
+
+        p {
+            padding-top: 25px;
+            font-size: 18px;
+        }
+        
+        span {
+            margin: 0 25px 0 10px;
+        }
+
+        #alt-contact-header {
+            text-align:center; 
+            margin-bottom: 40px;
+        }
+        #alt-contact-wrapper {
+            text-align: center;
+
+            span {
+                margin: 0 20px;
+            }
+        }
+    }
+}
+
+
+
