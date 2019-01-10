@@ -18,8 +18,55 @@ body {
 }
 
 .section-headers {
-    font-size: 32px;
-    color: $secondaryColor;
+    font-size: 24px;
+    color: $primaryColor;
     text-transform: uppercase;
     display: inline;
+}
+
+.fa {
+    margin-right: 10px;
+    font-size: 42px;
+    background: linear-gradient(155deg, #012041 0%, #18496a 50%, #138b89 100%);
+    background: -webkit-linear-gradient(250deg, #012041 0%, #18496a 50%, #138b89 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#hero-section, #about-description {
+    .contact-btn {
+        padding: 10px 30px;;
+        margin-right: 10px;
+        color: white;
+        background: transparent;
+        border: 2px solid white;
+        border-radius: 20px;
+        position: relative;
+        bottom: 8px;
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        
+        i {
+            margin: 0 0 0 10px !important;
+            font-size: 18px;
+        }
+
+        &:hover {
+            background: white;
+            color: $primaryColor;
+            box-shadow: 2px 5px 15px -5px rgb(183, 212, 255);
+            -webkit-box-shadow: 2px 5px 15px -5px rgb(183, 212, 255);  
+
+            i {
+                background: $primaryColor;
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+    }
 }

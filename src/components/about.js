@@ -5,7 +5,7 @@ const About = () => {
     return ( 
         <div id="about-section">
             <div id="about-header">
-                <span><i class="fas fa-user"></i></span>
+                <span><i class="fa fa-user-circle"></i></span>
                 <h2 className="section-headers"> About me </h2>
             </div>
             <div id="about-main">
@@ -25,7 +25,7 @@ const About = () => {
                     <h3> UI/UX Designer </h3>
                     <p> Hobbies: <br/>
                      Interests: </p>
-                    <button> Contact Me </button>
+                    <button className="contact-btn"> Contact Me <i className="fa fa-envelope"></i></button>
                 </div>
             </div>
         </div>

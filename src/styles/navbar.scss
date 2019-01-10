@@ -1,4 +1,4 @@
-$testColor: #123456;
+@import '../variables.scss';
 
 #navbar {
     color:white;
@@ -18,8 +18,28 @@ nav {
     a {
         text-decoration: none;
         color:white;
-        display: inline;
-        padding: 0 10px;
+        display: inline-block;
+        margin: 0 10px;
         text-transform: uppercase;
+        transition: border-width 0.5s;
+        -webkit-transition: border-width .5s;
+        -moz-transition: border-width .5s;
+
+        &:hover {
+            color: rgb(218, 218, 218)
+        }
+        
+        &::after {
+            content: '';
+            display: block;
+            width: 0px;
+            height: 2px;
+            background: white;
+            transition: width .3s;
+        }
+        &:hover::after {
+            width: 100%;
+        }
+        
     }
 }

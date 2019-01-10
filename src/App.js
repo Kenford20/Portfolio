@@ -40,7 +40,7 @@ class App extends Component {
         </section>
 
         <section id="codepen">
-          <span><i className="fab fa-html5"></i></span>
+          <span><i className="fa fa-codepen"></i></span>
           <h2 className="section-headers"> Codepen Work </h2>
           <Codepen />
         </section>

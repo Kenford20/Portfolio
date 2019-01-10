@@ -33,12 +33,15 @@
 
         h1 {
            font-size: 28px; 
-           margin-bottom: 20px;
+           margin-bottom: 5px;
            color: $secondaryColor;
         }
         h2 {
-            font-size: 20px;
-            margin-bottom: 15px;
+            font-size: 19px;
+            margin-bottom: 20px;
+            color: $secondaryColor;
+            opacity: 0.8;
+            font-weight: 400;
         }
         p { margin-bottom: 15px; }
     }
@@ -66,6 +69,12 @@
         }
         p {
             margin: 25px 0;
+        }
+        .fa {
+            background: white;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
     }
 }

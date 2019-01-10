@@ -5,8 +5,8 @@ const Contact = () => {
     return ( 
         <div>
             <div id="contact-header">
-                <span><i class="fas fa-code"></i></span>
-                <h2 className="section-headers"> Contact </h2>
+                <span><i class="fa fa-envelope"></i></span>
+                <h2 className="section-headers"> Get in touch </h2>
                 <h3> Use the form below to begin a conversation </h3>
             </div>
 

@@ -16,16 +16,20 @@
         margin-bottom: 45px;
         line-height: 2;
     }
-    button {
-        padding: 10px;
-        margin-right: 10px;
-        color: $primaryColor;
-    }
+        
     #hero-img {
         position: absolute;
         right: -130%;
         top: -50%;
         height: 500px;
+    }
+    
+    .fa {
+        margin-left: 20px;
+        background: white;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 }
 

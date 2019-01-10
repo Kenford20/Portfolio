@@ -17,8 +17,28 @@
             text-transform: uppercase;
             font-size: 14px;
             text-decoration: none;
+            opacity: 0.8;
+            transition: opacity .2s;
 
-            &:hover { font-weight: 600; }
+            &:hover {
+                opacity: 1;
+                font-weight: 600;
+            }
+
+            &::before {
+                content: '';
+                display: inline-block;
+                width: 0px;
+                height: 2px;
+                margin-bottom: 3px;
+                background: $secondaryColor;
+                transition: width .3s;
+            }
+
+            &:hover::before {
+                width: 20px;
+                margin-right: 2px;
+            }
         }
     }
 
@@ -26,6 +46,8 @@
         display: inline;
         text-transform: uppercase;
         font-size: 20px;
+        position: relative;
+        bottom: 5px;
     }
     p { 
         margin: 25px 0 15px 0; 

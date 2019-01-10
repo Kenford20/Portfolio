@@ -5,7 +5,7 @@ const Portfolio = () => {
     return ( 
         <div id="portfolio-container">
             <div id="portfolio-header">
-                <span><i class="fas fa-code"></i></span>
+                <span><i class="fa fa-html5"></i></span>
                 <h2 className="section-headers"> My Best Work </h2>
             </div>
 
