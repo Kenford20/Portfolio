@@ -1,0 +1,27 @@
+@import '../variables.scss';
+
+#codepen { 
+    text-align: center;
+}
+
+#codepen-container {
+    width: 80%;
+    margin: 70px auto 300px auto;
+
+    .codepen-item {
+      
+        img {
+            margin-left: 50px;
+            width: 75%;
+            height: 300px;
+            border-radius: 10px;
+        }
+    }
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-size: 36px;
+  color: $primaryColor;
+}
+

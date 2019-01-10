@@ -5,6 +5,7 @@ import Main from './components/main-content';
 import About from './components/about';
 import Skills from './components/skills';
 import Portfolio from './components/portfolio';
+import Codepen from './components/codepen-slider';
 import Contact from './components/contact';
 import Footer from './components/footer';
 
@@ -36,6 +37,12 @@ class App extends Component {
           <div className="portfolio-item">
             <Portfolio />
           </div>
+        </section>
+
+        <section id="codepen">
+          <span><i className="fab fa-html5"></i></span>
+          <h2 className="section-headers"> Codepen Work </h2>
+          <Codepen />
         </section>
 
         <section id="contact-container" style={{ zIndex: 0 }}>
