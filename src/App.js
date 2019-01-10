@@ -6,6 +6,7 @@ import About from './components/about';
 import Skills from './components/skills';
 import Portfolio from './components/portfolio';
 import Contact from './components/contact';
+import Footer from './components/footer';
 
 import './app.scss';
 
@@ -13,10 +14,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
+        <header style={{ zIndex: 0 }}>
           <Navbar />
           <section><Hero /></section>
-          <svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="-300 -100 650 320" >
+          <svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="-300 -100 650 320" style={{ zIndex: -100 }}>
             <path d="M-344, 207 C5, 404 200, 200 312, 339" fill="none" stroke="white" stroke-width="250" stroke-linecap="round"/>
           </svg>
         </header>
@@ -25,7 +26,7 @@ class App extends Component {
         <section><About /></section>
     
         <section className="skills-container" style={{ zIndex: -2 }}>
-          <svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="-300 -100 650 320" >
+          <svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="-300 -100 650 320" style={{ zIndex: -100 }}>
             <path d="M-344, 207 C5, 404 200, 200 312, 339" fill="none" stroke="white" stroke-width="250" stroke-linecap="round"/>
           </svg>
           <Skills />
@@ -44,14 +45,9 @@ class App extends Component {
           <Contact />
         </section>
 
-        <h1>dwadawad</h1>
-        <h1>dwadawad</h1>
-        <h1>dwadawad</h1>
-        <h1>dwadawad</h1>
-        <h1>dwadawad</h1>
-        <h1>dwadawad</h1>
-        
-
+        <footer id="footer-container">
+          <Footer />
+        </footer>
       </div>
     );
   }

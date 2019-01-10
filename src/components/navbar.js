@@ -4,7 +4,7 @@ import '../styles/navbar.scss';
 const Navbar = () => {
     return ( 
         <div id='navbar'>
-            <span> Kenny Zhou/></span>
+            <span> &lt;Kenny Zhou/></span>
             <nav>
                 <a href="#"> Home </a>
                 <a href="#"> About Me </a>
