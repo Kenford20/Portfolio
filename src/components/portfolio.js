@@ -19,7 +19,7 @@ const Portfolio = () => {
                     <span className="portfolio-item-tech"> Javascript </span>
                     <span className="portfolio-item-tech"> React </span>
                 </div>
-                <img className="portfolio-item-img" alt="" src={ "https://s3.amazonaws.com/media-cajewelers.com/DiamondRubyBand.jpg" }/>
+                <img className="portfolio-item-img" alt="" src={ require("../images/portfolio/cajewelers.png") }/>
             </div>
 
             <div className="portfolio-item-wrapper">
@@ -32,7 +32,7 @@ const Portfolio = () => {
                     <span className="portfolio-item-tech"> Javascript </span>
                     <span className="portfolio-item-tech"> React </span>
                 </div>
-                <img className="portfolio-item-img" alt="" src={ "https://s3.amazonaws.com/media-cajewelers.com/DiamondRubyBand.jpg" }/>
+                <img className="portfolio-item-img" alt="" src={ require("../images/portfolio/codenames.png") }/>
             </div>
 
             <div className="portfolio-item-wrapper">
@@ -45,7 +45,7 @@ const Portfolio = () => {
                     <span className="portfolio-item-tech"> Javascript </span>
                     <span className="portfolio-item-tech"> React </span>
                 </div>
-                <img className="portfolio-item-img" alt="" src={ "https://s3.amazonaws.com/media-cajewelers.com/DiamondRubyBand.jpg" }/>
+                <img className="portfolio-item-img" alt="" src={ require("../images/portfolio/typing-website.png") }/>
             </div>
         </div>
      );

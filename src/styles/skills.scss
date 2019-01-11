@@ -3,6 +3,9 @@
     position: relative;
     background: #0b345d;
     background-image: linear-gradient(-125deg, #002f62 0%, #18496a 50%, #138b89 100%);
+    padding-top: 200px;
+    color: white;
+    
 
     svg {
         position: absolute;
@@ -10,5 +13,48 @@
         bottom: -20%;
         width: 100%;
         height: auto;
+    }
+
+    i {
+        -webkit-text-fill-color: white;
+    }
+
+    #skills-items-wrapper {
+        display: flex;
+        width: 60%;
+        margin: auto;
+        flex-wrap: wrap;
+        text-align: center;
+
+        h5 {
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        .skills-item {
+            margin: 70px;
+        }
+
+        .fab {
+            font-size: 60px;
+            margin: 15px auto;
+        }
+    }
+
+
+    #skills-header {
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+
+        i {
+            font-size: 20px;
+        }
+
+        h2 {
+             display: inline;
+             margin-left: 15px;
+         }
     }
 }

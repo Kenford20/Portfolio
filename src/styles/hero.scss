@@ -7,6 +7,14 @@
     top: 25%;
     left: 20%;
 
+    a {
+        color: white;
+        font-weight: 600;
+    }
+    span {
+        font-weight: 600;
+    }
+
     h2 {
         margin-bottom: 25px;
         font-size:42px;
@@ -15,6 +23,7 @@
         color: rgb(240, 240, 240);
         margin-bottom: 45px;
         line-height: 2;
+        font-weight: 100;
     }
         
     #hero-img {
@@ -22,6 +31,32 @@
         right: -130%;
         top: -50%;
         height: 500px;
+    }
+
+    #github-link i, #linkedin-link i, #resume-link i {
+        margin-left: 15px;
+        background: white;
+        border: 1px solid white;
+        border-radius: 50%;
+        -webkit-text-fill-color: $primaryColor;
+        transition: background-color 0.2s;
+
+        &:hover {
+            -webkit-text-fill-color: white;
+            background: transparent;
+        }
+    }
+    #github-link i {
+        font-size: 28px;
+        padding: 5px;
+    }
+    #linkedin-link i {
+        font-size: 20px;
+        padding: 10px;
+    }
+    #resume-link i {
+        font-size: 20px;
+        padding: 10px;
     }
     
     .fa {

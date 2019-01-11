@@ -24,7 +24,7 @@ body {
     display: inline;
 }
 
-.fa {
+.fab {
     margin-right: 10px;
     font-size: 42px;
     background: linear-gradient(155deg, #012041 0%, #18496a 50%, #138b89 100%);
@@ -34,7 +34,7 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
-#hero-section, #about-description {
+#hero-section, #about-section #about-description {
     .contact-btn {
         padding: 10px 30px;;
         margin-right: 10px;

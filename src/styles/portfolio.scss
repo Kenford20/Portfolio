@@ -33,8 +33,10 @@
 
     img {
         // flex-basis: 50%;
-        filter: drop-shadow(8px 8px 10px $secondaryColor);
-        -webkit-filter: drop-shadow(0px 0px 10px $secondaryColor); /* Safari */
+        width: 500px;
+        height: 300px;
+        filter: drop-shadow(8px 8px 10px $primaryColor);
+        -webkit-filter: drop-shadow(0px 0px 10px $primaryColor); /* Safari */
     }
 
     .portfolio-item-info {
