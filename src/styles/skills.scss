@@ -1,18 +1,16 @@
 .skills-container {
-    height: 90vh;
+    height: 130vh;
     position: relative;
     background: #0b345d;
     background-image: linear-gradient(-125deg, #002f62 0%, #18496a 50%, #138b89 100%);
-    padding-top: 300px;
     color: white;
-    
 
-    svg {
-        position: absolute;
-        left:0;
-        bottom: -20%;
-        width: 100%;
-        height: auto;
+    #skills-section {
+        padding-top: 500px;
+    }
+    
+    .svg-top {
+        bottom: 70%;
     }
 
     i {
