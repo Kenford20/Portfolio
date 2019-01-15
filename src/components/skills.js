@@ -31,14 +31,16 @@ const Skills = () => {
                     <h5>ReactJS</h5>
                 </div>
                 <div className="skills-item">
-                <i className="icon-mongodb"></i> 
-        
+                    <i className="icon-mongodb"></i> 
                     <h5>MongoDB</h5>
                 </div>
                 <div className="skills-item">
-                <i className="icon-bootstrap"></i> 
-        
+                    <i className="icon-bootstrap"></i>
                     <h5>Bootstrap</h5>
+                </div>
+                <div className="skills-item">
+                    <i className="fab fa-sass"></i>
+                    <h5>Sass</h5>
                 </div>
             </div>
         </div>

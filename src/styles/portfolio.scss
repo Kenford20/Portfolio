@@ -33,13 +33,15 @@
         flex-basis: 50%;
         width: 500px;
         height: 300px;
-        filter: drop-shadow(8px 8px 10px $primaryColor);
-        -webkit-filter: drop-shadow(0px 0px 10px $primaryColor); /* Safari */
     }
 
     .portfolio-item-info {
         flex-basis: 50%;
         margin-right: 200px;
+
+        &:nth-child(2) { 
+            margin: 0 0 0 200px;
+        }
     
         .portfolio-item-title {
             color: $primaryColor;

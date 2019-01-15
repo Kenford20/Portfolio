@@ -42,7 +42,7 @@ class App extends Component {
           </div>
         </section>
 
-        <section id="codepen">
+        <section id="codepen" style={{ zIndex: 100 }}>
           <span><i className="fab fa-codepen"></i></span>
           <h2 className="section-headers"> Codepen Work </h2>
           <Codepen />
@@ -52,9 +52,6 @@ class App extends Component {
           <svg className="svg-bg svg-top" xmlns="http://www.w3.org/2000/svg" viewBox="50 0 670 220" style={{ zIndex: -100 }}>
             <path d="M 0 50 Q 0 150 400 100 C 750 50 784 137 800 150 L 800 50 L 0 50" fill="rgb(245, 250, 250)"/>
           </svg>
-          {/* <svg className="svg-bg svg-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="80 170 700 550" style={{ zIndex: -100 }}>
-            <path d="M 1 427 Q 170 515 563 437 C 693 420 785 480 800 546 L 800 550 L 0 550" fill="white"/>
-          </svg> */}
           <svg className="svg-bg svg-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="80 0 700 550" style={{ zIndex: -100 }}>
             <path d="M 1 427 Q 170 515 563 437 C 693 420 785 480 800 546 L 800 550 L 0 550" fill="white"/>
           </svg> 
