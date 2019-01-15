@@ -2,13 +2,17 @@
 
 #navbar {
     color:white;
-    width:60%;
+    width: 100%;
     margin: auto;
     padding-top: 30px;
     font-weight:600;
 
     span {
         text-transform: uppercase;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        width: 1150px;
     }
 }
 

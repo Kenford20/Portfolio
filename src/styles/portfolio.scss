@@ -1,8 +1,6 @@
 @import '../variables.scss';
 
 #portfolio-container{
-
-
     #portfolio-header {
         text-align: center;
         margin: 0 0 200px 0;
@@ -32,7 +30,7 @@
     }
 
     img {
-        // flex-basis: 50%;
+        flex-basis: 50%;
         width: 500px;
         height: 300px;
         filter: drop-shadow(8px 8px 10px $primaryColor);
@@ -40,7 +38,7 @@
     }
 
     .portfolio-item-info {
-        // flex-basis: 48%;
+        flex-basis: 50%;
         margin-right: 200px;
     
         .portfolio-item-title {
