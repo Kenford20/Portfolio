@@ -27,6 +27,16 @@ class Thumbnail extends React.Component {
                     <div id="keys"></div>
                 </div>
                 <div id="keyboard-base"></div>
+                    
+                <div id="thumbnail-mobile">
+                    <div id="mobile-top">
+                        <span id="camera"></span>
+                        <span id="speaker"></span>
+                    </div>
+                    <div id="mobile-bottom">
+                        <span id="home-btn"></span>
+                    </div>
+                </div>
             </div>
         );
     }

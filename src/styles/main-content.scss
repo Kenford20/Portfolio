@@ -1,7 +1,7 @@
 @import '../variables.scss';
 
 #main-content {
-    width: 60%;
+    width: $containerDesktop;
     margin: 0 auto 200px auto;
     display: flex;
     position: relative;
