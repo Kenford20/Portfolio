@@ -11,7 +11,7 @@ const Portfolio = () => {
             </div>
 
             <div className="portfolio-item-wrapper">
-                <div className="portfolio-item-info">
+                <div className="portfolio-item-info" data-aos="fade-right">
                     <h1 className="portfolio-item-title"> Website Name </h1>
                     <h2 className="portfolio-item-type"> Website </h2>
                     <hr />
@@ -22,16 +22,24 @@ const Portfolio = () => {
                 </div>
                 <Thumbnail 
                     altTag = "Cajewelers Thumbnail"
+                    altTagMobile = "Cajewelers Mobile View Thumbnail"
                     path = "cajewelers"
+                    pathMobile = "cajewelersM"
+                    animation = "fade-left"
+                    animationDelay = { 1000 }
                 />
             </div>
 
             <div className="portfolio-item-wrapper">
                 <Thumbnail 
                     altTag = "Codenames Thumbnail"
+                    altTagMobile = "Cajewelers Mobile View Thumbnail"
                     path = "codenames"
+                    pathMobile = "cajewelersM"
+                    animation = "fade-right"
+                    animationDelay = { 1000 }
                 />
-                <div className="portfolio-item-info">
+                <div className="portfolio-item-info" data-aos="fade-left">
                     <h1 className="portfolio-item-title"> Website Name </h1>
                     <h2 className="portfolio-item-type"> Website </h2>
                     <hr />
@@ -43,7 +51,7 @@ const Portfolio = () => {
             </div>
 
             <div className="portfolio-item-wrapper">
-                <div className="portfolio-item-info">
+                <div className="portfolio-item-info" data-aos="fade-right">
                     <h1 className="portfolio-item-title"> Website Name </h1>
                     <h2 className="portfolio-item-type"> Website </h2>
                     <hr />
@@ -54,7 +62,11 @@ const Portfolio = () => {
                 </div>
                 <Thumbnail 
                     altTag = "Typing Website Thumbnail"
+                    altTagMobile = "Cajewelers Mobile View Thumbnail"
                     path = "typingWebsite"
+                    pathMobile = "cajewelersM"
+                    animation = "fade-left"
+                    animationDelay = { 1000 }
                 />
             </div>
         </div>

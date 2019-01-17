@@ -18,7 +18,7 @@ const About = () => {
                     <p> B.S. Computer Engineering: University of Illinois at Chicago (2013 - 2018) </p>
                 </div>
                 <div id="about-description">
-                    <img id="about-img" alt="Picture of Kenny" src={require("../images/profile2.png")} />
+                    <img id="about-img" alt="Kenny at a mural" src={require("../images/profile2.png")} />
                     <h1> Kenny Zhou </h1>
                     <h2> Chicago, Illinois </h2>
                     <h3> Web Developer </h3>

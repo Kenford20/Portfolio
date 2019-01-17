@@ -3,14 +3,17 @@ import '../styles/thumbnail.scss';
 
 class Thumbnail extends React.Component {
     render(){
-        let path = this.props.path;
+        const { animation, animationDelay, altTag, altTagMobile, path, pathMobile } = this.props;
+
         let imgPaths = {
             cajewelers: require('../images/portfolio/cajewelers.png'),
+            cajewelersM: require('../images/portfolio/cajewelers-mobile.png'),
             codenames: require('../images/portfolio/codenames.png'),
             typingWebsite: require("../images/portfolio/typing-website.png")
         };
+
         return ( 
-            <div id="thumbnail-laptop">
+            <div id="thumbnail-laptop" data-aos={ animation } data-aos-delay={ animationDelay }>
                 <div id="screen">
                     <span id="camera"></span>
                     <div id="tool-bar">
@@ -20,7 +23,7 @@ class Thumbnail extends React.Component {
                         <div id="address-bar"></div>
                     </div>
                     <div id="portfolio-img">
-                    <img className="portfolio-item-img" alt={ this.props.altTag } src={ imgPaths[path] }/>
+                        <img alt={ altTag } src={ imgPaths[path] }/>
                     </div>
                 </div>
                 <div id="keyboard">
@@ -32,6 +35,9 @@ class Thumbnail extends React.Component {
                     <div id="mobile-top">
                         <span id="camera"></span>
                         <span id="speaker"></span>
+                    </div>
+                    <div id="portfolio-img-mobile">
+                        <img alt={ altTagMobile } src={ imgPaths[pathMobile] }/>
                     </div>
                     <div id="mobile-bottom">
                         <span id="home-btn"></span>
