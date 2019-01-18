@@ -27,6 +27,7 @@ const Portfolio = () => {
                     pathMobile = "cajewelersM"
                     animation = "fade-left"
                     animationDelay = { 1000 }
+                    siteUrl = "https://blooming-river-65352.herokuapp.com/"
                 />
             </div>
 
@@ -38,6 +39,8 @@ const Portfolio = () => {
                     pathMobile = "cajewelersM"
                     animation = "fade-right"
                     animationDelay = { 1000 }
+                    btnPosition = "850px"
+                    siteUrl = "http://weebcodenames.online"
                 />
                 <div className="portfolio-item-info" data-aos="fade-left">
                     <h1 className="portfolio-item-title"> Website Name </h1>
@@ -67,6 +70,7 @@ const Portfolio = () => {
                     pathMobile = "cajewelersM"
                     animation = "fade-left"
                     animationDelay = { 1000 }
+                    siteUrl = "https://kenford20.github.io/"
                 />
             </div>
         </div>
