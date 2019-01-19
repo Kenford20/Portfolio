@@ -29,7 +29,7 @@ const Contact = () => {
                         <p className="form-item-label"> Phone: </p>
                         <input className="form-inputs" type="number" placeholder="Enter phone..."></input>
                     </div>
-                    <div id="abc" className="form-items-wrapper">
+                    <div className="form-items-wrapper">
                         <p className="form-item-label"> Message: </p>
                         <textarea className="form-inputs" type="text" placeholder="Enter message..." rows="10"></textarea>
                     </div>
@@ -39,22 +39,24 @@ const Contact = () => {
                 <div id="contact-info-wrapper">
                     <h3> Contact Information </h3>
                     <hr />
-                    <i class="fas fa-user-alt"></i>
-                    <h5> Kenny Zhou </h5>
-                    <br />
-                    <i class="fas fa-city city-icon"></i>
-                    <h5> Chicago, Illinois </h5>
-                    <br />
-                    <i class="fas fa-globe-americas"></i>
-                    <h5> United States </h5>
-                    <br />
-                    <i class="fas fa-phone-volume phone-icon"></i>
-                    <h5> 312-532-0066 </h5>
-                    <br />
-                    <i class="fas fa-envelope-open"></i>
-                    <h5> kzhou1013@gmail.com </h5>
-                    <br />
-                    <hr />
+                    <div id="abc">
+                        <i class="fas fa-user-alt"></i>
+                        <h5> Kenny Zhou </h5>
+                        <br />
+                        <i class="fas fa-city city-icon"></i>
+                        <h5> Chicago, Illinois </h5>
+                        <br />
+                        <i class="fas fa-globe-americas"></i>
+                        <h5> United States </h5>
+                        <br />
+                        <i class="fas fa-phone-volume phone-icon"></i>
+                        <h5> 312-532-0066 </h5>
+                        <br />
+                        <i class="fas fa-envelope-open"></i>
+                        <h5> kzhou1013@gmail.com </h5>
+                        <br />
+                    </div>
+                        <hr />
 
                     <p id="alt-contact-header">...or contact me via: </p>
                     <div id="alt-contact-wrapper">

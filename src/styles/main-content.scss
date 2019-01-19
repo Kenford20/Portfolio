@@ -8,10 +8,24 @@
     bottom: -50px;
     color: rgb(80, 80, 80);
 
+    @media only screen and (max-width: 1200px) {
+        width: 1000px;
+    }
+    @media only screen and (max-width: 1000px) {
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+
+        & div:last-child {
+            margin-bottom: 150px;
+        }
+    }
+
     .main-item {
         width: 30%;
         margin: auto;
-
+        flex-wrap: wrap;
+        
         a { 
             color: $secondaryColor; 
             text-transform: uppercase;
@@ -24,7 +38,7 @@
                 opacity: 1;
                 font-weight: 600;
             }
-
+            
             &::before {
                 content: '';
                 display: inline-block;
@@ -34,14 +48,25 @@
                 background: $secondaryColor;
                 transition: width .3s;
             }
-
+            
             &:hover::before {
                 width: 20px;
                 margin-right: 2px;
             }
         }
-    }
 
+        @media only screen and (max-width: 1000px) {
+            width: 500px;
+            margin-bottom: 50px;
+        }
+        @media only screen and (max-width: 500px) {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 30px;
+            margin-bottom: 0;
+        }
+    }
+    
     h2 { 
         display: inline;
         text-transform: uppercase;
@@ -51,7 +76,8 @@
     }
     p { 
         margin: 25px 0 15px 0; 
-        line-height: 1.5;
+        line-height: 1.8;
+        overflow: wrap;
     }
 
 }
