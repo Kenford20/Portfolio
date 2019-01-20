@@ -7,42 +7,83 @@
     background-image: linear-gradient(-125deg, #002f62 0%, #18496a 50%, #138b89 100%);
     color: white;
 
-    #skills-section {
-        padding-top: 500px;
+    @media only screen and (max-width: 1000px) {
+        height: 145vh;
+        padding-top: 650px;
     }
-    
-    .svg-top {
-        bottom: 70%;
+    @media only screen and (max-width: 500px) {
+        padding-top: 920px;
+        height: 165vh;
     }
 
-    i {
-        -webkit-text-fill-color: white;
-    }
+    #skills-section { padding-top: 500px }
+    .svg-top { bottom: 70% }
+    i { -webkit-text-fill-color: white }
 
     #skills-items-wrapper {
-        display: flex;
         width: $containerDesktop;
         margin: auto;
-        flex-wrap: wrap;
         text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+            "skill1 skill2 skill3 skill4"
+            "skill5 skill6 skill7 skill8";
+
+        @for $i from 1 through 8 {
+            & div:nth-child(#{$i}) {
+                grid-area: skill#{$i};
+            }
+        }
+
+        @media only screen and (max-width: 1000px) {
+            width: 100%;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas: 
+            ". skill1 . skill2 . skill3 ."
+            ". . skill4 . skill5 . ."
+            ". skill6 . skill7 . skill8 .";
+        }
+
+        @media only screen and (max-width: 500px) {
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas: 
+            ". skill1 . skill2 ."
+            " . . skill3 . ."
+            ". skill4 . skill5 ."
+            " . . skill6 . ."
+            ". skill7 . skill8 .";
+        }
 
         h5 {
             font-size: 16px;
             text-transform: uppercase;
             letter-spacing: 3px;
+
+            @media only screen and (max-width: 500px) {
+                font-size: 12px;
+            }
         }
 
-        .skills-item {
-            margin: 70px;
-        }
+        .skills-item { margin: 50px auto }
 
         .fab {
             font-size: 60px;
             margin: 15px auto;
+
+            @media only screen and (max-width: 1000px) {
+                font-size: 45px;
+            }
+            @media only screen and (max-width: 500px) {
+                font-size: 30px;
+            }
         }
 
         #bootstrap-icon {
-            margin: 15px auto 15px auto;
+            margin: 15px auto;
             width: 55px;
             height: 55px;
             padding-top: 3px;
@@ -51,6 +92,17 @@
             font-size: 40px;
             font-weight: 900;
             border-radius: 10px;
+
+            @media only screen and (max-width: 1000px) {
+                width: 40px;
+                height: 40px;
+                font-size: 30px;
+            }
+            @media only screen and (max-width: 500px) {
+                width: 32px;
+                height: 32px;
+                font-size: 24px;
+            }
         }
 
         #mongodb-icon {
@@ -58,6 +110,15 @@
             height: 75px;
             margin: 0px 0 10px 0;
 
+            @media only screen and (max-width: 1000px) {
+                width: 57px;
+                height: 57px;
+            }
+            @media only screen and (max-width: 500px) {
+                margin-top: 8px;
+                width: 42px;
+                height: 42px;
+            }
         }
     }
 

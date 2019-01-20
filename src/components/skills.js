@@ -4,7 +4,6 @@ import '../styles/skills.scss';
 const Skills = () => {
     return ( 
         <div id="skills-section">
-
             <div id="skills-header">
                 <i className="fas fa-desktop"></i>
                 <h2> Technologies I Use </h2>
