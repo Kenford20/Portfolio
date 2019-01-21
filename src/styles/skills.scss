@@ -12,8 +12,10 @@
         padding-top: 650px;
     }
     @media only screen and (max-width: 500px) {
-        padding-top: 920px;
-        height: 165vh;
+        padding-top: 750px;
+    }
+    @media only screen and (max-width: 425px) {
+        padding-top: 900px;
     }
 
     #skills-section { padding-top: 500px }
@@ -68,7 +70,13 @@
             }
         }
 
-        .skills-item { margin: 50px auto }
+        .skills-item { 
+            margin: 50px auto; 
+        
+            @media only screen and (max-width: 500px) {
+                margin: 25px auto;
+            }
+        }
 
         .fab {
             font-size: 60px;

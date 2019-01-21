@@ -5,6 +5,13 @@
     color: $primaryColor;
     margin-top: 230px;
 
+    @media only screen and (max-width: 1000px) {
+        margin-top: 830px;
+    }
+    @media only screen and (max-width: 500px) {
+        margin-top: 900px;
+    }
+
     h2 {
         text-transform: uppercase;
     }

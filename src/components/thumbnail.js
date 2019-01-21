@@ -29,7 +29,6 @@ class Thumbnail extends React.Component {
             codenames: require('../images/portfolio/codenames.png'),
             typingWebsite: require("../images/portfolio/typing-website.png")
         };
-
         let siteBtn = this.state.showBtn ? <button id="site-btn" onMouseEnter={ this.buttonHandler } onMouseLeave={ this.thumbnailHoverHandler } style={{ right: btnPosition }}>Visit Site</button> : '';
 
         return ( 

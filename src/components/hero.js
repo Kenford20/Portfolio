@@ -12,7 +12,7 @@ const Hero = () => {
                 <a href="https://www.linkedin.com/in/kenny-zhou-35a039177/" target="_blank" id="linkedin-link"><i className="fab fa-linkedin-in"></i></a>
                 <a href="#" id="resume-link"><i className="fas fa-file"></i></a>
             </div>
-            <img id="hero-img" data-aos="fade-in" src={require("../images/hero3.png")} alt="hero"/>
+            {/* <img id="hero-img" data-aos="fade-in" src={require("../images/hero3.png")} alt="hero"/> */}
         </div>
      );
 }

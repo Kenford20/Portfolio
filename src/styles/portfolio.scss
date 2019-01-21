@@ -1,9 +1,15 @@
 @import '../variables.scss';
 
 #portfolio-container{
+    background: white;
+
     #portfolio-header {
         text-align: center;
-        margin: 0 0 200px 0;
+        margin: 100px 0 150px 0;
+
+        @media only screen and (max-width: 500px) {
+            margin-bottom: 75px;
+        }
     }
 }
 
@@ -12,6 +18,21 @@
     width: $containerDesktop;
     margin: 0 auto 250px auto;
     position: relative;
+
+    @media only screen and (max-width: 1000px) {
+        flex-direction: column;
+        box-sizing: border-box;
+        width: 700px;
+        padding: 50px;
+        border-radius: 15px;
+        box-shadow: 0 0 70px -15px rgb(0, 67, 70);
+        -webkit-box-shadow: 0 12px 100px -20px rgb(0, 67, 70);
+    }
+    @media only screen and (max-width: 768px) {
+        padding: 30px;
+        width: 90%;
+        margin-bottom: 75px;
+    }
 
     hr {
         width: 30%;
@@ -30,18 +51,42 @@
         border-radius: 20px;
     }
 
-    img {
-        flex-basis: 50%;
-        width: 500px;
-        height: 300px;
-    }
-
     .portfolio-item-info {
         flex-basis: 50%;
         margin-right: 200px;
 
+        @media only screen and (max-width: 1350px) {
+            flex-basis: 30%;
+            margin: 0 100px;
+        }
+        @media only screen and (max-width: 1200px) {
+            margin: 0 50px;
+        }
+        @media only screen and (max-width: 1000px) {
+            text-align: center;
+
+            hr { margin: 10px auto 40px auto }
+        }
+        @media only screen and (max-width: 500px) {
+            margin: 0 auto;
+            width: 90%;
+        }
+
         &:nth-child(2) { 
             margin: 0 0 0 200px;
+            
+            @media only screen and (max-width: 1200px) {
+                margin: 0 0 0 100px;
+            }
+            @media only screen and (max-width: 1000px) {
+                margin: 0 auto;
+                width: 75%;
+            }
+            @media only screen and (max-width: 500px) {
+                width: 90%;
+                padding-bottom: 50px;
+            }
+            
         }
     
         .portfolio-item-title {
