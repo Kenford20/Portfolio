@@ -3,7 +3,7 @@
 #about-section {
     background-color: $bg-light;
     position: relative;
-    height: 60vh;
+    height: 600px;
     z-index: 5; 
 
     #about-header {
@@ -94,6 +94,9 @@
                     i { -webkit-text-fill-color: white !important }
                 }
             }
+        }
+        @media only screen and (max-width: 500px) {
+            margin-bottom: 75px;
         }
 
         img {

@@ -13,6 +13,19 @@ import './app.scss';
 import AOS from 'aos';
 
 class App extends Component {
+    constructor(props) {
+        super(props);
+        this.toggleNav = this.toggleNav.bind(this);
+
+        this.state = {
+            showNav: false
+        };
+    }
+
+    toggleNav() {
+        this.setState({ showNav: !this.state.showNav });
+    }
+
   render() {
       AOS.init({
           duration: 1000
@@ -20,9 +33,9 @@ class App extends Component {
       return (
         <div className="App">
             <header style={{ zIndex: 0 }}>
-                <Navbar />
+                <Navbar isActive={ this.state.showNav } toggle={ this.toggleNav }/>
                 <section id="hero-container">
-                    <Hero />
+                    <Hero showNav={ this.state.showNav }/>
                 </section>
                 <svg className="svg-bg" xmlns="http://www.w3.org/2000/svg" viewBox="50 120 670 320" style={{ zIndex: -100 }}>
                     <path d="M 0 50 Q 0 450 400 400 C 700 350 750 450 800 550 L 800 550 L 50 550" fill="white"/>
