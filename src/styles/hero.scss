@@ -5,6 +5,8 @@
     width: $containerDesktop;
     margin: auto;
     display:flex;
+    transition: opacity 0.5s;
+    transition-delay: 0.2s;
 
     @media only screen and (max-width: 1330px) {
         width: $containerLaptop;
