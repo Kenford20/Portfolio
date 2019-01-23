@@ -12,13 +12,14 @@ const Portfolio = () => {
 
             <div className="portfolio-item-wrapper">
                 <div className="portfolio-item-info" data-aos="fade-right">
-                    <h1 className="portfolio-item-title"> Website Name </h1>
-                    <h2 className="portfolio-item-type"> Website </h2>
+                    <h1 className="portfolio-item-title"> C.A. Jewelers Inc. </h1>
+                    <h2 className="portfolio-item-type"> E-commerce Website </h2>
                     <hr />
-                    <p className="portfolio-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-                    <span className="portfolio-item-tech"> HTML </span>
-                    <span className="portfolio-item-tech"> Javascript </span>
+                    <p className="portfolio-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <span className="portfolio-item-tech"> MongoDB </span>
+                    <span className="portfolio-item-tech"> Express </span>
                     <span className="portfolio-item-tech"> React </span>
+                    <span className="portfolio-item-tech"> Node </span>
                 </div>
                 <Thumbnail 
                     altTag = "Cajewelers Thumbnail"
@@ -43,25 +44,26 @@ const Portfolio = () => {
                     siteUrl = "http://weebcodenames.online"
                 />
                 <div className="portfolio-item-info" data-aos="fade-left">
-                    <h1 className="portfolio-item-title"> Website Name </h1>
-                    <h2 className="portfolio-item-type"> Website </h2>
+                    <h1 className="portfolio-item-title"> Kodo Namaewaz </h1>
+                    <h2 className="portfolio-item-type"> Web Application </h2>
                     <hr />
-                    <p className="portfolio-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                    <p className="portfolio-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                     <span className="portfolio-item-tech"> HTML </span>
                     <span className="portfolio-item-tech"> Javascript </span>
-                    <span className="portfolio-item-tech"> React </span>
+                    <span className="portfolio-item-tech"> Node </span>
+                    <span className="portfolio-item-tech"> SocketIO </span>
                 </div>
             </div>
 
             <div className="portfolio-item-wrapper">
                 <div className="portfolio-item-info" data-aos="fade-right">
-                    <h1 className="portfolio-item-title"> Website Name </h1>
-                    <h2 className="portfolio-item-type"> Website </h2>
+                    <h1 className="portfolio-item-title"> Speed Typing Test </h1>
+                    <h2 className="portfolio-item-type"> Web Application </h2>
                     <hr />
-                    <p className="portfolio-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                    <p className="portfolio-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                     <span className="portfolio-item-tech"> HTML </span>
                     <span className="portfolio-item-tech"> Javascript </span>
-                    <span className="portfolio-item-tech"> React </span>
+                    <span className="portfolio-item-tech"> CSS </span>
                 </div>
                 <Thumbnail 
                     altTag = "Typing Website Thumbnail"

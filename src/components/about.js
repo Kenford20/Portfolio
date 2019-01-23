@@ -25,7 +25,7 @@ const About = () => {
                     <h3> UI/UX Designer </h3>
                     <p> Hobbies: <br/>
                      Interests: </p>
-                    <button className="contact-btn"> Contact Me <i className="fa fa-envelope"></i></button>
+                    <a href="#contact-container"><button className="contact-btn"> Contact Me <i className="fa fa-envelope"></i></button></a>
                 </div>
             </div>
         </div>
