@@ -1,5 +1,11 @@
 @import './variables.scss';
 
+@mixin media($device-width) {
+    @media only screen and (max-width: $device-width + 1px) {
+        @content;
+    }
+}
+
 * {
     margin:0;
     padding: 0;
@@ -10,13 +16,13 @@ body {
 }
 
 header {
-    @media only screen and (max-width: 1024px) {
+    @include media($laptop-S) {
         height: 750px;
     }
-    @media only screen and (max-width: 768px) {
+    @include media($tablet) {
         height: 650px;
     }
-    @media only screen and (max-width: 500px) {
+    @include media($phone-L) {
         height: 500px;
     }
 }

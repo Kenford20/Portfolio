@@ -1,4 +1,5 @@
 @import '../variables.scss';
+@import '../app.scss';
 
 .skills-container {
     height: 1300px;
@@ -7,19 +8,19 @@
     background-image: linear-gradient(-125deg, #002f62 0%, #18496a 50%, #138b89 100%);
     color: white;
 
-    @media only screen and (max-width: 1000px) {
+    @include media($laptop-S) {
         padding-top: 550px;
     }
-    @media only screen and (max-width: 500px) {
+    @include media($phone-L) {
         padding-top: 750px;
     }
     @media only screen and (max-width: 425px) {
         padding-top: 700px;
     }
-    @media only screen and (max-width: 375px) {
+    @include media($phone-M) {
         padding-top: 750px;
     }
-    @media only screen and (max-width: 350px) {
+    @include media($phone-S) {
         padding-top: 950px;
     }
 
@@ -57,7 +58,7 @@
             }
         }
 
-        @media only screen and (max-width: 1000px) {
+        @include media($laptop-S) {
             width: 100%;
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
             grid-template-rows: 1fr 1fr 1fr;
@@ -67,7 +68,7 @@
             ". skill6 . skill7 . skill8 .";
         }
 
-        @media only screen and (max-width: 500px) {
+        @include media($phone-L) {
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
             grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
             grid-template-areas: 
@@ -83,7 +84,7 @@
             text-transform: uppercase;
             letter-spacing: 3px;
 
-            @media only screen and (max-width: 500px) {
+            @include media($phone-L) {
                 font-size: 12px;
             }
         }
@@ -91,7 +92,7 @@
         .skills-item { 
             margin: 50px auto; 
         
-            @media only screen and (max-width: 500px) {
+            @include media($phone-L) {
                 margin: 25px auto;
             }
         }
@@ -100,10 +101,10 @@
             font-size: 60px;
             margin: 15px auto;
 
-            @media only screen and (max-width: 1000px) {
+            @include media($laptop-S) {
                 font-size: 45px;
             }
-            @media only screen and (max-width: 500px) {
+            @include media($phone-L) {
                 font-size: 30px;
             }
         }
@@ -119,12 +120,12 @@
             font-weight: 900;
             border-radius: 10px;
 
-            @media only screen and (max-width: 1000px) {
+            @include media($laptop-S) {
                 width: 40px;
                 height: 40px;
                 font-size: 30px;
             }
-            @media only screen and (max-width: 500px) {
+            @include media($phone-L) {
                 width: 32px;
                 height: 32px;
                 font-size: 24px;
@@ -136,11 +137,11 @@
             height: 75px;
             margin: 0px 0 10px 0;
 
-            @media only screen and (max-width: 1000px) {
+            @include media($laptop-S) {
                 width: 57px;
                 height: 57px;
             }
-            @media only screen and (max-width: 500px) {
+            @include media($phone-L) {
                 margin-top: 8px;
                 width: 42px;
                 height: 42px;

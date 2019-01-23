@@ -1,4 +1,5 @@
 @import '../variables.scss';
+@import '../app.scss';
 
 #hero-section {
     color: white;
@@ -8,10 +9,10 @@
     transition: opacity 0.5s;
     transition-delay: 0.2s;
 
-    @media only screen and (max-width: 1330px) {
+    @include media($laptop-L) {
         width: $containerLaptop;
     }
-    @media only screen and (max-width: 1024px) {
+    @include media($laptop-S) {
         width: 50%;
         height: 550px;
         justify-content: center;
@@ -20,11 +21,11 @@
     @media only screen and (min-width: 769px) {
         display: flex !important;
     }
-    @media only screen and (max-width: 768px) {
+    @include media($tablet) {
         width: 65%;
         height: 500px;
     }
-    @media only screen and (max-width: 500px) {
+    @include media($phone-L) {
         text-align: center;
         width: 95%;
     }
@@ -33,14 +34,14 @@
         flex-basis: 40%;
         margin-top: 170px;
 
-        @media only screen and (max-width: 1330px) {
+        @include media($laptop-L) {
             flex-basis: 45%;
         }
-        @media only screen and (max-width: 1024px) {
+        @include media($laptop-S) {
             flex-basis: 100%;
             margin: 0;
         }
-        @media only screen and (max-width: 500px) {
+        @include media($phone-L) {
             margin-top: -140px;
         }
     }
@@ -51,13 +52,13 @@
         top: 50px;
         left: 150px;
 
-        @media only screen and (max-width: 1330px) {
+        @include media($laptop-L) {
             height: 400px;
             top: 100px;
             left: 100px;
         }
 
-        @media only screen and (max-width: 1024px) {
+        @include media($laptop-S) {
             display: none;
         }
     }
@@ -72,13 +73,13 @@
         margin-bottom: 25px;
         font-size:42px;
 
-        @media only screen and (max-width: 1330px) {
+        @include media($laptop-L) {
             font-size: 37px;
         }
-        @media only screen and (max-width: 1024px) {
+        @include media($laptop-S) {
             font-size: 32px;
         }
-        @media only screen and (max-width: 500px) {
+        @include media($phone-L) {
             font-size: 24px;
         }
     }
@@ -89,10 +90,10 @@
         line-height: 2;
         font-weight: 100;
 
-        @media only screen and (max-width: 1024px) {
+        @include media($laptop-S) {
             font-size: 18px;
         }
-        @media only screen and (max-width: 500px) {
+        @include media($phone-L) {
             font-size: 14px;
         }
     }

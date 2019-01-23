@@ -1,4 +1,5 @@
 @import '../variables.scss';
+@import '../app.scss';
 
 #main-content {
     width: $containerDesktop;
@@ -8,10 +9,10 @@
     bottom: -50px;
     color: rgb(80, 80, 80);
 
-    @media only screen and (max-width: 1200px) {
+    @include media($laptop-M) {
         width: 1000px;
     }
-    @media only screen and (max-width: 1000px) {
+    @include media($laptop-S) {
         flex-direction: column;
         width: 100%;
         margin: auto;
@@ -55,11 +56,11 @@
             }
         }
 
-        @media only screen and (max-width: 1000px) {
+        @include media($laptop-S) {
             width: 500px;
             margin-bottom: 50px;
         }
-        @media only screen and (max-width: 500px) {
+        @include media($phone-L) {
             box-sizing: border-box;
             width: 100%;
             padding: 30px;

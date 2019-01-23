@@ -1,4 +1,5 @@
 @import '../variables.scss';
+@import '../app.scss';
 
 #about-section {
     background-color: $bg-light;
@@ -12,7 +13,7 @@
         align-items: center;
         justify-content: center;
 
-        @media only screen and (max-width: 1000px) {
+        @include media($laptop-S) {
             height: 150px;
             padding-top: 25px;
         }
@@ -29,7 +30,7 @@
     box-shadow: -5px 5px 40px -5px rgb(0, 67, 70);
     -webkit-box-shadow: -5px 5px 40px -5px rgb(0, 67, 70);
 
-    @media only screen and (max-width: 1000px) {
+    @include media($laptop-S) {
         width: 100%;
         flex-direction: column;
         background-color: $bg-light;
@@ -41,16 +42,15 @@
         flex-basis: 60%;
         padding: 50px;
 
-        @media only screen and (max-width: 1000px) {
+        @include media($laptop-S) {
             width: 75%;
             margin: auto;
             padding-top: 0;
         }
-        @media only screen and (max-width: 500px) {
+        @include media($phone-L) {
             width: 90%;
             padding: 5px;
         }
-
 
         h1 {
            font-size: 28px; 
@@ -74,7 +74,7 @@
         background-image: linear-gradient(155deg, #012041 0%, #18496a 50%, #138b89 100%);
         border-radius: 0 10px 10px 0;
 
-        @media only screen and (max-width: 1000px) {
+        @include media($laptop-S) {
             background: $bg-light;
             color: $primaryColor;
             margin-bottom: 150px;
@@ -95,7 +95,7 @@
                 }
             }
         }
-        @media only screen and (max-width: 500px) {
+        @include media($phone-L) {
             margin-bottom: 75px;
         }
 

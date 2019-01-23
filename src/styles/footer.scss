@@ -1,14 +1,15 @@
 @import '../variables.scss';
+@import '../app.scss';
 
 #footer-container {
     text-align: center;
     color: $primaryColor;
     margin-top: 230px;
 
-    @media only screen and (max-width: 1000px) {
+    @include media($laptop-S) {
         margin-top: 830px;
     }
-    @media only screen and (max-width: 500px) {
+    @include media($phone-L) {
         margin-top: 750px;
     }
 

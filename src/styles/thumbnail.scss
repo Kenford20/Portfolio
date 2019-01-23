@@ -1,22 +1,25 @@
+@import '../variables.scss';
+@import '../app.scss';
+
 #thumbnail-laptop {
     height: 400px;
     position: relative;
     transition: -webkit-filter 0.3s, opacity 0.3s, transform 0.5s;
     
-    @media only screen and (max-width: 1350px) {
+    @include media($laptop-L) {
         transform: scale(0.9);
     }
-    @media only screen and (max-width: 1200px) {
+    @include media($laptop-M) {
         transform: scale(0.8);
     }
-    @media only screen and (max-width: 1000px) {
+    @include media($laptop-S) {
         margin-top: 50px;
     }
-    @media only screen and (max-width: 768px) {
+    @include media($tablet) {
         transform: scale(0.7);
         width: 100%;
     }
-    @media only screen and (max-width: 500px) {
+    @include media($phone-L) {
         transform: scale(0.5);
         width: 30%;
         margin: 0;
@@ -35,13 +38,13 @@
         opacity: 0.8;
         transform: scale(0.95);
 
-        @media only screen and (max-width: 1350px) {
+        @include media($laptop-L) {
             transform: scale(0.85);
         }
-        @media only screen and (max-width: 1200px) {
+        @include media($laptop-M) {
             transform: scale(0.75);
         }
-        @media only screen and (max-width: 500px) {
+        @include media($phone-L) {
             transform: scale(0.45);
         }
     }
@@ -134,13 +137,13 @@
     border-radius: 30px;
     cursor: pointer;
 
-    @media only screen and (max-width: 1350px) {
+    @include media($laptop-L) {
         right: 275px;
     }
-    @media only screen and (max-width: 1200px) {
+    @include media($laptop-M) {
         right: 375px;
     }
-    @media only screen and (max-width: 500px) {
+    @include media($phone-L) {
         display: none;
     }
 

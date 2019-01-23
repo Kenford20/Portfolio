@@ -1,4 +1,5 @@
 @import '../variables.scss';
+@import '../app.scss';
 
 #navbar {
     color:white;
@@ -15,13 +16,13 @@
     @media only screen and (min-width: 1331px) {
         width: $containerDesktop;
     }
-    @media only screen and (max-width: 1330px) {
+    @include media($laptop-L) {
         width: $containerLaptop;
     }
-    @media only screen and (max-width: 1024px) {
+    @include media($laptop-S) {
         width: 80%;
     }
-    @media only screen and (max-width: 500px) {
+    @include media($phone-L) {
         width: 90%;
     }
     
@@ -39,7 +40,7 @@
     @media only screen and (min-width: 769px) {
         display: none;
     }
-    @media only screen and (max-width: 500px) {
+    @include media($phone-L) {
         right: 25px;
     }
 
@@ -51,7 +52,7 @@
         background: white;
         transition: background-color 0.3s;
         
-        @media only screen and (max-width: 500px) {
+        @include media($phone-L) {
             width: 30px;
         }
 
@@ -67,7 +68,7 @@
             -ms-transition: -ms-transform 0.3s ease-in-out;
             transition: transform 0.3s ease-in-out;
 
-            @media only screen and (max-width: 500px) {
+            @include media($phone-L) {
                 width: 30px;
             }
         }
@@ -88,7 +89,7 @@
 nav {
     float: right;
 
-    @media only screen and (max-width: 768px) {
+    @include media($tablet) {
         display: flex;
         flex-direction: column;
         position: absolute;
@@ -98,7 +99,7 @@ nav {
         transition: opacity 0.8s;
         transition-delay: 0.5s;
     }
-    @media only screen and (max-width: 500px) {
+    @include media($phone-L) {
         width: 90%;
         margin-top: 30px;
     }
@@ -125,13 +126,13 @@ nav {
             width: 100%;
         }
         
-        @media only screen and (max-width: 768px) {
+        @include media($tablet) {
             display: block;
             text-align: center;
             font-size: 24px;
             margin: 25px 0;
         }
-        @media only screen and (max-width: 500px) {
+        @include media($phone-L) {
             font-size: 18px;
         }
     }
