@@ -6,32 +6,19 @@
     position: relative;
     transition: -webkit-filter 0.3s, opacity 0.3s, transform 0.5s;
     
-    @include media($laptop-L) {
-        transform: scale(0.9);
-    }
-    @include media($laptop-M) {
-        transform: scale(0.8);
-    }
-    @include media($laptop-S) {
-        margin-top: 50px;
-    }
-    @include media($tablet) {
-        transform: scale(0.7);
-        width: 100%;
-    }
+    @include media($laptop-L) { transform: scale(0.9) }
+    @include media($laptop-M) { transform: scale(0.8) }
+    @include media($laptop-S) { margin-top: 50px }
+    @include media($tablet) { transform: scale(0.7); width: 100% }
     @include media($phone-L) {
         transform: scale(0.5);
         width: 30%;
         margin: 0;
         height: 350px;
     }
-    @media only screen and (max-width: 450px) {
-        transform: scale(0.45);
-    }
-    @media only screen and (max-width: 400px) {
-        transform: scale(0.4);
-        height: 300px;
-    }
+    @include media(450px) { transform: scale(0.45) }
+    @include media(400px) { transform: scale(0.4); height: 300px }
+    @include media(320px) { transform: scale(0.35) }
 
     &:hover, #site-btn:hover + &{
         filter: blur(5px);

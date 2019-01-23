@@ -3,7 +3,7 @@ import '../styles/contact.scss';
 
 const Contact = () => {
     return ( 
-        <div>
+        <div id="contact">
             <div id="contact-header">
                 <span><i class="fas fa-comment"></i></span>
                 <h2 className="section-headers"> Get in touch </h2>

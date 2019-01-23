@@ -17,13 +17,13 @@ class Codepen extends React.Component {
             speed: 500,
             responsive: [
                 {
-                    breakpoint: 1200,
+                    breakpoint: 1201,
                     settings: {
                         slidesToShow: 2
                     }
                 },
                 {
-                    breakpoint: 765,
+                    breakpoint: 500,
                     settings: {
                         slidesToShow: 1,
                         centerPadding:'0px'
