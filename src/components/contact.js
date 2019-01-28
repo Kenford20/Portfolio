@@ -11,7 +11,7 @@ const Contact = () => {
             </div>
 
             <div id="contact-form-card">
-                <div id="form-wrapper">
+                <form id="form-wrapper" onSubmut={'p'}>
                     <h3> Fill out the form </h3>
                     <div className="form-items-wrapper">
                         <p className="form-item-label"> Name: </p>
@@ -34,7 +34,7 @@ const Contact = () => {
                         <textarea className="form-inputs" type="text" placeholder="Enter message..." rows="10"></textarea>
                     </div>
                     <button> SEND </button>
-                </div>
+                </form>
 
                 <div id="contact-info-wrapper">
                     <h3> Contact Information </h3>
@@ -56,7 +56,7 @@ const Contact = () => {
                         <h5> kzhou1013@gmail.com </h5>
                         <br />
                     </div>
-                        <hr />
+                    <hr />
 
                     <p id="alt-contact-header">...or contact me via: </p>
                     <div id="alt-contact-wrapper">

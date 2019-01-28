@@ -35,9 +35,9 @@ const Portfolio = () => {
             <div className="portfolio-item-wrapper">
                 <Thumbnail 
                     altTag = "Codenames Thumbnail"
-                    altTagMobile = "Cajewelers Mobile View Thumbnail"
+                    altTagMobile = "Codenames Mobile View Thumbnail"
                     path = "codenames"
-                    pathMobile = "cajewelersM"
+                    pathMobile = "codenamesM"
                     animation = "fade-right"
                     animationDelay = { 1000 }
                     btnPosition = "850px"
@@ -67,9 +67,9 @@ const Portfolio = () => {
                 </div>
                 <Thumbnail 
                     altTag = "Typing Website Thumbnail"
-                    altTagMobile = "Cajewelers Mobile View Thumbnail"
+                    altTagMobile = "Typing Website Mobile View Thumbnail"
                     path = "typingWebsite"
-                    pathMobile = "cajewelersM"
+                    pathMobile = "typingWebsiteM"
                     animation = "fade-left"
                     animationDelay = { 1000 }
                     siteUrl = "https://kenford20.github.io/"

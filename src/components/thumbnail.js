@@ -27,7 +27,9 @@ class Thumbnail extends React.Component {
             cajewelers: require('../images/portfolio/cajewelers.png'),
             cajewelersM: require('../images/portfolio/cajewelers-mobile.png'),
             codenames: require('../images/portfolio/codenames.png'),
-            typingWebsite: require("../images/portfolio/typing-website.png")
+            codenamesM: require('../images/portfolio/codenames-mobile.png'),
+            typingWebsite: require('../images/portfolio/typing-website.png'),
+            typingWebsiteM: require('../images/portfolio/typing-website-mobile.png')
         };
         let siteBtn = this.state.showBtn ? <button id="site-btn" onMouseEnter={ this.buttonHandler } onMouseLeave={ this.thumbnailHoverHandler } style={{ right: btnPosition }}>Visit Site</button> : '';
 
@@ -65,7 +67,7 @@ class Thumbnail extends React.Component {
                     </div>
                 </div>
             </div>
-                </a>
+        </a>
         );
     }
 }
