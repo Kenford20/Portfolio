@@ -1,0 +1,37 @@
+#project-container {
+    font-size: 13px;
+    line-height: 1.8;
+    position: relative;
+
+    ul {
+        margin-bottom: 20px;
+    }
+
+    .project-titles {
+        display: inline-block;
+    }
+    .project-technologies {
+        display: inline;
+        padding-left: 10px;
+    }
+    .project-links {
+        display: inline;
+        position: absolute;
+        right: 5px;
+        top: 3px;
+        
+        a { 
+            color: white;
+            transition: color 0.5s, font-size 0.3s;
+
+            &:hover {
+                color: rgba(255, 255, 255, 0.7);
+                font-size: 14px;
+            }
+        }
+    }
+    .project-descriptions {
+        padding-left: 15px;
+        margin-top: 7px;
+    }
+}

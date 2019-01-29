@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Navbar from './components/navbar';
 import Hero from './components/hero';
+import Resume from './components/resume-modal';
 import Main from './components/main-content';
 import About from './components/about';
 import Skills from './components/skills';
@@ -37,6 +38,7 @@ class App extends Component {
                 <section id="hero-container">
                     <Hero showNav={ this.state.showNav }/>
                 </section>
+                <Resume />
                 <svg className="svg-bg" xmlns="http://www.w3.org/2000/svg" viewBox="50 120 670 320" style={{ zIndex: -100 }}>
                     <path d="M 0 50 Q 0 450 400 400 C 700 350 750 450 800 550 L 800 550 L 50 550" fill="white"/>
                 </svg>

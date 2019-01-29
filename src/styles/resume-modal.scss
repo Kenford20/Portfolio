@@ -1,0 +1,117 @@
+#resume-modal {
+    position: absolute;
+    width: 700px;
+    height: auto;
+    top: 100px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    color: white;
+    background: rgba(25, 25, 25, 0.9);
+    overflow-wrap: break-word;
+    z-index: 100;
+    padding: 100px 40px 50px 40px;
+    box-sizing: border-box;
+    font-size: 13px;
+
+    #close-modal {
+        position: absolute;
+        right: 25px;
+        top: 25px;
+        height: 25px;
+        width: 25px;
+        cursor: pointer;
+         
+        &::before, &::after {
+            content: '';
+            display: inline-block;
+            width: 25px;
+            height: 2px;
+            background: white;
+        }
+        &::before {
+            transform: rotate(225deg);
+        }
+        &::after {
+            transform: rotate(-225deg);
+            position: absolute;
+            top: 12px;
+            right: 0px;
+        }
+    }
+
+    #resume-link-modal {
+        font-size: 16px;
+        margin-top: 35px;
+
+        a { color: white }
+    }
+
+    h1 {
+        display: inline-block;
+        font-weight: 300;
+        font-size: 28px;
+        text-transform: uppercase;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+            background: rgba(255, 255, 255, 0.7);
+            margin-top: 5px;
+        }
+    }
+
+    .resume-section-headers {
+        text-transform: uppercase;
+        font-size: 18px;
+        margin: 35px 0 20px 0;
+
+        &::before {
+            content: '';
+            display: block;
+            width: 495px;
+            height: 3px;
+            background: rgba(255, 255, 255, 0.9);
+            margin-top: 5px;
+            position: relative;
+            left: 120px;
+            top: 12px;
+        }
+    }
+    #skills-header {
+        &::before { width: 295px; left: 325px }
+    }
+    #education-header {
+        &::before { width: 485px; left: 135px }
+    }
+    #experience-header {
+        &::before { width: 480px; left: 140px }
+    }
+}
+
+#resume-skills {
+    p { margin-top: 15px }
+}
+
+#resume-education, #resume-experience {
+    :not(h2) { line-height: 1.8 }
+    ul { padding-left: 15px }
+
+    .education-headers, .experience-headers {
+        display: flex;
+        margin-bottom: 10px;
+
+        h4 { margin-left: auto; font-size: 14px }
+    }
+}
+
+#resume-education {
+    & ul:nth-of-type(1) { margin-bottom: 15px; }
+}
+
+
+
+
+    

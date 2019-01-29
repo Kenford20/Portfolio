@@ -25,15 +25,9 @@
         opacity: 0.8;
         transform: scale(0.95);
 
-        @include media($laptop-L) {
-            transform: scale(0.85);
-        }
-        @include media($laptop-M) {
-            transform: scale(0.75);
-        }
-        @include media($phone-L) {
-            transform: scale(0.45);
-        }
+        @include media($laptop-L) { transform: scale(0.85) }
+        @include media($laptop-M) { transform: scale(0.75) }
+        @include media($phone-L) { transform: scale(0.45) }
     }
 
     #thumbnail-mobile {
@@ -124,15 +118,9 @@
     border-radius: 30px;
     cursor: pointer;
 
-    @include media($laptop-L) {
-        right: 275px;
-    }
-    @include media($laptop-M) {
-        right: 375px;
-    }
-    @include media($phone-L) {
-        display: none;
-    }
+    @include media($laptop-L) { right: 275px }
+    @include media($laptop-M) { right: 375px }
+    @include media($phone-L) { display: none }
 
     &::before {
         content: '';

@@ -8,6 +8,7 @@
     position: relative;
     bottom: -50px;
     color: rgb(80, 80, 80);
+    z-index: -1;
 
     @include media($laptop-M) {
         width: 1000px;
