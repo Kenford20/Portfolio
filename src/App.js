@@ -17,14 +17,24 @@ class App extends Component {
     constructor(props) {
         super(props);
         this.toggleNav = this.toggleNav.bind(this);
+        this.showResumeModal = this.showResumeModal.bind(this);
+        this.hideResumeModal = this.hideResumeModal.bind(this);
 
         this.state = {
-            showNav: false
+            showNav: false,
+            showResume: false
         };
     }
 
     toggleNav() {
         this.setState({ showNav: !this.state.showNav });
+    }
+
+    showResumeModal() {
+        this.setState({ showResume: true });
+    }
+    hideResumeModal() {
+        this.setState({ showResume: false });
     }
 
   render() {
@@ -36,23 +46,29 @@ class App extends Component {
             <header style={{ zIndex: 0 }}>
                 <Navbar isActive={ this.state.showNav } toggle={ this.toggleNav }/>
                 <section id="hero-container">
-                    <Hero showNav={ this.state.showNav }/>
+                    <Hero 
+                        showNav={ this.state.showNav }
+                        showResumeModal = { this.showResumeModal }
+                    />
                 </section>
-                <Resume />
+                <Resume 
+                    isOpen = { this.state.showResume }
+                    hideModal = { this.hideResumeModal }
+                />
                 <svg className="svg-bg" xmlns="http://www.w3.org/2000/svg" viewBox="50 120 670 320" style={{ zIndex: -100 }}>
                     <path d="M 0 50 Q 0 450 400 400 C 700 350 750 450 800 550 L 800 550 L 50 550" fill="white"/>
                 </svg>
             </header>
 
             <main id="main-container">
-                <Main />
+                <Main isResumeOpen={ this.state.showResume }/>
             </main>
             
             <section id="about-container">
-                <About />
+                <About isResumeOpen={ this.state.showResume }/>
             </section>
         
-            <section className="skills-container" style={{ zIndex: 0 }}>
+            <section className="skills-container">
                 <svg className="svg-bg svg-top" xmlns="http://www.w3.org/2000/svg" viewBox="50 0 670 220" style={{ zIndex: -100 }}>
                     <path d="M -1 261 Q 99 147 403 142 C 681 147 784 137 799 56 L 800 50 L 0 50" fill="rgb(245, 250, 250)"/>
                 </svg>

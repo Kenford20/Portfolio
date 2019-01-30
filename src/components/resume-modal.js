@@ -2,10 +2,12 @@ import React from 'react';
 import Project from './resume-project-template';
 import '../styles/resume-modal.scss';
 
-const Resume = (props) => {
+const Resume = ({ isOpen, hideModal }) => {
     return ( 
-        <div id="resume-modal">
-            <span id="close-modal" onClick={ props.close }></span>
+        <React.Fragment>
+        <div id="modal-background" style={{ opacity: isOpen ? '0.7' : '0', display: isOpen ? 'block' : 'none' }} onClick={ hideModal }></div>
+        <div id="resume-modal" style={{ webkitTransform: isOpen ? 'scale(1)' : 'scale(0)'}}>
+            <span id="close-modal" onClick={ hideModal }></span>
             <h1> <strong>Resume</strong> </h1>
             <p id="resume-link-modal"> You can also view my resume <a href="#" target="__blank"> here. </a></p>
 
@@ -100,6 +102,7 @@ const Resume = (props) => {
                 </ul>
             </section>
         </div>
+    </React.Fragment>
      );
 }
  

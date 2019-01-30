@@ -1,9 +1,9 @@
 import React from 'react';
 import '../styles/about.scss';
 
-const About = () => {
+const About = ({ isResumeOpen }) => {
     return ( 
-        <div id="about-section">
+        <div id="about-section" style={{ zIndex: isResumeOpen ? '-1' : '1' }}>
             <div id="about-header">
                 <span><i className="fas fa-user-circle"></i></span>
                 <h2 className="section-headers"> About me </h2>

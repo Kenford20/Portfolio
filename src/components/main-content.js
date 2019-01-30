@@ -1,9 +1,9 @@
 import React from 'react';
 import '../styles/main-content.scss';
 
-const Main = () => {
+const Main = ({ isResumeOpen }) => {
     return ( 
-        <div id="main-content">
+        <div id="main-content" style={{ zIndex: isResumeOpen ? '-1' : '1' }}>
             <div className="main-item">
                 <i className="fab fa-html5"></i>
                 <h2> Web Development </h2>
