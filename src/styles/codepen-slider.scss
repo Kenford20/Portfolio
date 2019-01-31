@@ -12,22 +12,6 @@
     padding-bottom: 150px;
     margin: 100px auto 0 auto;
 
-    .codepen-item {
-        img {
-            margin-left: 50px;
-            width: 75%;
-            height: 300px;
-            border-radius: 10px;
-        }
-
-        @include media($phone-L) {
-            img {
-                width: 90%;
-                margin-left: 25px;
-            }
-        }
-    }
-
     .slick-list, .slick-next, .slick-prev {
         z-index: 100;
     }
