@@ -7,20 +7,20 @@ const Main = ({ isResumeOpen }) => {
             <div className="main-item">
                 <i className="fab fa-html5"></i>
                 <h2> Web Development </h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                <p>As a developer who's worked with the full-stack, I have a good understanding of how a website/application works both on the frontend and backend. I mainly develop in JavaScript, HTML, and CSS, with the help of technologies such as React.js, and Node.js. I am open to learning and employing any additional libraries/frameworks to get the job done. I build static sites, eCommerce sites, web applications, and more!</p>
                 <a href="#portfolio-container"> Go to portfolio > </a>
             </div>
             <div className="main-item">
                 <i className="fab fa-codepen"></i>
                 <h2> Codepen Work </h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                <p>In addition to any portfolio projects, I have many other smaller, web development projects that I enjoy building on Codepen. This is a great sandbox environment to turn some of my unique ideas into creations. Codepen is also useful for learning and practicing different technologies without the hassle of a workflow setup. Hosted here are several of my projects from online courses required to earn multiple certifications. </p>
                 <a href="#codepen"> browse projects > </a>
             </div>
             <div className="main-item">
                 <i className="fas fa-code"></i>
-                <h2> WordPress </h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-                <a href="#"> Go to portfolio > </a>
+                <h2> Certifications </h2>
+                <p>Curious about my qualifications? Before developing any project, I make sure to educate myself on any technologies that may be needed to produce a working product. I have utilized many online resources to aide my learning process. One of the most popular ones is Freecodecamp.org. After completing over 1000 hours of coursework, I earned several web development certificates.</p>
+                <a href="https://www.freecodecamp.org/kenford" target="_blank"> View certificates > </a>
             </div>
         </div>
      );
