@@ -15,9 +15,7 @@
         justify-content: center;
         align-items: center;
     }
-    @media only screen and (min-width: 769px) {
-        display: flex !important;
-    }
+    @media only screen and (min-width: 769px) { display: flex !important }
     @include media($tablet) {
         width: 65%;
         height: 500px;

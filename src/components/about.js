@@ -9,10 +9,10 @@ const About = ({ isResumeOpen }) => {
             </div>
             <div id="about-main">
                 <div id="about-summary">
-                    <h1> Web developer and graphical designer </h1>
+                    <h1> Full-stack Web Developer, Fitness Enthusiast, Competitive Gamer </h1>
                     <h2> My name is Kenny Zhou. I live in Chicago, Illinois. I am passionate about web development and UI/UX design. </h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                    <p>I am all about learning and keeping up with state of the art technologies. I enjoy creating visually appealing and responsive websites/applications. Coming from a computer engineering background and moving to self taught web development, I am a highly versatile engineer and motivated learner. Having taken this route, I believe in continuously improving myself on a day to day basis, whether that be through code, communication, or any other aspects in life.</p>
+                    <p>The world will continuously dive deeper into the digital age, and with that, comes higher demand for web developers. I am currently open to opportunities in this industry. Whether you'd be interested in working with me or if you just want to ask me a few questions, I'd be more than happy to <a href="#contact-container" style={{ color: 'black' }}>hear from you!</a></p>
                     <h3> Education: </h3>
                     <p> B.S. Computer Engineering: University of Illinois at Chicago (2013 - 2018) </p>
                 </div>
@@ -22,8 +22,9 @@ const About = ({ isResumeOpen }) => {
                     <h2> Chicago, Illinois </h2>
                     <h3> Web Developer </h3>
                     <h3> UI/UX Designer </h3>
-                    <p> Hobbies: <br/>
-                     Interests: </p>
+                    <p> <span><strong>Hobbies:</strong></span> 
+                    <br/>Weight-lifting, Video games, Sports(basketball/volleyball)</p>
+                    <p><span><strong>Interests:</strong></span><br/>Technology, Fitness, Anime</p>
                     <a href="#contact-container"><button className="contact-btn"> Contact Me <i className="fa fa-envelope"></i></button></a>
                 </div>
             </div>
