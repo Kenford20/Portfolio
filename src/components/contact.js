@@ -36,9 +36,8 @@ const Contact = (props) => {
 
                     <p id="alt-contact-header">...or contact me via: </p>
                     <div id="alt-contact-wrapper">
-                        <i className="fas fa-code"></i>
-                        <i className="fas fa-code"></i>
-                        <i className="fas fa-code"></i>
+                        <a href="https://github.com/kenford20" target="_blank" rel="noopener noreferrer" id="github-link"><i className="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/kenny-zhou-35a039177/" target="_blank" rel="noopener noreferrer" id="linkedin-link"><i className="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
             </div>
