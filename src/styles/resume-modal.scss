@@ -9,7 +9,7 @@
 
 #resume-modal {
     position: absolute;
-    width: 700px;
+    width: 765px;
     height: auto;
     top: 100px;
     left: 0;
@@ -25,6 +25,9 @@
     -moz-transition: -webkit-transform 0.3s ease-in-out;
     transition: transform 0.3s ease-in-out;
     
+    @include media($phone-L) { width: 380px; padding: 100px 25px 35px 25px }
+    @include media($phone-M) { width: 325px; padding: 100px 15px 20px 15px; font-size: 11px }
+
     #close-modal {
         position: absolute;
         right: 25px;
@@ -46,8 +49,10 @@
         &::after {
             transform: rotate(-225deg);
             position: absolute;
-            top: 12px;
+            top: 11px;
             right: 0px;
+
+            @include media($phone-M) { top: 9px }
         }
     }
 
@@ -64,6 +69,8 @@
         font-size: 28px;
         text-transform: uppercase;
 
+        @include media($phone-L) { font-size: 24px }
+
         &::after {
             content: '';
             display: block;
@@ -79,26 +86,50 @@
         font-size: 18px;
         margin: 35px 0 20px 0;
 
+        @include media($phone-L) { font-size: 16px }
+        @include media($phone-M) { font-size: 15px }
+
         &::before {
             content: '';
             display: block;
-            width: 495px;
+            width: 560px;
             height: 3px;
             background: rgba(255, 255, 255, 0.9);
             margin-top: 5px;
             position: relative;
             left: 120px;
             top: 12px;
+
+            @include media($phone-L) { left: 95px; width: 235px }
+            @include media($phone-M) { left: 92px; width: 200px }
         }
     }
     #skills-header {
-        &::before { width: 295px; left: 325px }
+        &::before { 
+            width: 360px; 
+            left: 325px;
+            
+            @include media($phone-L) { left: 280px; width: 55px }
+            @include media($phone-M) { left: 265px; width: 30px }
+        }
     }
     #education-header {
-        &::before { width: 485px; left: 135px }
+        &::before { 
+            width: 550px; 
+            left: 135px;
+
+            @include media($phone-L) { left: 110px; width: 225px }
+            @include media($phone-M) { left: 105px; width: 190px }
+        }
     }
     #experience-header {
-        &::before { width: 480px; left: 140px }
+        &::before { 
+            width: 545px; 
+            left: 140px;
+
+            @include media($phone-L) { left: 115px; width: 220px }
+            @include media($phone-M) { left: 110px; width: 185px }
+        }
     }
 }
 
@@ -115,11 +146,26 @@
         margin-bottom: 10px;
 
         h4 { margin-left: auto; font-size: 14px }
+
+        @include media($phone-L) { 
+            h3, h4 { font-size: 14px }
+        }
+        @include media($phone-M) {
+            h3, h4 { font-size: 13px }
+        }
     }
 }
 
 #resume-education {
     & ul:nth-of-type(1) { margin-bottom: 15px; }
+}
+
+@include media($phone-L) {
+    #resume-experience .experience-headers {
+        display: flex;
+        flex-direction: column;
+        h4 { margin-left: 0 }
+    }
 }
 
 

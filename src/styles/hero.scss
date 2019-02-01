@@ -8,9 +8,7 @@
     transition: opacity 0.5s;
     transition-delay: 0.2s;
 
-    @include media($laptop-L) {
-        width: $containerLaptop;
-    }
+    @include media($laptop-L) { width: $containerLaptop }
     @include media($laptop-S) {
         width: 50%;
         height: 550px;
@@ -33,16 +31,10 @@
         flex-basis: 40%;
         margin-top: 135px;
 
-        @include media($laptop-L) {
-            flex-basis: 45%;
-        }
-        @include media($laptop-S) {
-            flex-basis: 100%;
-            margin: 0;
-        }
-        @include media($phone-L) {
-            margin-top: -140px;
-        }
+        @include media($laptop-L) { flex-basis: 45% }
+        @include media($laptop-S) { flex-basis: 100%; margin: 0 }
+        @include media($phone-L) { margin-top: -120px }
+        @include media($phone-M) { margin-top: -100px }
     }
 
     #hero-img {
@@ -56,10 +48,7 @@
             top: 100px;
             left: 100px;
         }
-
-        @include media($laptop-S) {
-            display: none;
-        }
+        @include media($laptop-S) { display: none }
     }
 
     a {
@@ -72,15 +61,9 @@
         margin-bottom: 25px;
         font-size:42px;
 
-        @include media($laptop-L) {
-            font-size: 37px;
-        }
-        @include media($laptop-S) {
-            font-size: 32px;
-        }
-        @include media($phone-L) {
-            font-size: 24px;
-        }
+        @include media($laptop-L) { font-size: 37px }
+        @include media($laptop-S) { font-size: 32px }
+        @include media($phone-L) { font-size: 24px }
     }
 
     h3 {
@@ -89,12 +72,8 @@
         line-height: 2;
         font-weight: 100;
 
-        @include media($laptop-S) {
-            font-size: 18px;
-        }
-        @include media($phone-L) {
-            font-size: 14px;
-        }
+        @include media($laptop-S) { font-size: 18px }
+        @include media($phone-L) { font-size: 14px }
     }
 
     #github-link i, #linkedin-link i, #resume-link i {
@@ -105,12 +84,8 @@
         -webkit-text-fill-color: $primaryColor;
         transition: background-color 0.2s;
 
-        @media only screen and (max-width: 450px) {
-            margin-left: 8px;
-        }
-        @media only screen and (max-width: 387px) {
-            display: none;
-        }
+        @media only screen and (max-width: 450px) { margin-left: 8px }
+        @media only screen and (max-width: 387px) { display: none }
 
         &:hover {
             -webkit-text-fill-color: white;

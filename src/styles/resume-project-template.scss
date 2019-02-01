@@ -1,7 +1,11 @@
+@import './global-styles.scss';
+
 #project-container {
     font-size: 13px;
     line-height: 1.8;
     position: relative;
+
+    @include media($phone-M) { font-size: 11px }
 
     ul {
         margin-bottom: 20px;
@@ -19,6 +23,12 @@
         position: absolute;
         right: 5px;
         top: 3px;
+
+        @include media($phone-L) { 
+            display: block; 
+            position: initial;
+            margin: 6px 0 8px 0;
+        }
         
         a { 
             color: white;
@@ -33,5 +43,7 @@
     .project-descriptions {
         padding-left: 15px;
         margin-top: 7px;
+
+        @include media($phone-L) { margin-bottom: 25px }
     }
 }
