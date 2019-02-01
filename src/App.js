@@ -9,9 +9,10 @@ import Portfolio from './components/portfolio';
 import Codepen from './components/codepen-slider';
 import Contact from './components/contact';
 import Footer from './components/footer';
-
-import './app.scss';
 import AOS from 'aos';
+
+// global sass style sheet that imports the styles for each component as well
+import './app.scss';
 
 class App extends Component {
     constructor(props) {

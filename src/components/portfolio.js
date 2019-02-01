@@ -1,6 +1,5 @@
 import React from 'react';
 import Thumbnail from './thumbnail';
-import '../styles/portfolio.scss';
 
 const Portfolio = () => {
     return ( 

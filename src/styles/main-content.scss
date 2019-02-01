@@ -1,5 +1,4 @@
-@import '../variables.scss';
-@import '../app.scss';
+@import './global-styles.scss';
 
 #main-content {
     width: $containerDesktop;
@@ -10,9 +9,7 @@
     color: rgb(80, 80, 80);
     z-index: 1;
 
-    @include media($laptop-M) {
-        width: 1000px;
-    }
+    @include media($laptop-M) { width: 1000px }
     @include media($laptop-S) {
         flex-direction: column;
         width: 100%;

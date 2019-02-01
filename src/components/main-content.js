@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/main-content.scss';
 
 const Main = ({ isResumeOpen }) => {
     return ( 

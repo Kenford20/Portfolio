@@ -1,6 +1,3 @@
-@import '../variables.scss';
-@import '../app.scss';
-
 #portfolio-container{
     background: white;
 
@@ -39,6 +36,8 @@
         border-color: grey;
         opacity: 0.3;
         margin: 20px 0 30px 0;
+
+        @include media($phone-L) { width: 80% }
     }
     
     span {
@@ -75,8 +74,10 @@
         @include media($phone-L) {
             margin: 0 auto;
             width: 90%;
+            
         }
-        @include media($phone-M) {
+        @include media(400px) {
+            width: 100%;
             p { text-align: left }
         }
 
@@ -94,6 +95,7 @@
                 width: 90%;
                 padding-bottom: 50px;
             }
+            @include media($phone-M) { width: 100% }
         }
     
         .portfolio-item-title {

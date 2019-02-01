@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/codepen-project.scss';
 
 class Project extends React.Component {
     constructor(props) {

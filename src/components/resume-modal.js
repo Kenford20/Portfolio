@@ -1,6 +1,5 @@
 import React from 'react';
 import Project from './resume-project-template';
-import '../styles/resume-modal.scss';
 
 const Resume = ({ isOpen, hideModal }) => {
     return ( 

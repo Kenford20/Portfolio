@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/thumbnail.scss';
 
 class Thumbnail extends React.Component {
     constructor(props) {

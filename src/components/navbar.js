@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/navbar.scss';
 
 const Navbar = ({ isActive, toggle }) => {
     return ( 

@@ -2,8 +2,6 @@ import React from 'react';
 import Slider from 'react-slick';
 import Project from './codepen-project';
 
-import '../styles/codepen-slider.scss';
-
 class Codepen extends React.Component {
     constructor(props) {
         super(props);
