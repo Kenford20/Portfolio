@@ -1,4 +1,5 @@
 import React from 'react';
+import Form from './contact-form';
 
 const Contact = (props) => {
     return ( 
@@ -10,31 +11,7 @@ const Contact = (props) => {
             </div>
 
             <div id="contact-form-card">
-                <form id="form-wrapper" onSubmit={ props.submit }>
-                    <h3> Fill out the form </h3>
-                    <div className="form-items-wrapper">
-                        <p className="form-item-label"> Name: </p>
-                        <input className="form-inputs" type="text" placeholder="Enter name..."></input>
-                    </div>
-                    <div className="form-items-wrapper">
-                        <p className="form-item-label"> E-mail: </p>
-                        <input className="form-inputs" type="email" placeholder="Enter e-mail..."></input>
-                    </div>
-                    <div className="form-items-wrapper">
-                        <p className="form-item-label"> Company: </p>
-                        <input className="form-inputs" type="text" placeholder="Enter company..."></input>
-                    </div>
-                    <div className="form-items-wrapper">
-                        <p className="form-item-label"> Phone: </p>
-                        <input className="form-inputs" type="number" placeholder="Enter phone..."></input>
-                    </div>
-                    <div className="form-items-wrapper">
-                        <p className="form-item-label"> Message: </p>
-                        <textarea className="form-inputs" type="text" placeholder="Enter message..." rows="10"></textarea>
-                    </div>
-                    <button> SEND </button>
-                </form>
-
+                <Form />
                 <div id="contact-info-wrapper">
                     <h3> Contact Information </h3>
                     <hr />
