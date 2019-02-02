@@ -27,6 +27,7 @@
     
     @include media($phone-L) { width: 380px; padding: 100px 25px 35px 25px }
     @include media($phone-M) { width: 325px; padding: 100px 15px 20px 15px; font-size: 11px }
+    @include media($phone-S) { width: 300px; }
 
     #close-modal {
         position: absolute;
@@ -85,6 +86,7 @@
         text-transform: uppercase;
         font-size: 18px;
         margin: 35px 0 20px 0;
+        position: relative;
 
         @include media($phone-L) { font-size: 16px }
         @include media($phone-M) { font-size: 15px }
@@ -92,43 +94,40 @@
         &::before {
             content: '';
             display: block;
-            width: 560px;
-            height: 3px;
-            background: rgba(255, 255, 255, 0.9);
+            height: 2px;
+            background: rgba(255, 255, 255, 0.8);
             margin-top: 5px;
-            position: relative;
-            left: 120px;
-            top: 12px;
+            position: absolute;
+            right: 0;
+            left: 115px;
+            top: 5px;
 
-            @include media($phone-L) { left: 95px; width: 235px }
-            @include media($phone-M) { left: 92px; width: 200px }
+            @include media($phone-L) { left: 95px }
+            @include media($phone-M) { left: 92px }
         }
     }
     #skills-header {
         &::before { 
-            width: 360px; 
-            left: 325px;
+            left: 320px;
             
-            @include media($phone-L) { left: 280px; width: 55px }
-            @include media($phone-M) { left: 265px; width: 30px }
+            @include media($phone-L) { left: 280px }
+            @include media($phone-M) { left: 265px }
         }
     }
     #education-header {
         &::before { 
-            width: 550px; 
-            left: 135px;
+            left: 130px;
 
-            @include media($phone-L) { left: 110px; width: 225px }
-            @include media($phone-M) { left: 105px; width: 190px }
+            @include media($phone-L) { left: 110px }
+            @include media($phone-M) { left: 105px }
         }
     }
     #experience-header {
         &::before { 
-            width: 545px; 
-            left: 140px;
+            left: 135px;
 
-            @include media($phone-L) { left: 115px; width: 220px }
-            @include media($phone-M) { left: 110px; width: 185px }
+            @include media($phone-L) { left: 115px }
+            @include media($phone-M) { left: 110px }
         }
     }
 }
