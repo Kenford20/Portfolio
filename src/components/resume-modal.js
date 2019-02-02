@@ -15,8 +15,8 @@ const Resume = ({ isOpen, hideModal }) => {
                 <Project 
                     title = "Portfolio Website"
                     technologies = "React.js, Email.js, Sass(SCSS)"
-                    liveLink = "#"
-                    githubLink = "#"
+                    liveLink = "www.kenford.info"
+                    githubLink = "https://github.com/Kenford20/Portfolio"
                     descriptions = {
                         ["Built my portfolio website from scratch using frontend technologies like React and Sass",
                          "Integrated Email.js library to allow emailing capabilities without the help of a backend server",
@@ -26,7 +26,7 @@ const Resume = ({ isOpen, hideModal }) => {
                 <Project 
                     title = "C.A. Jewelers Inc."
                     technologies = "MongoDB, Express.js, React.js, Node.js, Bootstrap"
-                    liveLink = "#"
+                    liveLink = "https://blooming-river-65352.herokuapp.com/"
                     githubLink = "#"
                     descriptions = {
                         ["Built a full stack eCommerce website from scratch as an SPA with multiple routes using React Router",
@@ -39,8 +39,8 @@ const Resume = ({ isOpen, hideModal }) => {
                 <Project 
                     title = "Kodo Namaewaz"
                     technologies = "JavaScript, Node.js, Socket.io, HTML"
-                    liveLink = "#"
-                    githubLink = "#"
+                    liveLink = "http://weebcodenames.online"
+                    githubLink = "https://github.com/Kenford20/Kodo-Namaewas-Heroku"
                     descriptions = {
                         ["Constructed an interactive browser version of the board/card game, Codenames",
                          "Incorporated web socket programming to allow multiple users to play together across different devices",
@@ -51,8 +51,8 @@ const Resume = ({ isOpen, hideModal }) => {
                 <Project 
                     title = "Speed Typing Test"
                     technologies = "JavaScript, HTML, CSS"
-                    liveLink = "#"
-                    githubLink = "#"
+                    liveLink = "https://kenford20.github.io"
+                    githubLink = "https://github.com/Kenford20/Kenford20.github.io"
                     descriptions = {
                         ["Created an interactive web application using only vanilla technologies",
                          "Implemented a variety of typing tests using vanilla AJAX calls to multiple public APIs",
