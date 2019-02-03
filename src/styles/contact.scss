@@ -40,50 +40,6 @@
     }
 }
 
-#confirmation {
-    position: absolute;
-    height: 90px;
-    left: 60px;
-    right: 60px;
-    top: 20px;
-    padding: 10px 20px 10px 10px;
-    background: $secondaryColor;
-    display: flex;
-    border-radius: 20px;
-    color: white;
-    justify-content: center;
-    align-items: center;
-    transition: top 0.4s ease-in-out, opacity 0.3s ease-in-out;
-
-    @include media($tablet) { height: 70px }
-    @include media($phone-L) {
-        left: 15px;
-        right: 15px;
-        height: 60px;
-    } 
-
-    p { 
-        margin-left: 20px; 
-        line-height: 1.8;
-        font-size: 18px;
-
-        @include media($tablet) { font-size: 14px } 
-        @include media($phone-L) { 
-            font-size: 12px;
-            line-height: 1.5;
-            margin-left: 10px;
-        }
-        @include media($phone-S) { font-size: 10px }
-    }
-    i { 
-        font-size: 56px;
-        padding: 5px 5px 5px 10px; 
-        -webkit-text-fill-color: white;
-
-        @include media($phone-L) { font-size: 40px }
-    }
-}
-
 #contact-form-card {
     display: relative;
     width: 1100px;
@@ -184,12 +140,8 @@
             }
         }
 
-        @include media($laptop-S) {
-            border-top-right-radius: 20px;
-        }
-        @include media($tablet) {
-            padding: 40px;
-        }
+        @include media($laptop-S) { border-top-right-radius: 20px }
+        @include media($tablet) { padding: 40px }
         @include media($phone-L) {
             padding: 25px;
             grid-template-columns: 100%;
@@ -203,13 +155,9 @@
                 "message"
                 "button";
             
-            h3 {
-                margin: 20px 0 40px 0;
-            }
+            h3 { margin: 20px 0 40px 0 }
+            .form-items-wrapper { margin-bottom: 20px }
 
-            .form-items-wrapper {
-                margin-bottom: 20px;
-            }
             button { 
                 margin: 5px 0 25px 0; 
                 width: 100%;
@@ -236,12 +184,13 @@
             margin: 0;
         }
         @include media($phone-L) {
-            #abc {
+            #info-wrapper {
                 text-align: left;
                 width: 85%;
                 margin: auto;
             }
         }
+        @include media($phone-M) { padding: 40px 20px 50px 20px }
         
         hr {
             width: 60%;
@@ -289,4 +238,99 @@
             text-align: center;        
         }
     }
+}
+
+// #confirmation {
+//     position: absolute;
+//     height: 90px;
+//     left: 60px;
+//     right: 60px;
+//     top: 20px;
+//     padding: 10px 20px 10px 10px;
+//     background: $secondaryColor;
+//     display: flex;
+//     border-radius: 20px;
+//     color: white;
+//     justify-content: center;
+//     align-items: center;
+//     transition: top 0.4s ease-in-out, opacity 0.3s ease-in-out;
+
+//     @include media($tablet) { height: 70px }
+//     @include media($phone-L) {
+//         left: 15px;
+//         right: 15px;
+//         height: 60px;
+//     } 
+
+//     p { 
+//         margin-left: 20px; 
+//         line-height: 1.8;
+//         font-size: 18px;
+
+//         @include media($tablet) { font-size: 14px } 
+//         @include media($phone-L) { 
+//             font-size: 12px;
+//             line-height: 1.5;
+//             margin-left: 10px;
+//         }
+//         @include media($phone-S) { font-size: 10px }
+//     }
+//     i { 
+//         font-size: 56px;
+//         padding: 5px 5px 5px 10px; 
+//         -webkit-text-fill-color: white;
+
+//         @include media($phone-L) { font-size: 40px }
+//     }
+// }
+
+#confirmation, #form-sending {
+    position: fixed;
+    z-index: 2;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px 10px 10px;
+    border-radius: 20px;
+    z-index: 2;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#confirmation {
+    width: 600px;
+    transition: top 0.4s ease-in-out, opacity 0.3s ease-in-out;
+    background: $secondaryColor;
+
+    @include media($phone-L) { width: 300px; padding: 0 10px }
+
+    p { 
+        margin-left: 20px; 
+        line-height: 1.8;
+        font-size: 18px;
+
+        @include media($tablet) { font-size: 14px } 
+        @include media($phone-L) { 
+            font-size: 12px;
+            line-height: 1.5;
+            margin-left: 10px;
+        }
+        @include media($phone-S) { font-size: 10px }
+    }
+
+    i { 
+        font-size: 50px;
+        padding: 5px 5px 5px 10px; 
+        -webkit-text-fill-color: white;
+
+        @include media($phone-L) { font-size: 40px }
+    }
+}
+
+#form-sending { 
+    width: 300px;
+    background: rgb(25, 25, 25);
 }

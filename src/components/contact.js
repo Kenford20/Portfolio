@@ -15,7 +15,7 @@ const Contact = (props) => {
                 <div id="contact-info-wrapper">
                     <h3> Contact Information </h3>
                     <hr />
-                    <div id="abc">
+                    <div id="info-wrapper">
                         <i className="fas fa-user-alt"></i>
                         <h5> Kenny Zhou </h5>
                         <br />

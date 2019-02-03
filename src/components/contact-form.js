@@ -16,6 +16,7 @@ class Form extends React.Component {
             senderCompany: '',
             senderPhone: '',
             senderMessage: '',
+            loading: false,
             submitted: false
         }
     }
@@ -60,20 +61,25 @@ class Form extends React.Component {
             senderEmail: '',
             senderCompany: '',
             senderPhone: '',
-            senderMessage: ''
+            senderMessage: '',
+            loading: true
         });
     }
 
     sendMessage(templateID, templateParams, userID) {
         emailjs.send('mailgun', templateID, templateParams, userID)
         .then(res => {
-            this.setState({ submitted: true });
+            this.setState({ 
+                loading: false,
+                submitted: true
+            });
             setInterval(() => this.setState({ submitted: false }), 4000);
         })
         .catch(err => alert('Failed to send message. Error ', err));
     }
 
     render() {
+        const loadingModal = this.state.loading && <div id="form-sending"><h1>Sending...</h1></div>;
     return ( 
         <form id="form-wrapper" onSubmit={ this.handleSubmit }>
             <h3> Fill out the form </h3>
@@ -141,9 +147,10 @@ class Form extends React.Component {
                 ></textarea>
             </div>
             <button> SEND </button>
+            { loadingModal }
             <div 
                 id="confirmation" 
-                style={{ top: this.state.submitted ? '20px' : '-300px', 
+                style={{ top: this.state.submitted ? '10%' : '-50%', 
                 opacity: this.state.submitted ? '1' : '0' }}
             >
                 <i className="fas fa-check"></i>
