@@ -36,7 +36,7 @@
             width: 245px;
             font-size: 12px;
         }
-        @include media($phone-M) { width: 210px }
+        @include media($phone-M) { width: 200px }
 
         h2, p, a { color: $primaryColor }
         h2 { margin-bottom: 15px; text-decoration: underline }

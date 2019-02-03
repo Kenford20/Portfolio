@@ -18,8 +18,8 @@ const Resume = ({ isOpen, hideModal }) => {
                     liveLink = "www.kenford.info"
                     githubLink = "https://github.com/Kenford20/Portfolio"
                     descriptions = {
-                        ["Built my portfolio website from scratch using frontend technologies like React and Sass",
-                         "Integrated Email.js library to allow emailing capabilities without the help of a backend server",
+                        ["Developed my portfolio website from ground up using front end technologies like React and Sass",
+                         "Integrated Email.js library and Mailgun services to support emailing capabilities without the help of a back end server",
                         ]
                     }
                 />
@@ -30,8 +30,8 @@ const Resume = ({ isOpen, hideModal }) => {
                     githubLink = "#"
                     descriptions = {
                         ["Built a full stack eCommerce website from scratch as an SPA with multiple routes using React Router",
-                        "Designed and developed responsive layouts, interfaces, and functionalities for each page",
-                        "Utilized a MongoDB database to store client data and import dynamic content to the product catalogs",
+                        "Designed and developed fully responsive layouts, interfaces, and functionalities for each page",
+                        "Utilized a MongoDB database to store client data and import dynamic content to the product catalogs via server-side, custom REST APIs",
                         "Used Amazon S3 services for image hosting to optimize website performance and file size"    
                         ]
                     }
@@ -43,8 +43,8 @@ const Resume = ({ isOpen, hideModal }) => {
                     githubLink = "https://github.com/Kenford20/Kodo-Namaewas-Heroku"
                     descriptions = {
                         ["Constructed an interactive browser version of the board/card game, Codenames",
-                         "Incorporated web socket programming to allow multiple users to play together across different devices",
-                         "Mastered the art of DOM manipulation using vanilla JavaScript"
+                         "Incorporated web socket programming to enable multiple users to play together across different devices",
+                         "Modeled the game play and rules of Codenames through vanilla JavaScript events and DOM manipulation"
                         ]
                     }
                 />
@@ -55,7 +55,7 @@ const Resume = ({ isOpen, hideModal }) => {
                     githubLink = "https://github.com/Kenford20/Kenford20.github.io"
                     descriptions = {
                         ["Created an interactive web application using only vanilla technologies",
-                         "Implemented a variety of typing tests using vanilla AJAX calls to multiple public APIs",
+                         "Implemented a variety of typing tests using vanilla AJAX calls to several public APIs",
                         ]
                     }
                 />
