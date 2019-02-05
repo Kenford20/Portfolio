@@ -9,10 +9,12 @@
     @include media($laptop-S) { padding-top: 550px }
     @include media($phone-L) { 
         height: 1350px;
-        padding-top: 750px;
+        padding-top: 900px;
     }
-    @include media($phone-M) { padding-top: 800px }
-    @include media($phone-S) { padding-top: 950px }
+    @include media(425px) { padding-top: 950px }
+    @include media(390px) { padding-top: 1000px }
+    @include media($phone-M) { padding-top: 1050px }
+    @include media($phone-S) { padding-top: 1150px }
 
     .svg-top {
         @include media(1440px) { top: -18% }
@@ -20,8 +22,9 @@
         @include media($laptop-S) {top: 40% }
         @include media($tablet) { top: 44% }
         @include media($phone-L) { top: 50% }
-        @include media($phone-M) { top: 53% }
-        @include media(320px) { top: 57% }
+        @include media(425px) { top: 53% }
+        @include media($phone-M) { top: 57% }
+        @include media($phone-S) { top: 61% }
     }
 
     #skills-header {
