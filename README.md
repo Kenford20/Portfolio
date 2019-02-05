@@ -1,14 +1,24 @@
 # My Portfolio Website
 
-## *Fully Responsive*
-
+My single page, fully-responsive web development portfolio built with React and Sass.
 
 ## *Demo*
 View my portfolio live at www.kenford.info
 
 ## *Features*
+* Personal projects
+* Codepen projects
+* Font Awesome Icons
+* Contact form with emailing capabilites
+* Lightweight animations 
 
 ## *Technologies used*
+* React
+* Sass
+* React slick, a React library for creating responsive carousels
+* Email.js for sending emails without a back end server via the contact form submission
+* AOS, a CSS3 driven library for animating elements upon scroll
+* dotenv package to manage environment variables
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -80,4 +90,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
 ## *License*
-MIT © Kenny Zhou
+MIT © [Kenny Zhou](https://github.com/kenford20)
