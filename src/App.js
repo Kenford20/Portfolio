@@ -22,20 +22,20 @@ class App extends Component {
         this.hideResumeModal = this.hideResumeModal.bind(this);
 
         this.state = {
-            showNav: false,
-            showResume: false
+            isNavActive: false,
+            isResumeActive: false
         };
     }
 
     toggleNav() {
-        this.setState({ showNav: !this.state.showNav });
+        this.setState({ isNavActive: !this.state.isNavActive });
     }
 
     showResumeModal() {
-        this.setState({ showResume: true });
+        this.setState({ isResumeActive: true });
     }
     hideResumeModal() {
-        this.setState({ showResume: false });
+        this.setState({ isResumeActive: false });
     }
 
   render() {
@@ -45,15 +45,15 @@ class App extends Component {
       return (
         <div className="App">
             <header style={{ zIndex: 0 }}>
-                <Navbar isActive={ this.state.showNav } toggle={ this.toggleNav }/>
+                <Navbar isActive={ this.state.isNavActive } toggle={ this.toggleNav }/>
                 <section id="hero-container">
                     <Hero 
-                        showNav={ this.state.showNav }
+                        isNavActive={ this.state.isNavActive }
                         showResumeModal = { this.showResumeModal }
                     />
                 </section>
                 <Resume 
-                    isOpen = { this.state.showResume }
+                    isOpen = { this.state.isResumeActive }
                     hideModal = { this.hideResumeModal }
                 />
                 <svg className="svg-bg" xmlns="http://www.w3.org/2000/svg" viewBox="50 120 670 320" style={{ zIndex: -100 }}>
@@ -62,11 +62,11 @@ class App extends Component {
             </header>
 
             <main id="main-container">
-                <Main isResumeOpen={ this.state.showResume }/>
+                <Main isResumeOpen={ this.state.isResumeActive }/>
             </main>
             
             <section id="about-container">
-                <About isResumeOpen={ this.state.showResume }/>
+                <About isResumeOpen={ this.state.isResumeActive }/>
             </section>
         
             <section className="skills-container">

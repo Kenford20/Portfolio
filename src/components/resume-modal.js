@@ -1,5 +1,6 @@
 import React from 'react';
 import Project from './resume-project-template';
+import { PropTypes } from 'prop-types';
 
 const Resume = ({ isOpen, hideModal }) => {
     return ( 
@@ -79,10 +80,10 @@ const Resume = ({ isOpen, hideModal }) => {
                 <div className="education-headers">
                     <h3>University of Illinois at Chicago</h3>
                     <h4>2013 - 2018</h4>
-                </div>
-                <p>Bachelor of Science in Computer Engineering</p>
+                </  div>
+                <p  >Bachelor of Science in Computer Engineering</p>
                 <ul>
-                    <li>Worked on multi-disciplinary projects at UIC's robotics club, Engineering Design Team</li>
+                      <li>Worked on multi-disciplinary projects at UIC's robotics club, Engineering Design Team</li>
                     <li>Competed in Oakland University's annual Intelligent Ground Vehicle Competition</li>
                 </ul>
             </section>
@@ -106,3 +107,8 @@ const Resume = ({ isOpen, hideModal }) => {
 }
  
 export default Resume;
+
+Resume.propTypes = {
+    isOpen: PropTypes.bool.isRequired,
+    hideModal: PropTypes.func.isRequired
+}

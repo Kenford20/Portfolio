@@ -3,10 +3,6 @@ import Slider from 'react-slick';
 import Project from './codepen-project';
 
 class Codepen extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {  }
-    }
     render() { 
         const settings = {
             className: "center",

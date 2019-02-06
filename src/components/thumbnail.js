@@ -1,4 +1,5 @@
 import React from 'react';
+import { PropTypes } from 'prop-types';
 
 class Thumbnail extends React.Component {
     constructor(props) {
@@ -72,3 +73,14 @@ class Thumbnail extends React.Component {
 }
  
 export default Thumbnail;
+
+Thumbnail.propTypes = {
+    animation: PropTypes.string.isRequired,
+    animationDelay: PropTypes.number.isRequired,
+    altTag: PropTypes.string.isRequired,
+    altTagMobile: PropTypes.string.isRequired,
+    path: PropTypes.string.isRequired,
+    pathMobile: PropTypes.string.isRequired,
+    btnPosition: PropTypes.string,
+    siteUrl: PropTypes.string.isRequired,
+}

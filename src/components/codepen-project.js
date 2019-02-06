@@ -1,4 +1,5 @@
 import React from 'react';
+import { PropTypes } from 'prop-types';
 
 class Project extends React.Component {
     constructor(props) {
@@ -54,3 +55,11 @@ class Project extends React.Component {
 }
  
 export default Project;
+
+Project.propTypes = {
+    imgUrl: PropTypes.string.isRequired,
+    altTag: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    projectUrl: PropTypes.string.isRequired
+};

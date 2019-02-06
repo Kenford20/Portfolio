@@ -1,7 +1,7 @@
 import React from 'react';
 import Form from './contact-form';
 
-const Contact = (props) => {
+const Contact = () => {
     return ( 
         <div id="contact">
             <div id="contact-header">

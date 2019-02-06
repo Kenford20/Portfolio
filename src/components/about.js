@@ -1,4 +1,5 @@
 import React from 'react';
+import { PropTypes } from 'prop-types';
 
 const About = ({ isResumeOpen }) => {
     return ( 
@@ -33,3 +34,7 @@ const About = ({ isResumeOpen }) => {
 }
  
 export default About;
+
+About.propTypes = {
+    isResumeOpen: PropTypes.bool.isRequired
+};

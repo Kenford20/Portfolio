@@ -1,4 +1,5 @@
 import React from 'react';
+import { PropTypes } from 'prop-types';
 
 const Navbar = ({ isActive, toggle }) => {
     return ( 
@@ -19,3 +20,8 @@ const Navbar = ({ isActive, toggle }) => {
 }
  
 export default Navbar;
+
+Navbar.propTypes = {
+    isActive: PropTypes.bool.isRequired,
+    toggle: PropTypes.func.isRequired
+}
