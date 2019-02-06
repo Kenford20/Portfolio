@@ -20,7 +20,7 @@ const Main = ({ isResumeOpen }) => {
                 <i className="fas fa-code"></i>
                 <h2> Certifications </h2>
                 <p>Curious about my qualifications? Before developing any project, I make sure to educate myself on any technologies that may be needed to produce a working product. I have utilized many online resources to aide my learning process. One of the most popular ones is Freecodecamp.org. After completing over 1000 hours of coursework, I earned several web development certificates.</p>
-                <a href="https://www.freecodecamp.org/kenford" target="_blank"> View certificates > </a>
+                <a href="https://www.freecodecamp.org/kenford" target="_blank" rel="noopener noreferrer"> View certificates > </a>
             </div>
         </div>
      );

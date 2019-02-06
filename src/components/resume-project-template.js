@@ -14,9 +14,9 @@ class Project extends React.Component {
                 <h3 className="project-titles"><strong>{ title }</strong></h3>
                 <p className="project-technologies">{ technologies } </p>
                 <div className="project-links">
-                    <a href={ liveLink } target="__blank">Live</a>
+                    <a href={ liveLink } target="__blank" rel="noopener noreferrer">Live</a>
                     <span> | </span>
-                    <a href={ githubLink } target="__blank">Github</a>
+                    <a href={ githubLink } target="__blank" rel="noopener noreferrer">Github</a>
                 </div>
                 { projectDescriptions }
             </div>

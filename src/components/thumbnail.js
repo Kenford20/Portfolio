@@ -34,7 +34,7 @@ class Thumbnail extends React.Component {
         let siteBtn = this.state.showBtn ? <button id="site-btn" onMouseEnter={ this.buttonHandler } onMouseLeave={ this.thumbnailHoverHandler } style={{ right: btnPosition }}>Visit Site</button> : '';
 
         return ( 
-        <a href={ siteUrl } target="_blank">
+        <a href={ siteUrl } target="_blank" rel="noopener noreferrer">
             { siteBtn }
             <div id="thumbnail-laptop" data-aos={ animation } data-aos-delay={ animationDelay } onMouseEnter={ this.thumbnailHoverHandler } onMouseLeave={ this.thumbnailHoverHandler}>
                 <div id="screen">

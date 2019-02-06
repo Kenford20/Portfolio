@@ -47,7 +47,7 @@ class Project extends React.Component {
                 >
                 <h2>{ title }</h2>
                 <p>{ description }</p>
-                <a href={ projectUrl } target="_blank">View Pen</a>
+                <a href={ projectUrl } target="_blank" rel="noopener noreferrer">View Pen</a>
             </div>
         </div>
      );

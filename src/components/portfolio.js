@@ -47,7 +47,7 @@ const Portfolio = () => {
                     <h2 className="portfolio-item-type"> Web Application </h2>
                     <hr />
                     <p className="portfolio-item-description">Kodo Namaewaz is my own custom made, web version of the table top, card game, Codenames. The application allows for online game play across multiple devices with your family and friends! With the help of Node, Express, and Socket.io on the backend, the multiplayer aspect of this application was made possible. On a turn by turn basis, the game plays just like the regular version with just some clicks. It is mobile responsive, so grab your phones and friends and play now! 
-                    <br/><br/> Interested and want to learn how to play? Click <a target="_blank" href="https://en.wikipedia.org/wiki/Codenames_(board_game)">here.</a></p>
+                    <br/><br/> Interested and want to learn how to play? Click <a href="https://en.wikipedia.org/wiki/Codenames_(board_game)" target="_blank" rel="noopener noreferrer">here.</a></p>
                     <span className="portfolio-item-tech"> HTML </span>
                     <span className="portfolio-item-tech"> Javascript </span>
                     <span className="portfolio-item-tech"> Node </span>
