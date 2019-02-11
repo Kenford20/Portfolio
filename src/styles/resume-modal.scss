@@ -21,9 +21,9 @@
     padding: 100px 40px 50px 40px;
     box-sizing: border-box;
     font-size: 13px;
-    -webkit-transition: -moz-transform 0.3s ease-in-out; 
-    -moz-transition: -webkit-transform 0.3s ease-in-out;
-    transition: transform 0.3s ease-in-out;
+    -webkit-transition: -moz-transform 0.4s ease-in-out; 
+    -moz-transition: -webkit-transform 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out, top 0.3s ease-out;
     
     @include media($phone-L) { width: 380px; padding: 100px 25px 35px 25px }
     @include media($phone-M) { width: 325px; padding: 100px 15px 20px 15px; font-size: 11px }
@@ -166,8 +166,3 @@
         h4 { margin-left: 0 }
     }
 }
-
-
-
-
-    

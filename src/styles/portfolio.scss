@@ -30,6 +30,7 @@
         width: 90%;
         margin-bottom: 75px;
     }
+    @include media($phone-L) { overflow: hidden }
 
     hr {
         width: 30%;

@@ -47,7 +47,7 @@ const Portfolio = () => {
                     <h2 className="portfolio-item-type"> Web Application </h2>
                     <hr />
                     <p className="portfolio-item-description">Kodo Namaewaz is my own custom made, web version of the table top, card game, Codenames. The application allows for online game play across multiple devices with your family and friends! With the help of Node, Express, and Socket.io on the backend, the multiplayer aspect of this application was made possible. On a turn by turn basis, the game plays just like the regular version with just some clicks. It is mobile responsive, so grab your phones and friends and play now! 
-                    <br/><br/> Interested and want to learn how to play? Click <a href="https://en.wikipedia.org/wiki/Codenames_(board_game)" target="_blank" rel="noopener noreferrer">here.</a></p>
+                    <br/><br/> Interested and want to learn how to play? Click <a href="https://github.com/Kenford20/Kodo-Namaewas-Heroku/blob/master/README.md" target="_blank" rel="noopener noreferrer">here.</a></p>
                     <span className="portfolio-item-tech"> HTML </span>
                     <span className="portfolio-item-tech"> Javascript </span>
                     <span className="portfolio-item-tech"> Node </span>
@@ -60,7 +60,8 @@ const Portfolio = () => {
                     <h1 className="portfolio-item-title"> Speed Typing Test </h1>
                     <h2 className="portfolio-item-type"> Web Application </h2>
                     <hr />
-                    <p className="portfolio-item-description">This speed typing website is one of my first projects that I tackled. It is made using only vanilla HTML, CSS, and JavaScript. Being strictly a frontend application, it features a very simple layout that allows users to attempt a test for typing speed on multiple different texts pulled from various public APIs. Features includes a simple timer, words per minute and characters per minute results, and dynamically styled text used as indication for the current status of the user's typing accuracy.</p>
+                    <p className="portfolio-item-description">This speed typing website is one of my first projects that I tackled. It is made using only vanilla HTML, CSS, and JavaScript. Being strictly a frontend application, it features a very simple layout that allows users to attempt a test for typing speed on multiple different texts pulled from various public APIs. Features includes a simple timer, words per minute and characters per minute results, and dynamically styled text used as indication for the current status of the user's typing accuracy.
+                    <br/><br/> View source code <a href="https://github.com/Kenford20/Kenford20.github.io/blob/master/README.md" target="_blank" rel="noopener noreferrer">here.</a></p>
                     <span className="portfolio-item-tech"> HTML </span>
                     <span className="portfolio-item-tech"> Javascript </span>
                     <span className="portfolio-item-tech"> CSS </span>
