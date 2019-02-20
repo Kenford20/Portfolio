@@ -14,11 +14,12 @@ const Portfolio = () => {
                     <h1 className="portfolio-item-title"> C.A. Jewelers Inc. </h1>
                     <h2 className="portfolio-item-type"> E-commerce Website </h2>
                     <hr />
-                    <p className="portfolio-item-description">For a local, family-owned jewelry business, I produced an eCommerce website completely from scratch. Being a full stack application, React was used to create the front end layout and user interface for multiple pages with routing capabilities. The website uses Node and Express on the server side and connects with a Mongo database for importing dynamic content to the catalogs and products pages via custom APIs.</p>
+                    <p className="portfolio-item-description">For a local, family-owned jewelry business, I produced an eCommerce website completely from scratch. Being a full stack application, React and Redux were used to create the front end layout and user interface for multiple pages with routing capabilities. The website uses Node and Express on the server side and connects with a Mongo database for importing dynamic content to the catalogs and products pages via custom APIs.</p>
                     <span className="portfolio-item-tech"> MongoDB </span>
                     <span className="portfolio-item-tech"> Node </span>
                     <span className="portfolio-item-tech"> Express </span>
                     <span className="portfolio-item-tech"> React </span>
+                    <span className="portfolio-item-tech"> Redux </span>
                 </div>
                 <Thumbnail 
                     altTag = "Cajewelers Thumbnail"

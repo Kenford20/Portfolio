@@ -26,7 +26,7 @@ const Resume = ({ isOpen, hideModal }) => {
                 />
                 <Project 
                     title = "C.A. Jewelers Inc."
-                    technologies = "MongoDB, Express.js, React.js, Node.js, Bootstrap"
+                    technologies = "MongoDB, Express.js, React.js, Redux, Node.js, Bootstrap"
                     liveLink = "https://blooming-river-65352.herokuapp.com/"
                     githubLink = "#"
                     descriptions = {
@@ -64,7 +64,7 @@ const Resume = ({ isOpen, hideModal }) => {
 
             <section id="resume-skills">
                 <h2 id="skills-header" className="resume-section-headers">Programming Technologies</h2>
-                <p> JavaScript(ES6) | HTML5 | CSS3 | React | Node | Bootstrap | jQuery | MongoDB | Git | Sass </p>
+                <p> JavaScript(ES6) | HTML5 | CSS3 | React | Redux | Node | Bootstrap | jQuery | MongoDB | Git | Sass </p>
             </section>
 
             <section id="resume-education">
