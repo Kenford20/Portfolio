@@ -1,87 +1,59 @@
-import React from 'react';
-import * as emailjs from 'emailjs-com';
+import React, { useState, useEffect, useRef } from 'react';
+import { submitForm } from '../submit-form';
 
-require('dotenv').config();
+const Form = () => {
+    const [contactFormData, setContactFormData] = useState({
+        senderName: '',
+        senderEmail: '',
+        senderCompany: '',
+        senderPhone: '',
+        senderMessage: ''
+    });
 
-class Form extends React.Component {
-    constructor(props) {
-        super(props);
-        this.handleChange = this.handleChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
-        this.sendMessage = this.sendMessage.bind(this);
-
-        this.state = {
-            senderName: '',
-            senderEmail: '',
-            senderCompany: '',
-            senderPhone: '',
-            senderMessage: '',
-            loading: false,
-            submitted: false
+    const [formStatus, updateFormStatus] = useState({
+        loading: false,
+        submitted: false
+    });
+    
+    const isFirstRun = useRef(true);
+    useEffect (() => {
+        if (isFirstRun.current) {
+            isFirstRun.current = false;
+            return;
         }
-    }
+        console.log("Effect was run");
+        console.log(formStatus);
+    }, [formStatus]);
 
-    handleChange(e) {
-        switch(e.target.id) {
-            case 'name-input': this.setState({ senderName: e.target.value }); break;
-            case 'email-input': this.setState({ senderEmail: e.target.value }); break;
-            case 'company-input': this.setState({ senderCompany: e.target.value }); break;
-            case 'phone-input': this.setState({ senderPhone: e.target.value }); break;
-            case 'message-input': this.setState({ senderMessage: e.target.value }); break;
-            default: alert('Something went wrong with your inputs...');
-        }
-    }
+    const { senderName, senderEmail, senderCompany, senderPhone, senderMessage } = contactFormData;
+    const { loading, submitted } = formStatus;
 
-    handleSubmit(e) {
-        e.preventDefault();
+    const loadingModal = loading && <div id="form-sending"><h1>Sending...</h1></div>;
 
-        const { senderName, senderEmail, senderCompany, senderPhone, senderMessage } = this.state;
-        
-        const { REACT_APP_EMAILJS_RECEIVER: receiverEmail, 
-                REACT_APP_EMAILJS_TEMPLATEID: templateID, 
-                REACT_APP_EMAILJS_USERID: userID 
-        } = process.env;
-
-        const templateParams = {
-            "name": senderName,
-            "receiverEmail": receiverEmail,
-            "company": senderCompany,
-            "phone": senderPhone,
-            "senderEmail": senderEmail,
-            "message": senderMessage
-        };
-
-        this.sendMessage(
-            templateID, 
-            templateParams,
-            userID
-        )
-        this.setState({ 
-            senderName: '',
-            senderEmail: '',
-            senderCompany: '',
-            senderPhone: '',
-            senderMessage: '',
-            loading: true
-        });
-    }
-
-    sendMessage(templateID, templateParams, userID) {
-        emailjs.send('mailgun', templateID, templateParams, userID)
-        .then(res => {
-            this.setState({ 
-                loading: false,
-                submitted: true
-            });
-            setInterval(() => this.setState({ submitted: false }), 4000);
-        })
-        .catch(err => alert('Failed to send message. Error ', err));
-    }
-
-    render() {
-        const loadingModal = this.state.loading && <div id="form-sending"><h1>Sending...</h1></div>;
     return ( 
-        <form id="form-wrapper" onSubmit={ this.handleSubmit }>
+        <form 
+            id="form-wrapper" 
+            onSubmit={(e) => {
+                e.preventDefault();
+                updateFormStatus({...formStatus, loading: true});
+
+                async function fetchFormResponse() {
+                    let [shouldStillLoad, isFormSubmitted] = await submitForm(contactFormData);
+                
+                    updateFormStatus({ loading: shouldStillLoad, submitted: isFormSubmitted });
+                    setTimeout(() => updateFormStatus({ submitted: false }), 4000);
+                }
+                fetchFormResponse();
+                
+                setContactFormData({
+                    senderName: '',
+                    senderEmail: '',
+                    senderCompany: '',
+                    senderPhone: '',
+                    senderMessage: ''
+                });
+            }
+        }>
             <h3> Fill out the form </h3>
             <div className="form-items-wrapper">
                 <p className="form-item-label"> Name: </p>
@@ -92,8 +64,8 @@ class Form extends React.Component {
                     maxLength="50"
                     placeholder="Enter name..." 
                     required
-                    value={ this.state.senderName }
-                    onChange={ this.handleChange }
+                    value={ senderName }
+                    onChange={ (e) => setContactFormData({...contactFormData, senderName: e.target.value}) }
                 ></input>
             </div>
             <div className="form-items-wrapper">
@@ -105,8 +77,8 @@ class Form extends React.Component {
                     type="email" 
                     placeholder="Enter e-mail..." 
                     required
-                    value={ this.state.senderEmail }
-                    onChange={ this.handleChange }
+                    value={ senderEmail }
+                    onChange={ (e) => setContactFormData({...contactFormData, senderEmail: e.target.value}) }
                 ></input>
             </div>
             <div className="form-items-wrapper">
@@ -117,8 +89,8 @@ class Form extends React.Component {
                     type="text" 
                     maxLength="50"
                     placeholder="Enter company..."
-                    value={ this.state.senderCompany }
-                    onChange={ this.handleChange }
+                    value={ senderCompany }
+                    onChange={ (e) => setContactFormData({...contactFormData, senderCompany: e.target.value}) }
                 ></input>
             </div>
             <div className="form-items-wrapper">
@@ -129,8 +101,8 @@ class Form extends React.Component {
                     type="tel" 
                     maxLength="20"
                     placeholder="Enter phone..."
-                    value={ this.state.senderPhone }
-                    onChange={ this.handleChange }
+                    value={ senderPhone }
+                    onChange={ (e) => setContactFormData({...contactFormData, senderPhone: e.target.value}) }
                 ></input>
             </div>
             <div className="form-items-wrapper">
@@ -142,16 +114,18 @@ class Form extends React.Component {
                     maxLength="500" 
                     rows="10"
                     required
-                    value={ this.state.senderMessage }
-                    onChange={ this.handleChange }
+                    value={ senderMessage }
+                    onChange={ (e) => setContactFormData({...contactFormData, senderMessage: e.target.value}) }
                 ></textarea>
             </div>
             <button> SEND </button>
             { loadingModal }
             <div 
                 id="confirmation" 
-                style={{ top: this.state.submitted ? '10%' : '-50%', 
-                opacity: this.state.submitted ? '1' : '0' }}
+                style={{ 
+                    top: submitted ? '10%' : '-50%', 
+                    opacity: submitted ? '1' : '0' 
+                }}
             >
                 <i className="fas fa-check"></i>
                 <div id="confirmation-text">
@@ -161,7 +135,7 @@ class Form extends React.Component {
             </div>
         </form>
     );
-    }
 }
  
 export default Form;
+

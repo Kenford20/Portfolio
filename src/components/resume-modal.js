@@ -5,7 +5,11 @@ import { PropTypes } from 'prop-types';
 const Resume = ({ isOpen, hideModal }) => {
     return ( 
         <React.Fragment>
-        <div id="modal-background" style={{ opacity: isOpen ? '0.7' : '0', display: isOpen ? 'block' : 'none' }} onClick={ hideModal }></div>
+        <div 
+            id="modal-background" 
+            style={{ opacity: isOpen ? '0.7' : '0', display: isOpen ? 'block' : 'none' }} 
+            onClick={ hideModal }>
+        </div>
         <div className="animate" id="resume-modal" style={{ transform: isOpen ? 'scale(1)' : 'scale(0)', top: isOpen ? '100px' : '-300px'}}>
             <span id="close-modal" onClick={ hideModal }></span>
             <h1> <strong>Resume</strong> </h1>

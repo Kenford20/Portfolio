@@ -304,6 +304,7 @@
     width: 600px;
     transition: top 0.4s ease-in-out, opacity 0.3s ease-in-out;
     background: $secondaryColor;
+    z-index: 2;
 
     @include media($phone-L) { width: 300px; padding: 0 10px }
 
