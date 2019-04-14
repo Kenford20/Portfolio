@@ -28,7 +28,7 @@ const Portfolio = () => {
                     pathMobile = "cajewelersM"
                     animation = "fade-left"
                     animationDelay = { 1000 }
-                    siteUrl = "https://blooming-river-65352.herokuapp.com/"
+                    siteUrl = "https://cajewelers.herokuapp.com/"
                 />
             </div>
 
