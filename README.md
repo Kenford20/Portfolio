@@ -9,7 +9,7 @@ View my portfolio live at www.kenford.info
 * Personal projects
 * Codepen projects
 * Font Awesome Icons
-* Contact form with emailing capabilites
+* Contact form with emailing capability
 * Lightweight animations 
 
 ## *Technologies used*
