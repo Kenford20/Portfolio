@@ -17,8 +17,8 @@ const Thumbnail = ({
     const imgPaths = {
         cajewelers: require('../images/portfolio/cajewelers.png'),
         cajewelersM: require('../images/portfolio/cajewelers-mobile.png'),
-        codenames: require('../images/portfolio/codenames.png'),
-        codenamesM: require('../images/portfolio/codenames-mobile.png'),
+        codenames: require('../images/portfolio/codenames-board.png'),
+        codenamesM: require('../images/portfolio/codenames-mobile2.png'),
         typingWebsite: require('../images/portfolio/typing-website.png'),
         typingWebsiteM: require('../images/portfolio/typing-website-mobile.png')
     };
