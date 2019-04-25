@@ -1,5 +1,6 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
+import { Link } from "react-scroll";
 
 const About = ({ isResumeOpen }) => {
     return ( 
@@ -13,7 +14,16 @@ const About = ({ isResumeOpen }) => {
                     <h1> Full-stack Web Developer, Fitness Enthusiast, Competitive Gamer </h1>
                     <h2> My name is Kenny Zhou. I live in Chicago, Illinois. I am passionate about web development and UI/UX design. </h2>
                     <p>I am all about learning and keeping up with state of the art technologies. I enjoy creating visually appealing and responsive websites/applications. Coming from a computer engineering background and moving to self taught web development, I am a highly versatile engineer and motivated learner. Having taken this route, I believe in continuously improving myself on a day to day basis, whether that be through code, communication, or any other aspects in life.</p>
-                    <p>The world will continuously dive deeper into the digital age, and with that, comes higher demand for web developers. I am currently open to opportunities in this industry. Whether you'd be interested in working with me or if you just want to ask me a few questions, I'd be more than happy to <a href="#contact-container" style={{ color: 'black' }}>hear from you!</a></p>
+                    <p>The world will continuously dive deeper into the digital age, and with that, comes higher demand for web developers. I am currently open to opportunities in this industry. Whether you'd be interested in working with me or if you just want to ask me a few questions, I'd be more than happy to&nbsp;
+                        <Link 
+                            to="contact-container" 
+                            smooth={true} 
+                            offset={120} 
+                            duration={1000}
+                            style={{textDecoration:'underline', cursor:'pointer'}}
+                            >hear from you!
+                        </Link>
+                    </p>
                     <h3> Education: </h3>
                     <p> B.S. Computer Engineering: University of Illinois at Chicago (2013 - 2018) </p>
                 </div>
@@ -26,7 +36,9 @@ const About = ({ isResumeOpen }) => {
                     <p> <span><strong>Hobbies:</strong></span> 
                     <br/>Weight-lifting, Video games, Sports(basketball/volleyball)</p>
                     <p><span><strong>Interests:</strong></span><br/>Technology, Fitness, Anime</p>
-                    <a href="#contact-container"><button className="contact-btn"> Contact Me <i className="fa fa-envelope"></i></button></a>
+                    <Link to="contact-container" smooth={true} offset={120} duration={1000}>
+                        <button className="contact-btn"> Contact Me <i className="fa fa-envelope"></i></button>
+                    </Link>
                 </div>
             </div>
         </div>

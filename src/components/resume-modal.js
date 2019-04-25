@@ -22,47 +22,43 @@ const Resume = ({ isOpen, hideModal }) => {
                     technologies = "React.js, Email.js, Sass(SCSS)"
                     liveLink = "www.kenford.info"
                     githubLink = "https://github.com/Kenford20/Portfolio"
-                    descriptions = {
-                        ["Developed my portfolio website from ground up using front end technologies like React and Sass",
-                         "Integrated Email.js library and Mailgun services to support emailing capabilities without the help of a back end server",
-                        ]
-                    }
+                    bulletPoints = {[
+                        "Developed my portfolio website from ground up using front end technologies like React and Sass",
+                        "Integrated Email.js library and Mailgun services to support emailing capabilities without the help of a back end server",
+                    ]}
                 />
                 <Project 
                     title = "C.A. Jewelers Inc."
                     technologies = "MongoDB, Express.js, React.js, Redux, Node.js, Bootstrap"
                     liveLink = "https://blooming-river-65352.herokuapp.com/"
                     githubLink = "#"
-                    descriptions = {
-                        ["Built a full stack eCommerce website from scratch as an SPA with multiple routes using React Router",
+                    bulletPoints = {[
+                        "Built a full stack eCommerce website from scratch as an SPA with multiple routes using React Router",
                         "Designed and developed fully responsive layouts, interfaces, and functionalities for each page",
                         "Utilized a MongoDB database to store client data and import dynamic content to the product catalogs via server-side, custom REST APIs",
                         "Used Amazon S3 services for image hosting to optimize website performance and file size"    
-                        ]
-                    }
+                    ]}
                 />
                 <Project 
                     title = "Kodo Namaewaz"
                     technologies = "JavaScript, Node.js, Socket.io, HTML"
                     liveLink = "http://weebcodenames.online"
                     githubLink = "https://github.com/Kenford20/Kodo-Namaewas-Heroku"
-                    descriptions = {
-                        ["Constructed an interactive browser version of the board/card game, Codenames",
-                         "Incorporated web socket programming to enable multiple users to play together across different devices",
-                         "Modeled the game play and rules of Codenames through vanilla JavaScript events and DOM manipulation"
-                        ]
-                    }
+                    bulletPoints = {[
+                        "Constructed an interactive browser version of the board/card game, Codenames",
+                        "Incorporated web socket programming to enable multiple users to play together across different devices",
+                        "Modeled the game play and rules of Codenames through vanilla JavaScript events and DOM manipulation"
+                    ]}
                 />
                 <Project 
                     title = "Speed Typing Test"
                     technologies = "JavaScript, HTML, CSS"
                     liveLink = "https://kenford20.github.io"
                     githubLink = "https://github.com/Kenford20/Kenford20.github.io"
-                    descriptions = {
-                        ["Created an interactive web application using only vanilla technologies",
-                         "Implemented a variety of typing tests using vanilla AJAX calls to several public APIs",
-                        ]
-                    }
+                    bulletPoints = {[
+                        "Created an interactive web application using only vanilla technologies",
+                        "Implemented a variety of typing tests using vanilla AJAX calls to several public APIs"
+                    ]}
                 />
             </section>
 

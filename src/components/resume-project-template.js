@@ -5,9 +5,9 @@ import '../styles/resume-project-template.scss';
 
 class Project extends React.Component {
     render() {
-        const { descriptions, title, technologies, liveLink, githubLink } = this.props;
-        let projectDescriptions = <ul className="project-descriptions">
-            { descriptions.map((description, index) => <li key={ index }>{ description }</li>) }
+        const { bulletPoints, title, technologies, liveLink, githubLink } = this.props;
+        let projectBullets = <ul className="project-bullets">
+            { bulletPoints.map((description, index) => <li key={ index }>{ description }</li>) }
         </ul>
         return ( 
             <div id="project-container">
@@ -18,7 +18,7 @@ class Project extends React.Component {
                     <span> | </span>
                     <a href={ githubLink } target="__blank" rel="noopener noreferrer">Github</a>
                 </div>
-                { projectDescriptions }
+                { projectBullets }
             </div>
         );
     }
@@ -27,7 +27,7 @@ class Project extends React.Component {
 export default Project;
 
 Project.propTypes = {
-    descriptions: PropTypes.array.isRequired,
+    bulletPoints: PropTypes.array.isRequired,
     title: PropTypes.string.isRequired,
     technologies: PropTypes.string.isRequired,
     liveLink: PropTypes.string.isRequired,

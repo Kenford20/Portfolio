@@ -1,5 +1,6 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
+import { Link } from "react-scroll";
 
 const Hero = ({ isNavActive, showResumeModal }) => {
     return ( 
@@ -10,13 +11,26 @@ const Hero = ({ isNavActive, showResumeModal }) => {
         >
             <div id="hero-content" data-aos="fade-right" data-aos-delay="1000">
                 <h2> Hi, my name is Kenny! </h2>
-                <h3> I am a self taught <span>web developer</span> and <span>designer.</span> Take a look at some of <a href="#portfolio-container"> my work. </a></h3>
-                <h3> Interested in hiring? Here's my <span 
+                <h3> I am a self taught <span>web developer</span> and <span>designer.</span> Take a look at some of&nbsp;
+                    <Link 
+                        to="portfolio-container" 
+                        smooth={true} 
+                        duration={1000} 
+                        offset={-100}
+                        style={{textDecoration: 'underline', cursor:'pointer'}}>
+                        my work.
+                    </Link>
+                </h3>
+                <h3> Interested in hiring? Here's my&nbsp;
+                    <span 
                         style={{ textDecoration: 'underline', cursor: 'pointer' }}
-                        onClick={ showResumeModal }>resume.
+                        onClick={ showResumeModal }>
+                        resume.
                     </span>
                 </h3>
-                <a href="#contact-container"><button className="contact-btn"> Work with me <i className="fa fa-envelope"></i></button></a>
+                <Link to="contact-container" smooth={true} offset={120} duration={1000}>
+                    <button className="contact-btn"> Work with me <i className="fa fa-envelope"></i></button>
+                </Link>
                 <a href="https://github.com/kenford20" target="_blank" rel="noopener noreferrer" id="github-link"><i className="fab fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/kenny-zhou-35a039177/" target="_blank" rel="noopener noreferrer" id="linkedin-link"><i className="fab fa-linkedin-in"></i></a>
                 <span id="resume-link" onClick={ showResumeModal }><i className="fas fa-file"></i></span>
