@@ -22,7 +22,6 @@
     @include media($phone-L) {
         width: 90%;
     }
-    
 }
 
 #hamburger-menu {
@@ -108,6 +107,7 @@ nav {
         margin: 0 25px;
         text-transform: uppercase;
         font-size: 14px;
+        cursor: pointer;
 
         &:hover { color: rgb(218, 218, 218) }
         

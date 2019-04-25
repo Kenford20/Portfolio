@@ -1,16 +1,17 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
+import { Link } from "react-scroll";
 
 const Navbar = ({ isActive, toggle }) => {
     return ( 
         <div id='navbar'>
             <span> &lt;Kenny Zhou/></span>
             <nav style={{ opacity: isActive ? '1' : null, zIndex: isActive ? '100' : '-5' , transitionDelay: isActive ? '0.5s' : '0s' }}>
-                <a href="#hero-container">Home</a>
-                <a href="#about-container">About Me</a>
-                <a href="#contact-container">Contact</a>
-                <a href="#portfolio-container">Portfolio</a>
-                <a href="#codepen">Codepen</a>
+                <Link to="hero-container" smooth={true} offset={-70} duration= {1000}>Home</Link>
+                <Link to="about-container" smooth={true} duration= {1000}>About</Link>
+                <Link to="codepen" smooth={true} duration= {1000}>Codepen</Link>
+                <Link to="portfolio-container" smooth={true} offset={-70} duration= {1000}>Portfolio</Link>
+                <Link to="contact-container" smooth={true} offset={120} duration= {1000}>Contact</Link>
             </nav>
             <div id="hamburger-menu" onClick={ toggle }>
                 <span style={{ background: isActive ? 'transparent' : 'white' }} className={ isActive ? 'spin spin2' : null }></span>
