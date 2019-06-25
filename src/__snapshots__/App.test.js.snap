@@ -1,0 +1,2115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the accordion 1`] = `
+<div>
+  <div
+    class="App"
+  >
+    <header
+      style="z-index: 0;"
+    >
+      <div
+        data-testid="navbar"
+        id="navbar"
+      >
+        <span>
+           &lt;Kenny Zhou/&gt;
+        </span>
+        <nav
+          style="z-index: -5;"
+        >
+          <a>
+            Home
+          </a>
+          <a>
+            About
+          </a>
+          <a>
+            Codepen
+          </a>
+          <a>
+            Portfolio
+          </a>
+          <a>
+            Contact
+          </a>
+        </nav>
+        <div
+          data-testid="hamburger-menu"
+          id="hamburger-menu"
+        >
+          <span
+            style="background: white;"
+          />
+        </div>
+      </div>
+      <section
+        id="hero-container"
+      >
+        <div
+          id="hero-section"
+          style="z-index: -5;"
+        >
+          <div
+            data-aos="fade-right"
+            data-aos-delay="1000"
+            id="hero-content"
+          >
+            <h2>
+               Hi, my name is Kenny! 
+            </h2>
+            <h3>
+               I am a self taught 
+              <span>
+                web developer
+              </span>
+               and 
+              <span>
+                designer.
+              </span>
+               Take a look at some of 
+              <a
+                style="text-decoration: underline; cursor: pointer;"
+              >
+                my work.
+              </a>
+            </h3>
+            <h3>
+               Interested in hiring? Here's my 
+              <span
+                data-testid="toggle-resume-span"
+                style="text-decoration: underline; cursor: pointer;"
+              >
+                resume.
+              </span>
+            </h3>
+            <a>
+              <button
+                class="contact-btn"
+              >
+                 Work with me 
+                <i
+                  class="fa fa-envelope"
+                />
+              </button>
+            </a>
+            <a
+              href="https://github.com/kenford20"
+              id="github-link"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <i
+                class="fab fa-github"
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/kenny-zhou-35a039177/"
+              id="linkedin-link"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <i
+                class="fab fa-linkedin-in"
+              />
+            </a>
+            <span
+              data-testid="toggle-resume-btn"
+              id="resume-link"
+            >
+              <i
+                class="fas fa-file"
+              />
+            </span>
+          </div>
+          <img
+            alt="hero"
+            data-aos="fade-in"
+            id="hero-img"
+            src="hero3.png"
+          />
+        </div>
+      </section>
+      <div
+        data-testid="modal-background"
+        id="modal-background"
+        style="opacity: 0; display: none;"
+      />
+      <div
+        class="animate"
+        data-testid="resume-modal"
+        id="resume-modal"
+        style="transform: scale(0); top: -300px;"
+      >
+        <span
+          id="close-modal"
+        />
+        <h1>
+           
+          <strong>
+            Resume
+          </strong>
+           
+        </h1>
+        <p
+          id="resume-link-modal"
+        >
+           You can also view my resume 
+          <a
+            href="#"
+            rel="noopener noreferrer"
+            target="__blank"
+          >
+             here. 
+          </a>
+        </p>
+        <section
+          id="resume-projects"
+        >
+          <h2
+            class="resume-section-headers"
+          >
+            Projects
+          </h2>
+          <div
+            id="project-container"
+          >
+            <h3
+              class="project-titles"
+            >
+              <strong>
+                Portfolio Website
+              </strong>
+            </h3>
+            <p
+              class="project-technologies"
+            >
+              React.js, Email.js, Sass(SCSS)
+               
+            </p>
+            <div
+              class="project-links"
+            >
+              <a
+                href="www.kenford.info"
+                rel="noopener noreferrer"
+                target="__blank"
+              >
+                Live
+              </a>
+              <span>
+                 | 
+              </span>
+              <a
+                href="https://github.com/Kenford20/Portfolio"
+                rel="noopener noreferrer"
+                target="__blank"
+              >
+                Github
+              </a>
+            </div>
+            <ul
+              class="project-bullets"
+            >
+              <li>
+                Developed my portfolio website from ground up using front end technologies like React and Sass
+              </li>
+              <li>
+                Integrated Email.js library and Mailgun services to support emailing capabilities without the help of a back end server
+              </li>
+            </ul>
+          </div>
+          <div
+            id="project-container"
+          >
+            <h3
+              class="project-titles"
+            >
+              <strong>
+                C.A. Jewelers Inc.
+              </strong>
+            </h3>
+            <p
+              class="project-technologies"
+            >
+              MongoDB, Express.js, React.js, Redux, Node.js, Bootstrap
+               
+            </p>
+            <div
+              class="project-links"
+            >
+              <a
+                href="https://blooming-river-65352.herokuapp.com/"
+                rel="noopener noreferrer"
+                target="__blank"
+              >
+                Live
+              </a>
+              <span>
+                 | 
+              </span>
+              <a
+                href="#"
+                rel="noopener noreferrer"
+                target="__blank"
+              >
+                Github
+              </a>
+            </div>
+            <ul
+              class="project-bullets"
+            >
+              <li>
+                Built a full stack eCommerce website from scratch as an SPA with multiple routes using React Router
+              </li>
+              <li>
+                Designed and developed fully responsive layouts, interfaces, and functionalities for each page
+              </li>
+              <li>
+                Utilized a MongoDB database to store client data and import dynamic content to the product catalogs via server-side, custom REST APIs
+              </li>
+              <li>
+                Used Amazon S3 services for image hosting to optimize website performance and file size
+              </li>
+            </ul>
+          </div>
+          <div
+            id="project-container"
+          >
+            <h3
+              class="project-titles"
+            >
+              <strong>
+                Kodo Namaewaz
+              </strong>
+            </h3>
+            <p
+              class="project-technologies"
+            >
+              JavaScript, Node.js, Socket.io, HTML
+               
+            </p>
+            <div
+              class="project-links"
+            >
+              <a
+                href="http://weebcodenames.online"
+                rel="noopener noreferrer"
+                target="__blank"
+              >
+                Live
+              </a>
+              <span>
+                 | 
+              </span>
+              <a
+                href="https://github.com/Kenford20/Kodo-Namaewas-Heroku"
+                rel="noopener noreferrer"
+                target="__blank"
+              >
+                Github
+              </a>
+            </div>
+            <ul
+              class="project-bullets"
+            >
+              <li>
+                Constructed an interactive browser version of the board/card game, Codenames
+              </li>
+              <li>
+                Incorporated web socket programming to enable multiple users to play together across different devices
+              </li>
+              <li>
+                Modeled the game play and rules of Codenames through vanilla JavaScript events and DOM manipulation
+              </li>
+            </ul>
+          </div>
+          <div
+            id="project-container"
+          >
+            <h3
+              class="project-titles"
+            >
+              <strong>
+                Speed Typing Test
+              </strong>
+            </h3>
+            <p
+              class="project-technologies"
+            >
+              JavaScript, HTML, CSS
+               
+            </p>
+            <div
+              class="project-links"
+            >
+              <a
+                href="https://kenford20.github.io"
+                rel="noopener noreferrer"
+                target="__blank"
+              >
+                Live
+              </a>
+              <span>
+                 | 
+              </span>
+              <a
+                href="https://github.com/Kenford20/Kenford20.github.io"
+                rel="noopener noreferrer"
+                target="__blank"
+              >
+                Github
+              </a>
+            </div>
+            <ul
+              class="project-bullets"
+            >
+              <li>
+                Created an interactive web application using only vanilla technologies
+              </li>
+              <li>
+                Implemented a variety of typing tests using vanilla AJAX calls to several public APIs
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section
+          id="resume-skills"
+        >
+          <h2
+            class="resume-section-headers"
+            id="skills-header"
+          >
+            Programming Technologies
+          </h2>
+          <p>
+             JavaScript(ES6) | HTML5 | CSS3 | React | Redux | Node | Bootstrap | jQuery | MongoDB | Git | Sass 
+          </p>
+        </section>
+        <section
+          id="resume-education"
+        >
+          <h2
+            class="resume-section-headers"
+            id="education-header"
+          >
+            Education
+          </h2>
+          <div
+            class="education-headers"
+          >
+            <h3>
+              FreeCodeCamp.org
+            </h3>
+            <h4>
+              July - December 2018
+            </h4>
+          </div>
+          <p>
+            Front-End Web Development
+          </p>
+          <ul>
+            <li>
+              Completed 1000+ hours of coursework and algorithm challenges, earning several front end certifications
+            </li>
+          </ul>
+          <div
+            class="education-headers"
+          >
+            <h3>
+              University of Illinois at Chicago
+            </h3>
+            <h4>
+              2013 - 2018
+            </h4>
+          </div>
+          <p>
+            Bachelor of Science in Computer Engineering
+          </p>
+          <ul>
+            <li>
+              Worked on multi-disciplinary projects at UIC's robotics club, Engineering Design Team
+            </li>
+            <li>
+              Competed in Oakland University's annual Intelligent Ground Vehicle Competition
+            </li>
+          </ul>
+        </section>
+        <section
+          id="resume-experience"
+        >
+          <h2
+            class="resume-section-headers"
+            id="experience-header"
+          >
+            Experience
+          </h2>
+          <div
+            class="experience-headers"
+          >
+            <h3>
+              <strong>
+                Ivy Garden Learning Center
+              </strong>
+               | Lead Tutor
+            </h3>
+            <h4>
+              2014 - Present
+            </h4>
+          </div>
+          <ul>
+            <li>
+              Mentor grammar school students on fundamental subjects such as math, reading, writing, social studies, and science
+            </li>
+            <li>
+              Assist with daily homework, projects, and test preparations
+            </li>
+            <li>
+              Teach and supervise classrooms of up to 25 students
+            </li>
+            <li>
+              Review and grade test material regarding schools' current curriculum
+            </li>
+          </ul>
+        </section>
+      </div>
+      <svg
+        class="svg-bg"
+        style="z-index: -100;"
+        viewBox="50 120 670 320"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M 0 50 Q 0 450 400 400 C 700 350 750 450 800 550 L 800 550 L 50 550"
+          fill="white"
+        />
+      </svg>
+    </header>
+    <main
+      id="main-container"
+    >
+      <div
+        id="main-content"
+        style="z-index: 1;"
+      >
+        <div
+          class="main-item"
+        >
+          <i
+            class="fab fa-html5"
+          />
+          <h2>
+             Web Development 
+          </h2>
+          <p>
+            As a developer who's worked with the full-stack, I have a good understanding of how a website/application works both on the frontend and backend. I mainly develop in JavaScript, HTML, and CSS, with the help of technologies such as React.js, and Node.js. I am open to learning and employing any additional libraries/frameworks to get the job done. I build static sites, eCommerce sites, web applications, and more!
+          </p>
+          <a
+            style="cursor: pointer;"
+          >
+             Go to portfolio &gt;
+          </a>
+        </div>
+        <div
+          class="main-item"
+        >
+          <i
+            class="fab fa-codepen"
+          />
+          <h2>
+             Codepen Work 
+          </h2>
+          <p>
+            In addition to any portfolio projects, I have many other smaller, web development projects that I enjoy building on Codepen. This is a great sandbox environment to turn some of my unique ideas into creations. Codepen is also useful for learning and practicing different technologies without the hassle of a workflow setup. Hosted here are several of my projects from online courses required to earn multiple certifications. 
+          </p>
+          <a
+            style="cursor: pointer;"
+          >
+             Browse Projects &gt;
+          </a>
+        </div>
+        <div
+          class="main-item"
+        >
+          <i
+            class="fas fa-code"
+          />
+          <h2>
+             Certifications 
+          </h2>
+          <p>
+            Curious about my qualifications? Before developing any project, I make sure to educate myself on any technologies that may be needed to produce a working product. I have utilized many online resources to aide my learning process. One of the most popular ones is Freecodecamp.org. After completing over 1000 hours of coursework, I earned several web development certificates.
+          </p>
+          <a
+            href="https://www.freecodecamp.org/kenford"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+             View certificates &gt; 
+          </a>
+        </div>
+      </div>
+    </main>
+    <section
+      id="about-container"
+    >
+      <div
+        id="about-section"
+        style="z-index: 1;"
+      >
+        <div
+          id="about-header"
+        >
+          <span>
+            <i
+              class="fas fa-user-circle"
+            />
+          </span>
+          <h2
+            class="section-headers"
+          >
+             About me 
+          </h2>
+        </div>
+        <div
+          id="about-main"
+        >
+          <div
+            id="about-summary"
+          >
+            <h1>
+               Full-stack Web Developer, Fitness Enthusiast, Competitive Gamer 
+            </h1>
+            <h2>
+               My name is Kenny Zhou. I live in Chicago, Illinois. I am passionate about web development and UI/UX design. 
+            </h2>
+            <p>
+              I am all about learning and keeping up with state of the art technologies. I enjoy creating visually appealing and responsive websites/applications. Coming from a computer engineering background and moving to self taught web development, I am a highly versatile engineer and motivated learner. Having taken this route, I believe in continuously improving myself on a day to day basis, whether that be through code, communication, or any other aspects in life.
+            </p>
+            <p>
+              The world will continuously dive deeper into the digital age, and with that, comes higher demand for web developers. I am currently open to opportunities in this industry. Whether you'd be interested in working with me or if you just want to ask me a few questions, I'd be more than happy to 
+              <a
+                style="text-decoration: underline; cursor: pointer;"
+              >
+                hear from you!
+              </a>
+            </p>
+            <h3>
+               Education: 
+            </h3>
+            <p>
+               B.S. Computer Engineering: University of Illinois at Chicago (2013 - 2018) 
+            </p>
+          </div>
+          <div
+            id="about-description"
+          >
+            <img
+              alt="Kenny at a mural"
+              id="about-img"
+              src="profile2.png"
+            />
+            <h1>
+               Kenny Zhou 
+            </h1>
+            <h2>
+               Chicago, Illinois 
+            </h2>
+            <h3>
+               Web Developer 
+            </h3>
+            <h3>
+               UI/UX Designer 
+            </h3>
+            <p>
+               
+              <span>
+                <strong>
+                  Hobbies:
+                </strong>
+              </span>
+              <br />
+              Weight-lifting, Video games, Sports(basketball/volleyball)
+            </p>
+            <p>
+              <span>
+                <strong>
+                  Interests:
+                </strong>
+              </span>
+              <br />
+              Technology, Fitness, Anime
+            </p>
+            <a>
+              <button
+                class="contact-btn"
+              >
+                 Contact Me 
+                <i
+                  class="fa fa-envelope"
+                />
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="skills-container"
+    >
+      <svg
+        class="svg-bg svg-top"
+        style="z-index: -100;"
+        viewBox="50 0 670 220"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M -1 261 Q 99 147 403 142 C 681 147 784 137 799 56 L 800 50 L 0 50"
+          fill="rgb(245, 250, 250)"
+        />
+      </svg>
+      <svg
+        class="svg-bg svg-bottom"
+        style="z-index: -100;"
+        viewBox="100 200 700 320"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M 0 550 Q 82 496 334 477 C 796 463 787 384 800 300 L 800 550 L 50 550"
+          fill="white"
+        />
+      </svg>
+      <div
+        id="skills-section"
+      >
+        <div
+          id="skills-header"
+        >
+          <i
+            class="fas fa-desktop"
+          />
+          <h2>
+             Technologies I Use 
+          </h2>
+        </div>
+        <div
+          data-aos="fade-in"
+          data-aos-delay="100"
+          id="skills-items-wrapper"
+        >
+          <div
+            class="skills-item"
+          >
+            <i
+              class="fab fa-html5"
+            />
+            <h5>
+              HTML
+            </h5>
+          </div>
+          <div
+            class="skills-item"
+            data-aos="fade-in"
+            data-aos-delay="300"
+          >
+            <i
+              class="fab fa-css3"
+            />
+            <h5>
+              CSS
+            </h5>
+          </div>
+          <div
+            class="skills-item"
+            data-aos="fade-in"
+            data-aos-delay="500"
+          >
+            <i
+              class="fab fa-js"
+            />
+            <h5>
+              Javascript
+            </h5>
+          </div>
+          <div
+            class="skills-item"
+            data-aos="fade-in"
+            data-aos-delay="700"
+          >
+            <i
+              class="fab fa-node"
+            />
+            <h5>
+              NodeJS
+            </h5>
+          </div>
+          <div
+            class="skills-item"
+            data-aos="fade-in"
+            data-aos-delay="900"
+          >
+            <i
+              class="fab fa-react"
+            />
+            <h5>
+              ReactJS
+            </h5>
+          </div>
+          <div
+            class="skills-item"
+            data-aos="fade-in"
+            data-aos-delay="950"
+          >
+            <img
+              alt="mongodb icon"
+              id="mongodb-icon"
+              src="mongodb-icon.png"
+            />
+            <h5>
+              MongoDB
+            </h5>
+          </div>
+          <div
+            class="skills-item"
+            data-aos="fade-in"
+            data-aos-delay="550"
+          >
+            <div
+              id="bootstrap-icon"
+            >
+              B
+            </div>
+            <h5>
+              Bootstrap
+            </h5>
+          </div>
+          <div
+            class="skills-item"
+            data-aos="fade-in"
+            data-aos-delay="250"
+          >
+            <i
+              class="fab fa-sass"
+            />
+            <h5>
+              Sass
+            </h5>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      id="portfolio-container"
+    >
+      <div
+        class="portfolio-item"
+      >
+        <div
+          id="portfolio-container"
+        >
+          <div
+            id="portfolio-header"
+          >
+            <span>
+              <i
+                class="fab fa-html5"
+              />
+            </span>
+            <h2
+              class="section-headers"
+            >
+               My Best Work 
+            </h2>
+          </div>
+          <div
+            class="portfolio-item-wrapper"
+          >
+            <div
+              class="portfolio-item-info"
+              data-aos="fade-right"
+            >
+              <h1
+                class="portfolio-item-title"
+              >
+                 C.A. Jewelers Inc. 
+              </h1>
+              <h2
+                class="portfolio-item-type"
+              >
+                 E-commerce Website 
+              </h2>
+              <hr />
+              <p
+                class="portfolio-item-description"
+              >
+                For a local, family-owned jewelry business, I produced an eCommerce website completely from scratch. Being a full stack application, React and Redux were used to create the front end layout and user interface for multiple pages with routing capabilities. The website uses Node and Express on the server side and connects with a Mongo database for importing dynamic content to the catalogs and products pages via custom APIs.
+              </p>
+              <span
+                class="portfolio-item-tech"
+              >
+                 MongoDB 
+              </span>
+              <span
+                class="portfolio-item-tech"
+              >
+                 Node 
+              </span>
+              <span
+                class="portfolio-item-tech"
+              >
+                 Express 
+              </span>
+              <span
+                class="portfolio-item-tech"
+              >
+                 React 
+              </span>
+              <span
+                class="portfolio-item-tech"
+              >
+                 Redux 
+              </span>
+            </div>
+            <a
+              href="https://cajewelers.herokuapp.com/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <div
+                data-aos="fade-left"
+                data-aos-delay="1000"
+                id="thumbnail-laptop"
+              >
+                <div
+                  id="screen"
+                >
+                  <span
+                    id="camera"
+                  />
+                  <div
+                    id="tool-bar"
+                  >
+                    <span
+                      class="toolbar-btns"
+                    />
+                    <span
+                      class="toolbar-btns"
+                    />
+                    <span
+                      class="toolbar-btns"
+                    />
+                    <div
+                      id="address-bar"
+                    />
+                  </div>
+                  <div
+                    id="portfolio-img"
+                  >
+                    <img
+                      alt="Cajewelers Thumbnail"
+                      src="cajewelers.png"
+                    />
+                  </div>
+                </div>
+                <div
+                  id="keyboard"
+                >
+                  <div
+                    id="keys"
+                  />
+                </div>
+                <div
+                  id="keyboard-base"
+                />
+                <div
+                  id="thumbnail-mobile"
+                >
+                  <div
+                    id="mobile-top"
+                  >
+                    <span
+                      id="camera"
+                    />
+                    <span
+                      id="speaker"
+                    />
+                  </div>
+                  <div
+                    id="portfolio-img-mobile"
+                  >
+                    <img
+                      alt="Cajewelers Mobile View Thumbnail"
+                      src="cajewelers-mobile.png"
+                    />
+                  </div>
+                  <div
+                    id="mobile-bottom"
+                  >
+                    <span
+                      id="home-btn"
+                    />
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            class="portfolio-item-wrapper"
+          >
+            <a
+              href="http://weebcodenames.online"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <div
+                data-aos="fade-right"
+                data-aos-delay="1000"
+                id="thumbnail-laptop"
+              >
+                <div
+                  id="screen"
+                >
+                  <span
+                    id="camera"
+                  />
+                  <div
+                    id="tool-bar"
+                  >
+                    <span
+                      class="toolbar-btns"
+                    />
+                    <span
+                      class="toolbar-btns"
+                    />
+                    <span
+                      class="toolbar-btns"
+                    />
+                    <div
+                      id="address-bar"
+                    />
+                  </div>
+                  <div
+                    id="portfolio-img"
+                  >
+                    <img
+                      alt="Codenames Thumbnail"
+                      src="codenames-board.png"
+                    />
+                  </div>
+                </div>
+                <div
+                  id="keyboard"
+                >
+                  <div
+                    id="keys"
+                  />
+                </div>
+                <div
+                  id="keyboard-base"
+                />
+                <div
+                  id="thumbnail-mobile"
+                >
+                  <div
+                    id="mobile-top"
+                  >
+                    <span
+                      id="camera"
+                    />
+                    <span
+                      id="speaker"
+                    />
+                  </div>
+                  <div
+                    id="portfolio-img-mobile"
+                  >
+                    <img
+                      alt="Codenames Mobile View Thumbnail"
+                      src="codenames-mobile2.png"
+                    />
+                  </div>
+                  <div
+                    id="mobile-bottom"
+                  >
+                    <span
+                      id="home-btn"
+                    />
+                  </div>
+                </div>
+              </div>
+            </a>
+            <div
+              class="portfolio-item-info"
+              data-aos="fade-left"
+            >
+              <h1
+                class="portfolio-item-title"
+              >
+                 Kodo Namaewaz 
+              </h1>
+              <h2
+                class="portfolio-item-type"
+              >
+                 Web Application 
+              </h2>
+              <hr />
+              <p
+                class="portfolio-item-description"
+              >
+                Kodo Namaewaz is my own custom made, web version of the table top, card game, Codenames. The application allows for online game play across multiple devices with your family and friends! With the help of Node, Express, and Socket.io on the backend, the multiplayer aspect of this application was made possible. On a turn by turn basis, the game plays just like the regular version with just some clicks. It is mobile responsive, so grab your phones and friends and play now!
+                <br />
+                <br />
+                 Interested and want to learn how to play? Click 
+                <a
+                  href="https://github.com/Kenford20/Kodo-Namaewas-Heroku/blob/master/README.md"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  here.
+                </a>
+              </p>
+              <span
+                class="portfolio-item-tech"
+              >
+                 HTML 
+              </span>
+              <span
+                class="portfolio-item-tech"
+              >
+                 Javascript 
+              </span>
+              <span
+                class="portfolio-item-tech"
+              >
+                 Node 
+              </span>
+              <span
+                class="portfolio-item-tech"
+              >
+                 SocketIO 
+              </span>
+            </div>
+          </div>
+          <div
+            class="portfolio-item-wrapper"
+          >
+            <div
+              class="portfolio-item-info"
+              data-aos="fade-right"
+            >
+              <h1
+                class="portfolio-item-title"
+              >
+                 Speed Typing Test 
+              </h1>
+              <h2
+                class="portfolio-item-type"
+              >
+                 Web Application 
+              </h2>
+              <hr />
+              <p
+                class="portfolio-item-description"
+              >
+                This speed typing website is one of my first projects that I tackled. It is made using only vanilla HTML, CSS, and JavaScript. Being strictly a frontend application, it features a very simple layout that allows users to attempt a test for typing speed on multiple different texts pulled from various public APIs. Features includes a simple timer, words per minute and characters per minute results, and dynamically styled text used as indication for the current status of the user's typing accuracy.
+                <br />
+                <br />
+                 View source code 
+                <a
+                  href="https://github.com/Kenford20/Kenford20.github.io/blob/master/README.md"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  here.
+                </a>
+              </p>
+              <span
+                class="portfolio-item-tech"
+              >
+                 HTML 
+              </span>
+              <span
+                class="portfolio-item-tech"
+              >
+                 Javascript 
+              </span>
+              <span
+                class="portfolio-item-tech"
+              >
+                 CSS 
+              </span>
+            </div>
+            <a
+              href="https://kenford20.github.io/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <div
+                data-aos="fade-left"
+                data-aos-delay="1000"
+                id="thumbnail-laptop"
+              >
+                <div
+                  id="screen"
+                >
+                  <span
+                    id="camera"
+                  />
+                  <div
+                    id="tool-bar"
+                  >
+                    <span
+                      class="toolbar-btns"
+                    />
+                    <span
+                      class="toolbar-btns"
+                    />
+                    <span
+                      class="toolbar-btns"
+                    />
+                    <div
+                      id="address-bar"
+                    />
+                  </div>
+                  <div
+                    id="portfolio-img"
+                  >
+                    <img
+                      alt="Typing Website Thumbnail"
+                      src="typing-website.png"
+                    />
+                  </div>
+                </div>
+                <div
+                  id="keyboard"
+                >
+                  <div
+                    id="keys"
+                  />
+                </div>
+                <div
+                  id="keyboard-base"
+                />
+                <div
+                  id="thumbnail-mobile"
+                >
+                  <div
+                    id="mobile-top"
+                  >
+                    <span
+                      id="camera"
+                    />
+                    <span
+                      id="speaker"
+                    />
+                  </div>
+                  <div
+                    id="portfolio-img-mobile"
+                  >
+                    <img
+                      alt="Typing Website Mobile View Thumbnail"
+                      src="typing-website-mobile.png"
+                    />
+                  </div>
+                  <div
+                    id="mobile-bottom"
+                  >
+                    <span
+                      id="home-btn"
+                    />
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      id="codepen"
+      style="z-index: 100;"
+    >
+      <span>
+        <i
+          class="fab fa-codepen"
+        />
+      </span>
+      <h2
+        class="section-headers"
+      >
+         Codepen Work 
+      </h2>
+      <div
+        id="codepen-container"
+      >
+        <div
+          class="slick-slider center slick-initialized"
+          dir="ltr"
+        >
+          <button
+            class="slick-arrow slick-prev"
+            data-role="none"
+            style="display: block;"
+            type="button"
+          >
+             
+            Previous
+          </button>
+          <div
+            class="slick-list"
+            style="padding: 0px 10px;"
+          >
+            <div
+              class="slick-track"
+              style="width: -84px; opacity: 1; transform: translate3d(18px, 0px, 0px);"
+            >
+              <div
+                aria-hidden="true"
+                class="slick-slide slick-cloned"
+                data-index="-4"
+                style="width: -6px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="codepen-item"
+                  >
+                    <div
+                      class="project-img-wrapper"
+                    >
+                      <img
+                        alt="piano pen thumbnail"
+                        src="piano.png"
+                        style="opacity: 1;"
+                      />
+                    </div>
+                    <div
+                      class="project-description"
+                      style="opacity: 0;"
+                    >
+                      <h2>
+                        HTML Piano
+                      </h2>
+                      <p>
+                        Musical keyboard made from HTML elements and CSS with audio functionality triggered by jQuery. Supports both keyboard/mouse inputs!
+                      </p>
+                      <a
+                        href="https://codepen.io/Kenford/pen/xQqvwe"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
+                        View Pen
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="true"
+                class="slick-slide slick-cloned"
+                data-index="-3"
+                style="width: -6px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="codepen-item"
+                  >
+                    <div
+                      class="project-img-wrapper"
+                    >
+                      <img
+                        alt="quote machine pen thumbnail"
+                        src="quote-machine.png"
+                        style="opacity: 1;"
+                      />
+                    </div>
+                    <div
+                      class="project-description"
+                      style="opacity: 0;"
+                    >
+                      <h2>
+                        Random Quote Machine
+                      </h2>
+                      <p>
+                        Pulls random quotes from a public API and is displayed onto the screen with a simple animation.
+                      </p>
+                      <a
+                        href="https://codepen.io/Kenford/pen/ZmbPML"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
+                        View Pen
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="true"
+                class="slick-slide slick-cloned"
+                data-index="-2"
+                style="width: -6px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="codepen-item"
+                  >
+                    <div
+                      class="project-img-wrapper"
+                    >
+                      <img
+                        alt="markdown previewer pen thumbnail"
+                        src="markdown-previewer.png"
+                        style="opacity: 1;"
+                      />
+                    </div>
+                    <div
+                      class="project-description"
+                      style="opacity: 0;"
+                    >
+                      <h2>
+                        Markdown Previewer
+                      </h2>
+                      <p>
+                        Takes text in an HTML textarea box and converts it into markdown text in a separate box to be viewed. Useful for quick conversion for your .md files!
+                      </p>
+                      <a
+                        href="https://codepen.io/Kenford/pen/GPvLGv"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
+                        View Pen
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="false"
+                class="slick-slide slick-active slick-cloned"
+                data-index="-1"
+                style="width: -6px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="codepen-item"
+                  >
+                    <div
+                      class="project-img-wrapper"
+                    >
+                      <img
+                        alt="pomodoro clock pen thumbnail"
+                        src="pomodoro-clock.png"
+                        style="opacity: 1;"
+                      />
+                    </div>
+                    <div
+                      class="project-description"
+                      style="opacity: 0;"
+                    >
+                      <h2>
+                        Pomodoro Clock
+                      </h2>
+                      <p>
+                        Pomodoro clock app developed with React. Allows customization of break and session lengths to fit your needs as you get your work done while taking breaks!
+                      </p>
+                      <a
+                        href="https://codepen.io/Kenford/pen/eQrxQB"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
+                        View Pen
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="false"
+                class="slick-slide slick-active slick-center slick-current"
+                data-index="0"
+                style="outline: none; width: -6px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="codepen-item"
+                  >
+                    <div
+                      class="project-img-wrapper"
+                    >
+                      <img
+                        alt="calculator pen thumbnail"
+                        src="calculator.png"
+                        style="opacity: 1;"
+                      />
+                    </div>
+                    <div
+                      class="project-description"
+                      style="opacity: 0;"
+                    >
+                      <h2>
+                        React Calculator
+                      </h2>
+                      <p>
+                        JavaScript calculator made with React that utilizes formula logic and observes order of operation precedence. Supports both keyboard/mouse inputs!
+                      </p>
+                      <a
+                        href="https://codepen.io/Kenford/pen/MzOqxm"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
+                        View Pen
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="false"
+                class="slick-slide slick-active"
+                data-index="1"
+                style="outline: none; width: -6px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="codepen-item"
+                  >
+                    <div
+                      class="project-img-wrapper"
+                    >
+                      <img
+                        alt="piano pen thumbnail"
+                        src="piano.png"
+                        style="opacity: 1;"
+                      />
+                    </div>
+                    <div
+                      class="project-description"
+                      style="opacity: 0;"
+                    >
+                      <h2>
+                        HTML Piano
+                      </h2>
+                      <p>
+                        Musical keyboard made from HTML elements and CSS with audio functionality triggered by jQuery. Supports both keyboard/mouse inputs!
+                      </p>
+                      <a
+                        href="https://codepen.io/Kenford/pen/xQqvwe"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
+                        View Pen
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="true"
+                class="slick-slide"
+                data-index="2"
+                style="outline: none; width: -6px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="codepen-item"
+                  >
+                    <div
+                      class="project-img-wrapper"
+                    >
+                      <img
+                        alt="quote machine pen thumbnail"
+                        src="quote-machine.png"
+                        style="opacity: 1;"
+                      />
+                    </div>
+                    <div
+                      class="project-description"
+                      style="opacity: 0;"
+                    >
+                      <h2>
+                        Random Quote Machine
+                      </h2>
+                      <p>
+                        Pulls random quotes from a public API and is displayed onto the screen with a simple animation.
+                      </p>
+                      <a
+                        href="https://codepen.io/Kenford/pen/ZmbPML"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
+                        View Pen
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="true"
+                class="slick-slide"
+                data-index="3"
+                style="outline: none; width: -6px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="codepen-item"
+                  >
+                    <div
+                      class="project-img-wrapper"
+                    >
+                      <img
+                        alt="markdown previewer pen thumbnail"
+                        src="markdown-previewer.png"
+                        style="opacity: 1;"
+                      />
+                    </div>
+                    <div
+                      class="project-description"
+                      style="opacity: 0;"
+                    >
+                      <h2>
+                        Markdown Previewer
+                      </h2>
+                      <p>
+                        Takes text in an HTML textarea box and converts it into markdown text in a separate box to be viewed. Useful for quick conversion for your .md files!
+                      </p>
+                      <a
+                        href="https://codepen.io/Kenford/pen/GPvLGv"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
+                        View Pen
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="true"
+                class="slick-slide"
+                data-index="4"
+                style="outline: none; width: -6px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="codepen-item"
+                  >
+                    <div
+                      class="project-img-wrapper"
+                    >
+                      <img
+                        alt="pomodoro clock pen thumbnail"
+                        src="pomodoro-clock.png"
+                        style="opacity: 1;"
+                      />
+                    </div>
+                    <div
+                      class="project-description"
+                      style="opacity: 0;"
+                    >
+                      <h2>
+                        Pomodoro Clock
+                      </h2>
+                      <p>
+                        Pomodoro clock app developed with React. Allows customization of break and session lengths to fit your needs as you get your work done while taking breaks!
+                      </p>
+                      <a
+                        href="https://codepen.io/Kenford/pen/eQrxQB"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
+                        View Pen
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="true"
+                class="slick-slide slick-center slick-cloned"
+                data-index="5"
+                style="width: -6px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="codepen-item"
+                  >
+                    <div
+                      class="project-img-wrapper"
+                    >
+                      <img
+                        alt="calculator pen thumbnail"
+                        src="calculator.png"
+                        style="opacity: 1;"
+                      />
+                    </div>
+                    <div
+                      class="project-description"
+                      style="opacity: 0;"
+                    >
+                      <h2>
+                        React Calculator
+                      </h2>
+                      <p>
+                        JavaScript calculator made with React that utilizes formula logic and observes order of operation precedence. Supports both keyboard/mouse inputs!
+                      </p>
+                      <a
+                        href="https://codepen.io/Kenford/pen/MzOqxm"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
+                        View Pen
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="true"
+                class="slick-slide slick-cloned"
+                data-index="6"
+                style="width: -6px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="codepen-item"
+                  >
+                    <div
+                      class="project-img-wrapper"
+                    >
+                      <img
+                        alt="piano pen thumbnail"
+                        src="piano.png"
+                        style="opacity: 1;"
+                      />
+                    </div>
+                    <div
+                      class="project-description"
+                      style="opacity: 0;"
+                    >
+                      <h2>
+                        HTML Piano
+                      </h2>
+                      <p>
+                        Musical keyboard made from HTML elements and CSS with audio functionality triggered by jQuery. Supports both keyboard/mouse inputs!
+                      </p>
+                      <a
+                        href="https://codepen.io/Kenford/pen/xQqvwe"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
+                        View Pen
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="true"
+                class="slick-slide slick-cloned"
+                data-index="7"
+                style="width: -6px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="codepen-item"
+                  >
+                    <div
+                      class="project-img-wrapper"
+                    >
+                      <img
+                        alt="quote machine pen thumbnail"
+                        src="quote-machine.png"
+                        style="opacity: 1;"
+                      />
+                    </div>
+                    <div
+                      class="project-description"
+                      style="opacity: 0;"
+                    >
+                      <h2>
+                        Random Quote Machine
+                      </h2>
+                      <p>
+                        Pulls random quotes from a public API and is displayed onto the screen with a simple animation.
+                      </p>
+                      <a
+                        href="https://codepen.io/Kenford/pen/ZmbPML"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
+                        View Pen
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="true"
+                class="slick-slide slick-cloned"
+                data-index="8"
+                style="width: -6px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="codepen-item"
+                  >
+                    <div
+                      class="project-img-wrapper"
+                    >
+                      <img
+                        alt="markdown previewer pen thumbnail"
+                        src="markdown-previewer.png"
+                        style="opacity: 1;"
+                      />
+                    </div>
+                    <div
+                      class="project-description"
+                      style="opacity: 0;"
+                    >
+                      <h2>
+                        Markdown Previewer
+                      </h2>
+                      <p>
+                        Takes text in an HTML textarea box and converts it into markdown text in a separate box to be viewed. Useful for quick conversion for your .md files!
+                      </p>
+                      <a
+                        href="https://codepen.io/Kenford/pen/GPvLGv"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
+                        View Pen
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="true"
+                class="slick-slide slick-cloned"
+                data-index="9"
+                style="width: -6px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div
+                    class="codepen-item"
+                  >
+                    <div
+                      class="project-img-wrapper"
+                    >
+                      <img
+                        alt="pomodoro clock pen thumbnail"
+                        src="pomodoro-clock.png"
+                        style="opacity: 1;"
+                      />
+                    </div>
+                    <div
+                      class="project-description"
+                      style="opacity: 0;"
+                    >
+                      <h2>
+                        Pomodoro Clock
+                      </h2>
+                      <p>
+                        Pomodoro clock app developed with React. Allows customization of break and session lengths to fit your needs as you get your work done while taking breaks!
+                      </p>
+                      <a
+                        href="https://codepen.io/Kenford/pen/eQrxQB"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
+                        View Pen
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="slick-arrow slick-next"
+            data-role="none"
+            style="display: block;"
+            type="button"
+          >
+             
+            Next
+          </button>
+        </div>
+      </div>
+    </section>
+    <section
+      id="contact-container"
+      style="z-index: 0;"
+    >
+      <svg
+        class="svg-bg svg-top"
+        style="z-index: -100;"
+        viewBox="50 0 670 220"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M 0 50 Q 0 150 400 100 C 750 50 784 137 800 150 L 800 50 L 0 50"
+          fill="rgb(245, 250, 250)"
+        />
+      </svg>
+      <svg
+        class="svg-bg svg-bottom"
+        style="z-index: -100;"
+        viewBox="80 0 700 550"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M 1 427 Q 170 515 563 437 C 693 420 785 480 800 546 L 800 550 L 0 550"
+          fill="white"
+        />
+      </svg>
+      <div
+        id="contact"
+      >
+        <div
+          id="contact-header"
+        >
+          <span>
+            <i
+              class="fas fa-comment"
+            />
+          </span>
+          <h2
+            class="section-headers"
+          >
+             Get in touch 
+          </h2>
+          <h3>
+             Use the form below to begin a conversation 
+          </h3>
+        </div>
+        <div
+          id="contact-form-card"
+        >
+          <form
+            id="form-wrapper"
+          >
+            <h3>
+               Fill out the form 
+            </h3>
+            <div
+              class="form-items-wrapper"
+            >
+              <p
+                class="form-item-label"
+              >
+                 Name: 
+              </p>
+              <input
+                class="form-inputs"
+                id="name-input"
+                maxlength="50"
+                placeholder="Enter name..."
+                required=""
+                type="text"
+                value=""
+              />
+            </div>
+            <div
+              class="form-items-wrapper"
+            >
+              <p
+                class="form-item-label"
+              >
+                 E-mail: 
+              </p>
+              <input
+                class="form-inputs"
+                id="email-input"
+                maxlength="50"
+                placeholder="Enter e-mail..."
+                required=""
+                type="email"
+                value=""
+              />
+            </div>
+            <div
+              class="form-items-wrapper"
+            >
+              <p
+                class="form-item-label"
+              >
+                 Company: (optional)
+              </p>
+              <input
+                class="form-inputs"
+                id="company-input"
+                maxlength="50"
+                placeholder="Enter company..."
+                type="text"
+                value=""
+              />
+            </div>
+            <div
+              class="form-items-wrapper"
+            >
+              <p
+                class="form-item-label"
+              >
+                 Phone: (optional)
+              </p>
+              <input
+                class="form-inputs"
+                id="phone-input"
+                maxlength="20"
+                placeholder="Enter phone..."
+                type="tel"
+                value=""
+              />
+            </div>
+            <div
+              class="form-items-wrapper"
+            >
+              <p
+                class="form-item-label"
+              >
+                 Message: 
+              </p>
+              <textarea
+                class="form-inputs"
+                id="message-input"
+                maxlength="500"
+                placeholder="Enter message..."
+                required=""
+                rows="10"
+                type="text"
+              />
+            </div>
+            <button>
+               SEND 
+            </button>
+            <div
+              id="confirmation"
+              style="top: -50%; opacity: 0;"
+            >
+              <i
+                class="fas fa-check"
+              />
+              <div
+                id="confirmation-text"
+              >
+                <p>
+                  Form successfully submitted!
+                </p>
+                <p>
+                  Thanks for contacting me. I'll get back to you ASAP!
+                </p>
+              </div>
+            </div>
+          </form>
+          <div
+            id="contact-info-wrapper"
+          >
+            <h3>
+               Contact Information 
+            </h3>
+            <hr />
+            <div
+              id="info-wrapper"
+            >
+              <i
+                class="fas fa-user-alt"
+              />
+              <h5>
+                 Kenny Zhou 
+              </h5>
+              <br />
+              <i
+                class="fas fa-city city-icon"
+              />
+              <h5>
+                 Chicago, Illinois 
+              </h5>
+              <br />
+              <i
+                class="fas fa-globe-americas"
+              />
+              <h5>
+                 United States 
+              </h5>
+              <br />
+              <i
+                class="fas fa-phone-volume phone-icon"
+              />
+              <h5>
+                 312-532-0066 
+              </h5>
+              <br />
+              <i
+                class="fas fa-envelope-open"
+              />
+              <h5>
+                 kzhou1013@gmail.com 
+              </h5>
+              <br />
+            </div>
+            <hr />
+            <p
+              id="alt-contact-header"
+            >
+              ...or contact me via: 
+            </p>
+            <div
+              id="alt-contact-wrapper"
+            >
+              <a
+                href="https://github.com/kenford20"
+                id="github-link"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <i
+                  class="fab fa-github"
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/kenny-zhou-35a039177/"
+                id="linkedin-link"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <i
+                  class="fab fa-linkedin-in"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer
+      id="footer-container"
+    >
+      <div>
+        <h2>
+           &lt;Kenny Zhou/&gt; 
+        </h2>
+        <p>
+          Copyright © 2018 Kenny Zhou 
+          <br />
+          Website created by yours truly.
+        </p>
+      </div>
+    </footer>
+  </div>
+</div>
+`;

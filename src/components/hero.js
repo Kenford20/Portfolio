@@ -24,7 +24,9 @@ const Hero = ({ isNavActive, showResumeModal }) => {
                 <h3> Interested in hiring? Here's my&nbsp;
                     <span 
                         style={{ textDecoration: 'underline', cursor: 'pointer' }}
-                        onClick={ showResumeModal }>
+                        onClick={ showResumeModal }
+                        data-testid="toggle-resume-span"
+                    >
                         resume.
                     </span>
                 </h3>
@@ -33,7 +35,7 @@ const Hero = ({ isNavActive, showResumeModal }) => {
                 </Link>
                 <a href="https://github.com/kenford20" target="_blank" rel="noopener noreferrer" id="github-link"><i className="fab fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/kenny-zhou-35a039177/" target="_blank" rel="noopener noreferrer" id="linkedin-link"><i className="fab fa-linkedin-in"></i></a>
-                <span id="resume-link" onClick={ showResumeModal }><i className="fas fa-file"></i></span>
+                <span id="resume-link" onClick={ showResumeModal } data-testid="toggle-resume-btn"><i className="fas fa-file"></i></span>
             </div>
             <img id="hero-img" data-aos="fade-in" src={require("../images/hero3.png")} alt="hero"/>
         </div>

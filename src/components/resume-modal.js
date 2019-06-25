@@ -8,9 +8,19 @@ const Resume = ({ isOpen, hideModal }) => {
         <div 
             id="modal-background" 
             style={{ opacity: isOpen ? '0.7' : '0', display: isOpen ? 'block' : 'none' }} 
-            onClick={ hideModal }>
+            onClick={ hideModal }
+            data-testid="modal-background"   
+        >
         </div>
-        <div className="animate" id="resume-modal" style={{ transform: isOpen ? 'scale(1)' : 'scale(0)', top: isOpen ? '100px' : '-300px'}}>
+        <div 
+            className="animate" 
+            id="resume-modal" 
+            data-testid="resume-modal"
+            style={{ 
+                transform: isOpen ? 'scale(1)' : 'scale(0)', 
+                top: isOpen ? '100px' : '-300px'
+            }}
+        >
             <span id="close-modal" onClick={ hideModal }></span>
             <h1> <strong>Resume</strong> </h1>
             <p id="resume-link-modal"> You can also view my resume <a href="#" target="__blank" rel="noopener noreferrer"> here. </a></p>
