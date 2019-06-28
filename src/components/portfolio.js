@@ -10,6 +10,61 @@ const Portfolio = () => {
             </div>
 
             <div className="portfolio-item-wrapper">
+                <div className="portfolio-item-info" data-aos="fade-left">
+                    <h1 className="portfolio-item-title"> Epic7 Catalyst Tool </h1>
+                    <h2 className="portfolio-item-type"> Web Application </h2>
+                    <hr />
+                    <p className="portfolio-item-description">
+                        To solve an issue I often came across while playing the mobile gacha-game, Epic 7, I developed this web application to present lists of data in an organized, table-like format that pertained to a particular subsets of other data from the game. For example, if a player needed to find out the materials needed to upgrade their in-game characters, this application allows them to do so in a very simple, easy manner. The application is developed with Angular and Typescript. 
+                        <br/>
+                        <br/>
+                        You may view the source code&nbsp;
+                        <a href="https://github.com/Kenford20/epic7-catalyst-tool">here.</a>
+                    </p>
+                    <span className="portfolio-item-tech"> Typescript </span>
+                    <span className="portfolio-item-tech"> Angular </span>
+                    <span className="portfolio-item-tech"> Epic7 </span>
+                </div>
+                <Thumbnail 
+                    altTag = "Epic7 Site Thumbnail"
+                    altTagMobile = "Epic7 Site Mobile View Thumbnail"
+                    path = "epic7"
+                    pathMobile = "epic7M"
+                    animation = "fade-left"
+                    animationDelay = { 1000 }
+                    siteUrl = "https://epic7-catalyst-tool.herokuapp.com/"
+                />
+            </div>
+
+            <div className="portfolio-item-wrapper">
+                <Thumbnail 
+                    altTag = "Kaori-chan Thumbnail"
+                    altTagMobile = "Kaori-chan Mobile View Thumbnail"
+                    path = "kaori"
+                    pathMobile = "kaoriM"
+                    animation = "fade-right"
+                    animationDelay = { 1000 }
+                    btnPosition = "850px"
+                    siteUrl = "https://github.com/Kenford20/my-telegram-bot"
+                />
+                <div className="portfolio-item-info" data-aos="fade-right">
+                    <h1 className="portfolio-item-title"> Kaori-chan Bot </h1>
+                    <h2 className="portfolio-item-type"> Chat Bot Application </h2>
+                    <hr />
+                    <p className="portfolio-item-description">
+                        Kaori-chan is my custom chat bot made for the Telegram Messenger application. She is capable of handling a numerous amount of useful commands like providing local weather/weekly forecast, math calculations, reminders, tagging your friends, and much much more! She is built mainly with JavaScript and Node. A basic web server hosted on Heroku holds all her logic and allows users to continuously send requests to her during the majority of the day. 
+                        <br/>
+                        <br/>
+                        To learn more about Kaori-chan or see a more comprehensive list of her commands, please visit&nbsp;
+                        <a href="https://github.com/Kenford20/my-telegram-bot">here.</a>
+                    </p>
+                    <span className="portfolio-item-tech"> JavaScript </span>
+                    <span className="portfolio-item-tech"> Node </span>
+                    <span className="portfolio-item-tech"> Telegram </span>
+                </div>
+            </div>
+
+            <div className="portfolio-item-wrapper">
                 <div className="portfolio-item-info" data-aos="fade-right">
                     <h1 className="portfolio-item-title"> C.A. Jewelers Inc. </h1>
                     <h2 className="portfolio-item-type"> E-commerce Website </h2>

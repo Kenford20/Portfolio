@@ -20,7 +20,11 @@ const Thumbnail = ({
         codenames: require('../images/portfolio/codenames-board.png'),
         codenamesM: require('../images/portfolio/codenames-mobile2.png'),
         typingWebsite: require('../images/portfolio/typing-website.png'),
-        typingWebsiteM: require('../images/portfolio/typing-website-mobile.png')
+        typingWebsiteM: require('../images/portfolio/typing-website-mobile.png'),
+        kaori: require('../images/portfolio/kaori.png'),
+        kaoriM: require('../images/portfolio/kaori-mobile.png'),
+        epic7: require('../images/portfolio/epic7.png'),
+        epic7M: require('../images/portfolio/epic7-mobile.png')
     };
 
     return ( 
@@ -31,11 +35,13 @@ const Thumbnail = ({
                 id="site-btn" 
                 onMouseEnter={ () => toggleBtnState(true) }
                 style={{ right: btnPosition }}
+                data-testid="view-website-btn"
             >
             Visit Site</button> 
         }
         <div 
             id="thumbnail-laptop" 
+            data-testid="thumbnail"
             data-aos={ animation } 
             data-aos-delay={ animationDelay } 
             onMouseOver={ () => toggleBtnState(true) }
