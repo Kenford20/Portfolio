@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { submitForm, validatePhoneNumber, debounce } from '../utils';
+import { submitForm, validatePhoneNumber, debounce, validateEmail } from '../utils';
 
 const Form = () => {
     const [contactFormData, setContactFormData] = useState({
@@ -16,6 +16,7 @@ const Form = () => {
     });
 
     const [isValidPhone, setPhoneValidity] = useState(true);
+    const [isValidEmail, setEmailValidity] = useState(true);
     
     const isFirstRun = useRef(true);
     useEffect (() => {
@@ -54,13 +55,22 @@ const Form = () => {
         }
     }
 
-    const handleOnChange = e => {
+    const handleOnChange = (e, inputType) => {
         if(e.target.value) {
-            setContactFormData({...contactFormData, senderPhone: e.target.value});
-            debounce(setPhoneValidity(validatePhoneNumber(e.target.value)), 1000);
+            setContactFormData({...contactFormData, [inputType]: e.target.value});
+
+            if(inputType === 'senderPhone') {
+                debounce(setPhoneValidity(validatePhoneNumber(e.target.value)), 1000);
+            }
+            if(inputType === 'senderEmail') {
+                debounce(setEmailValidity(validateEmail(e.target.value)), 1000);
+            }
         } else {
-            setContactFormData({...contactFormData, senderPhone: ''});
-            setPhoneValidity(true);
+            setContactFormData({...contactFormData, [inputType]: ''});
+
+            if(inputType === 'senderPhone') {
+                setPhoneValidity(true);
+            }
         }
     }
 
@@ -88,7 +98,7 @@ const Form = () => {
                 ></input>
             </div>
             <div className="form-items-wrapper">
-                <p className="form-item-label"> E-mail: </p>
+                <p className="form-item-label"> E-mail: {!isValidEmail && <span className="invalid-form-input">!</span>}</p>
                 <input 
                     id="email-input"
                     className="form-inputs" 
@@ -97,7 +107,7 @@ const Form = () => {
                     placeholder="Enter e-mail..." 
                     required
                     value={ senderEmail }
-                    onChange={ (e) => setContactFormData({...contactFormData, senderEmail: e.target.value}) }
+                    onChange={(e) => handleOnChange(e, 'senderEmail')}
                 ></input>
             </div>
             <div className="form-items-wrapper">
@@ -121,7 +131,7 @@ const Form = () => {
                     maxLength="20"
                     placeholder="Enter phone..."
                     value={ senderPhone }
-                    onChange={(e) => handleOnChange(e)}
+                    onChange={(e) => handleOnChange(e, 'senderPhone')}
                 ></input>
             </div>
             <div className="form-items-wrapper">

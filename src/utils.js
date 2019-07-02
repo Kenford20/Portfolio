@@ -56,6 +56,11 @@ export const debounce = (func, delay) => {
 } 
 
 export const validatePhoneNumber = (str) => {
-    let validPhoneNumberRegex = /^\+?1?-? ?(\d{3}|\(\d{3}\))-? ?\d{3}-? ?\d{4}$/;
-    return validPhoneNumberRegex.test(str);
+    let validPhoneNumber = /^(\+?1\s?-?)? ?(\d{3}|\(\d{3}\))-? ?\d{3}-? ?\d{4}$/;
+    return validPhoneNumber.test(str);
+}
+
+export const validateEmail = (str) => {
+    let validEmail = /^(\w|[^\w\s])+@(\w|[^\w\s])+\.(\w|[^\w\s])+$/;
+    return validEmail.test(str);
 }
