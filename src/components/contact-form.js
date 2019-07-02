@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { submitForm } from '../submit-form';
+import { submitForm, validatePhoneNumber, debounce } from '../utils';
 
 const Form = () => {
     const [contactFormData, setContactFormData] = useState({
@@ -14,6 +14,8 @@ const Form = () => {
         loading: false,
         submitted: false
     });
+
+    const [isValidPhone, setPhoneValidity] = useState(true);
     
     const isFirstRun = useRef(true);
     useEffect (() => {
@@ -25,35 +27,52 @@ const Form = () => {
         console.log(formStatus);
     }, [formStatus]);
 
+    const handleSubmit = e => {
+        e.preventDefault();
+
+        if(isValidPhone) {
+            updateFormStatus({...formStatus, loading: true});
+
+            async function fetchFormResponse() {
+                let [shouldStillLoad, isFormSubmitted] = await submitForm(contactFormData);
+            
+                updateFormStatus({ loading: shouldStillLoad, submitted: isFormSubmitted });
+                setTimeout(() => updateFormStatus({ submitted: false }), 4000);
+            }
+            fetchFormResponse();
+            
+            setContactFormData({
+                senderName: '',
+                senderEmail: '',
+                senderCompany: '',
+                senderPhone: '',
+                senderMessage: ''
+            });
+        } else {
+            alert('Please enter a valid phone number!');
+            document.querySelector("#phone-input").focus();
+        }
+    }
+
+    const handleOnChange = e => {
+        if(e.target.value) {
+            setContactFormData({...contactFormData, senderPhone: e.target.value});
+            debounce(setPhoneValidity(validatePhoneNumber(e.target.value)), 1000);
+        } else {
+            setContactFormData({...contactFormData, senderPhone: ''});
+            setPhoneValidity(true);
+        }
+    }
+
     const { senderName, senderEmail, senderCompany, senderPhone, senderMessage } = contactFormData;
     const { loading, submitted } = formStatus;
-
     const loadingModal = loading && <div id="form-sending"><h1>Sending...</h1></div>;
 
     return ( 
         <form 
             id="form-wrapper" 
-            onSubmit={(e) => {
-                e.preventDefault();
-                updateFormStatus({...formStatus, loading: true});
-
-                async function fetchFormResponse() {
-                    let [shouldStillLoad, isFormSubmitted] = await submitForm(contactFormData);
-                
-                    updateFormStatus({ loading: shouldStillLoad, submitted: isFormSubmitted });
-                    setTimeout(() => updateFormStatus({ submitted: false }), 4000);
-                }
-                fetchFormResponse();
-                
-                setContactFormData({
-                    senderName: '',
-                    senderEmail: '',
-                    senderCompany: '',
-                    senderPhone: '',
-                    senderMessage: ''
-                });
-            }
-        }>
+            onSubmit={(e) => handleSubmit(e)}
+        >
             <h3> Fill out the form </h3>
             <div className="form-items-wrapper">
                 <p className="form-item-label"> Name: </p>
@@ -94,7 +113,7 @@ const Form = () => {
                 ></input>
             </div>
             <div className="form-items-wrapper">
-                <p className="form-item-label"> Phone: (optional)</p>
+                <p className="form-item-label"> Phone: (optional) {!isValidPhone && <span className="invalid-form-input">!</span>}</p>
                 <input 
                     id="phone-input"
                     className="form-inputs" 
@@ -102,7 +121,7 @@ const Form = () => {
                     maxLength="20"
                     placeholder="Enter phone..."
                     value={ senderPhone }
-                    onChange={ (e) => setContactFormData({...contactFormData, senderPhone: e.target.value}) }
+                    onChange={(e) => handleOnChange(e)}
                 ></input>
             </div>
             <div className="form-items-wrapper">

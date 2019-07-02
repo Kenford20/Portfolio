@@ -826,6 +826,268 @@ exports[`renders the accordion 1`] = `
           >
             <div
               class="portfolio-item-info"
+              data-aos="fade-left"
+            >
+              <h1
+                class="portfolio-item-title"
+              >
+                 Epic7 Catalyst Tool 
+              </h1>
+              <h2
+                class="portfolio-item-type"
+              >
+                 Web Application 
+              </h2>
+              <hr />
+              <p
+                class="portfolio-item-description"
+              >
+                To solve an issue I often came across while playing the mobile gacha-game, Epic 7, I developed this web application to present lists of data in an organized, table-like format that pertained to a particular subsets of other data from the game. For example, if a player needed to find out the materials needed to upgrade their in-game characters, this application allows them to do so in a very simple, easy manner. The application is developed with Angular and Typescript.
+                <br />
+                <br />
+                You may view the source code 
+                <a
+                  href="https://github.com/Kenford20/epic7-catalyst-tool"
+                >
+                  here.
+                </a>
+              </p>
+              <span
+                class="portfolio-item-tech"
+              >
+                 Typescript 
+              </span>
+              <span
+                class="portfolio-item-tech"
+              >
+                 Angular 
+              </span>
+              <span
+                class="portfolio-item-tech"
+              >
+                 Epic7 
+              </span>
+            </div>
+            <a
+              href="https://epic7-catalyst-tool.herokuapp.com/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <div
+                data-aos="fade-left"
+                data-aos-delay="1000"
+                data-testid="thumbnail"
+                id="thumbnail-laptop"
+              >
+                <div
+                  id="screen"
+                >
+                  <span
+                    id="camera"
+                  />
+                  <div
+                    id="tool-bar"
+                  >
+                    <span
+                      class="toolbar-btns"
+                    />
+                    <span
+                      class="toolbar-btns"
+                    />
+                    <span
+                      class="toolbar-btns"
+                    />
+                    <div
+                      id="address-bar"
+                    />
+                  </div>
+                  <div
+                    id="portfolio-img"
+                  >
+                    <img
+                      alt="Epic7 Site Thumbnail"
+                      src="epic7.png"
+                    />
+                  </div>
+                </div>
+                <div
+                  id="keyboard"
+                >
+                  <div
+                    id="keys"
+                  />
+                </div>
+                <div
+                  id="keyboard-base"
+                />
+                <div
+                  id="thumbnail-mobile"
+                >
+                  <div
+                    id="mobile-top"
+                  >
+                    <span
+                      id="camera"
+                    />
+                    <span
+                      id="speaker"
+                    />
+                  </div>
+                  <div
+                    id="portfolio-img-mobile"
+                  >
+                    <img
+                      alt="Epic7 Site Mobile View Thumbnail"
+                      src="epic7-mobile.png"
+                    />
+                  </div>
+                  <div
+                    id="mobile-bottom"
+                  >
+                    <span
+                      id="home-btn"
+                    />
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            class="portfolio-item-wrapper"
+          >
+            <a
+              href="https://github.com/Kenford20/my-telegram-bot"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <div
+                data-aos="fade-right"
+                data-aos-delay="1000"
+                data-testid="thumbnail"
+                id="thumbnail-laptop"
+              >
+                <div
+                  id="screen"
+                >
+                  <span
+                    id="camera"
+                  />
+                  <div
+                    id="tool-bar"
+                  >
+                    <span
+                      class="toolbar-btns"
+                    />
+                    <span
+                      class="toolbar-btns"
+                    />
+                    <span
+                      class="toolbar-btns"
+                    />
+                    <div
+                      id="address-bar"
+                    />
+                  </div>
+                  <div
+                    id="portfolio-img"
+                  >
+                    <img
+                      alt="Kaori-chan Thumbnail"
+                      src="kaori.png"
+                    />
+                  </div>
+                </div>
+                <div
+                  id="keyboard"
+                >
+                  <div
+                    id="keys"
+                  />
+                </div>
+                <div
+                  id="keyboard-base"
+                />
+                <div
+                  id="thumbnail-mobile"
+                >
+                  <div
+                    id="mobile-top"
+                  >
+                    <span
+                      id="camera"
+                    />
+                    <span
+                      id="speaker"
+                    />
+                  </div>
+                  <div
+                    id="portfolio-img-mobile"
+                  >
+                    <img
+                      alt="Kaori-chan Mobile View Thumbnail"
+                      src="kaori-mobile.png"
+                    />
+                  </div>
+                  <div
+                    id="mobile-bottom"
+                  >
+                    <span
+                      id="home-btn"
+                    />
+                  </div>
+                </div>
+              </div>
+            </a>
+            <div
+              class="portfolio-item-info"
+              data-aos="fade-right"
+            >
+              <h1
+                class="portfolio-item-title"
+              >
+                 Kaori-chan Bot 
+              </h1>
+              <h2
+                class="portfolio-item-type"
+              >
+                 Chat Bot Application 
+              </h2>
+              <hr />
+              <p
+                class="portfolio-item-description"
+              >
+                Kaori-chan is my custom chat bot made for the Telegram Messenger application. She is capable of handling a numerous amount of useful commands like providing local weather/weekly forecast, math calculations, reminders, tagging your friends, and much much more! She is built mainly with JavaScript and Node. A basic web server hosted on Heroku holds all her logic and allows users to continuously send requests to her during the majority of the day.
+                <br />
+                <br />
+                To learn more about Kaori-chan or see a more comprehensive list of her commands, please visit 
+                <a
+                  href="https://github.com/Kenford20/my-telegram-bot"
+                >
+                  here.
+                </a>
+              </p>
+              <span
+                class="portfolio-item-tech"
+              >
+                 JavaScript 
+              </span>
+              <span
+                class="portfolio-item-tech"
+              >
+                 Node 
+              </span>
+              <span
+                class="portfolio-item-tech"
+              >
+                 Telegram 
+              </span>
+            </div>
+          </div>
+          <div
+            class="portfolio-item-wrapper"
+          >
+            <div
+              class="portfolio-item-info"
               data-aos="fade-right"
             >
               <h1
@@ -1968,7 +2230,7 @@ exports[`renders the accordion 1`] = `
               <p
                 class="form-item-label"
               >
-                 Phone: (optional)
+                 Phone: (optional) 
               </p>
               <input
                 class="form-inputs"
@@ -2107,7 +2369,7 @@ exports[`renders the accordion 1`] = `
            &lt;Kenny Zhou/&gt; 
         </h2>
         <p>
-          Copyright © 2018 Kenny Zhou 
+          Copyright © 2019 Kenny Zhou 
           <br />
           Website created by yours truly.
         </p>
